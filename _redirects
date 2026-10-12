@@ -1,0 +1,4 @@
+# Single-page app fallback: serve the React app (HTTP 200) for every route that is not a real file.
+# Without this, Netlify answers deep links such as /services or /work/morrow-legal with a real
+# 404 status, and Google refuses to index them even though the page renders for visitors.
+/*    /index.html   200
