@@ -1,3 +1,5 @@
+import { trackEvent } from './analytics';
+
 const ENDPOINT = 'https://api.web3forms.com/submit';
 
 export async function submitEnquiry(fields, formName = 'Website enquiry') {
@@ -21,6 +23,14 @@ export async function submitEnquiry(fields, formName = 'Website enquiry') {
   if (!response.ok || !result.success) {
     throw new Error(result.message || 'Email delivery failed.');
   }
+
+  // Blog comments are not sales leads, so report them under their own event.
+  const isComment = /comment/i.test(formName);
+  trackEvent(isComment ? 'blog_comment' : 'generate_lead', {
+    form_name: formName,
+    service: fields.service || undefined,
+    page_path: window.location.pathname,
+  });
 
   return result;
 }

@@ -60,7 +60,7 @@ const staticMeta = {
   }
 };
 
-const truncate = (value, max) => value.length <= max ? value : `${value.slice(0, max - 1).trimEnd()}Ã¢â‚¬Â¦`;
+const truncate = (value, max) => value.length <= max ? value : `${value.slice(0, max - 1).trimEnd()}…`;
 const titleWithBrand = (value) => truncate(`${value} | BrandPixo`, 59);
 const cleanPath = (pathname) => pathname !== '/' && pathname.endsWith('/') ? pathname.slice(0, -1) : pathname;
 const articleWordCount = (post) => [

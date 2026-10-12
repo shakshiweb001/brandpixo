@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import useSmoothScroll from './hooks/useSmoothScroll';
 import CustomCursor from './components/CustomCursor';
 import SEO from './components/SEO';
+import Analytics from './components/Analytics';
 import Navigation from './components/Navigation';
 import HomePage from './pages/HomePage';
 import Footer from './components/Footer';
@@ -47,6 +48,7 @@ function App() {
       <Preloader />
       <ScrollToTop />
       <SEO />
+      <Analytics />
       <CustomCursor />
       <Navigation />
       <Suspense fallback={<main aria-live="polite" style={{ minHeight: '70vh', paddingTop: '9rem' }} />}>
@@ -57,7 +59,10 @@ function App() {
           <Route path="/blog/:slug" element={<BlogDetailPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/work" element={<WorkPage />} />
-          <Route path="/work/websites" element={<WorkCategoryPage />} />`r`n          <Route path="/work/ecommerce" element={<WorkCategoryPage />} />`r`n          <Route path="/work/apps" element={<WorkCategoryPage />} />`r`n          <Route path="/work/:slug" element={<ProjectDetailPage />} />
+          <Route path="/work/websites" element={<WorkCategoryPage />} />
+          <Route path="/work/ecommerce" element={<WorkCategoryPage />} />
+          <Route path="/work/apps" element={<WorkCategoryPage />} />
+          <Route path="/work/:slug" element={<ProjectDetailPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
           <Route path="/terms-and-conditions" element={<TermsPage />} />
           <Route path="/services" element={<ServicesPage />} />
