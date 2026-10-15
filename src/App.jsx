@@ -8,7 +8,6 @@ import Navigation from './components/Navigation';
 import HomePage from './pages/HomePage';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
-import Preloader from './components/Preloader';
 
 const ServicesPage = lazy(() => import('./pages/ServicesPage'));
 const ServiceDetailPage = lazy(() => import('./pages/ServiceDetailPage'));
@@ -45,7 +44,6 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Preloader />
       <ScrollToTop />
       <SEO />
       <Analytics />

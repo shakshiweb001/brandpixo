@@ -4,7 +4,7 @@
 //
 // Runs after `vite build` (see postbuild). It opens each route from the sitemap in a local
 // headless Chrome, waits for React + react-helmet to finish, strips things that must only
-// exist at runtime (preloader, injected analytics scripts) and writes the result to
+// exist at runtime (injected analytics scripts) and writes the result to
 //   build/<route>.html  and  build/<route>/index.html   (build/index.html for "/")
 // If Chrome is not available the script exits quietly and the plain SPA shell files created
 // by generate-route-pages.mjs stay in place, so the build never fails because of this step.
@@ -93,7 +93,6 @@ async function render(route) {
     await new Promise((done) => setTimeout(done, 400));
 
     const html = await page.evaluate((original) => {
-      document.querySelector('[role="status"][aria-label^="Loading"]')?.remove();
       document.querySelectorAll('.custom-cursor, .custom-cursor-dot').forEach((node) => node.remove());
       document.body.removeAttribute('style');
       document.documentElement.removeAttribute('style');
