@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useLocation } from 'react-router-dom';
 import { servicesData } from '../data/servicesData';
@@ -11,12 +11,13 @@ const SITE_URL = (import.meta.env.VITE_SITE_URL || 'https://brandpixo.com').repl
 const SHARE_IMAGE = `${SITE_URL}/brandpixo-share.png`;
 const EMAIL = 'brandpixo@gmail.com';
 const PHONE = '+91-76508-37963';
-const SOCIALS = ['https://www.instagram.com/', 'https://www.facebook.com/'];
+// Add the real BrandPixo profile URLs here (instagram.com/<handle> etc.) to emit them as sameAs.
+const SOCIALS = [];
 
 const staticMeta = {
   '/': {
-    title: 'BrandPixo | Digital Marketing & Branding Agency',
-    description: 'BrandPixo is a digital marketing and branding agency offering SEO, social media marketing, web design and performance campaigns.'
+    title: 'BrandPixo | Branding, Web Design & Digital Marketing Agency',
+    description: 'BrandPixo is a branding, web design and digital marketing agency. We build memorable brands and fast, conversion-focused websites, backed by SEO and social.'
   },
   '/about': {
     title: 'About BrandPixo | Digital Marketing Agency',
@@ -48,15 +49,15 @@ const staticMeta = {
   },
   '/work/websites': {
     title: 'Website Projects | BrandPixo',
-    description: 'Explore our latest website design and development projects.'
+    description: 'Explore website design and development projects by BrandPixo for healthcare, home services, education, membership and community brands.'
   },
   '/work/ecommerce': {
     title: 'E-commerce Projects | BrandPixo',
-    description: 'Explore our latest e-commerce and online store projects.'
+    description: 'Explore e-commerce website and online store design projects by BrandPixo, from skincare and furniture storefronts to conversion-focused shopping journeys.'
   },
   '/work/apps': {
     title: 'Web App Projects | BrandPixo',
-    description: 'Explore our latest custom web application projects.'
+    description: 'Explore app and web application interface design projects by BrandPixo, from fitness and finance apps to custom digital products.'
   }
 };
 
@@ -144,6 +145,12 @@ const breadcrumbSchema = (items) => ({
 });
 
 export default function SEO() {
+  // Pre-rendered pages ship their own copy of the SEO tags (marked data-prerendered) so crawlers
+  // see them without running JS. Once the app has rendered its own tags, drop the static copies.
+  useEffect(() => {
+    document.head.querySelectorAll('[data-prerendered]').forEach((node) => node.remove());
+  }, []);
+
   const location = useLocation();
   const pathname = cleanPath(location.pathname.toLowerCase());
   const meta = routeDetails(pathname);
@@ -155,33 +162,26 @@ export default function SEO() {
     '@type': ['Organization', 'ProfessionalService'],
     '@id': `${SITE_URL}/#organization`,
     name: SITE_NAME,
-    description: 'Digital marketing and branding agency offering SEO, social media marketing, web design and performance campaigns.',
+    description: 'Branding, web design and digital marketing agency offering brand identity, website development, SEO, social media marketing and performance campaigns.',
     url: SITE_URL,
     logo: { '@type': 'ImageObject', url: SHARE_IMAGE },
     email: EMAIL,
     telephone: PHONE,
-    sameAs: SOCIALS,
+    ...(SOCIALS.length ? { sameAs: SOCIALS } : {}),
     address: {
       '@type': 'PostalAddress',
       addressCountry: 'IN'
     }
   };
 
-  const localBusiness = {
+  const website = {
     '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
-    '@id': `${SITE_URL}/#localbusiness`,
+    '@type': 'WebSite',
+    '@id': `${SITE_URL}/#website`,
     name: SITE_NAME,
-    image: SHARE_IMAGE,
     url: SITE_URL,
-    email: EMAIL,
-    telephone: PHONE,
-    priceRange: '$$',
-    address: {
-      '@type': 'PostalAddress',
-      addressCountry: 'India'
-    },
-    areaServed: 'India'
+    inLanguage: 'en-IN',
+    publisher: { '@id': `${SITE_URL}/#organization` }
   };
 
   const pageSchema = meta.post ? {
@@ -286,7 +286,7 @@ export default function SEO() {
       <meta name="twitter:image:alt" content={meta.post?.imageAlt || 'BrandPixo digital marketing and branding agency'} />
 
       {pathname === '/' && <script type="application/ld+json">{JSON.stringify(organization)}</script>}
-      {pathname === '/' && <script type="application/ld+json">{JSON.stringify(localBusiness)}</script>}
+      {pathname === '/' && <script type="application/ld+json">{JSON.stringify(website)}</script>}
       <script type="application/ld+json">{JSON.stringify(pageSchema)}</script>
       {meta.breadcrumbs.length > 0 && <script type="application/ld+json">{JSON.stringify(breadcrumbSchema(meta.breadcrumbs))}</script>}
       {allServicesSchema && <script type="application/ld+json">{JSON.stringify(allServicesSchema)}</script>}

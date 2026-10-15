@@ -8,7 +8,7 @@
     "dev": "vite",
     "prebuild": "node scripts/generate-sitemap.mjs",
     "build": "vite build",
-    "postbuild": "node scripts/generate-route-pages.mjs",
+    "postbuild": "node scripts/generate-route-pages.mjs && node scripts/prerender-routes.mjs",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "lint": "oxlint",
@@ -32,6 +32,7 @@
     "gh-pages": "^6.3.0",
     "oxlint": "^1.71.0",
     "pdfjs-dist": "^6.2.108",
+    "puppeteer-core": "^25.14.0",
     "vite": "^8.1.1"
   }
 }
