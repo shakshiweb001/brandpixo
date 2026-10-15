@@ -15,7 +15,73 @@
 .iconStack span:nth-child(1) { left: 0; top: 42px; transform: rotate(-10deg); background: $secondary; }
 .iconStack span:nth-child(2) { left: 47px; top: 0; z-index: 2; transform: rotate(5deg); background: $primary; }
 .iconStack span:nth-child(3) { right: 0; bottom: 0; z-index: 3; transform: rotate(11deg); }
-.heroBottom { margin-top: 3rem; padding-top: 2rem; display: flex; justify-content: flex-end; align-items: flex-start; border-top: 1px solid rgba(24,24,24,.14); }
+
+.heroBanner {
+  margin-top: 3.5rem;
+  width: 100%;
+}
+
+.bannerFrame {
+  position: relative;
+  width: 100%;
+  height: clamp(280px, 36vw, 480px);
+  border: 2px solid $dark;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 8px 10px 0 rgba(24, 24, 24, 0.16);
+  background: #f1ede4;
+}
+
+.bannerImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+.bannerTagline {
+  position: absolute;
+  left: 1.5rem;
+  bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  z-index: 2;
+}
+
+.bannerIssue {
+  padding: 0.5rem 0.9rem;
+  border: 1.5px solid $dark;
+  border-radius: 999px;
+  background: $white;
+  color: $dark;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  box-shadow: 3px 3px 0 $dark;
+}
+
+.bannerCategory {
+  padding: 0.5rem 0.9rem;
+  border: 1.5px solid $dark;
+  border-radius: 999px;
+  background: $primary;
+  color: $dark;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  box-shadow: 3px 3px 0 $dark;
+}
+
+.heroBottom { margin-top: 3.5rem; padding-top: 2rem; display: flex; justify-content: flex-end; align-items: flex-start; border-top: 1px solid rgba(24,24,24,.14); }
 .quoteMark { margin-right: .7rem; color: $dark; font-family: $font-heading; font-size: 4rem; font-weight: 800; line-height: .8; }
 .statementCard { width: min(530px, 100%); padding: 1.7rem 2rem; border: 2px solid $dark; border-radius: 18px; background: $secondary; box-shadow: 8px 9px 0 $primary; transform: rotate(-.5deg); }
 .statementCard h2 { color: $dark; font-size: clamp(1.8rem, 3vw, 2.7rem); line-height: .96; }
@@ -67,7 +133,11 @@
   .heroTitle { margin-top: 5rem; }
   .heroTitle h1 { font-size: clamp(3.5rem, 16vw, 5.5rem); letter-spacing: -3px; }
   .iconStack { top: 4rem; right: .5rem; transform: scale(.65); }
-  .heroBottom { margin-top: 4rem; }
+  .heroBanner { margin-top: 2.2rem; }
+  .bannerFrame { height: 220px; border-radius: 18px; box-shadow: 5px 6px 0 rgba(24,24,24,.16); }
+  .bannerTagline { left: 0.8rem; bottom: 0.8rem; gap: 0.5rem; }
+  .bannerIssue, .bannerCategory { font-size: 0.6rem; padding: 0.35rem 0.65rem; }
+  .heroBottom { margin-top: 3rem; }
   .quoteMark { display: none; }
   .statementCard { padding: 1.4rem; }
   .journal { padding: 5rem .75rem 6rem; }

@@ -47,7 +47,7 @@ export default function Contact() {
           </div>
           <div className={styles.infoItem}>
             <span className={styles.label}>WhatsApp Us</span>
-            <a href="https://wa.me/919805312402" target="_blank" rel="noreferrer" className={styles.val}>+91 98053 12402</a>
+            <a href="https://wa.me/917650837963" target="_blank" rel="noreferrer" className={styles.val}>+91 76508 37963</a>
           </div>
           <div className={styles.infoItem}>
             <span className={styles.label}>Main Headquarters</span>

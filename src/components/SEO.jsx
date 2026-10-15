@@ -10,7 +10,7 @@ const SITE_NAME = 'BrandPixo';
 const SITE_URL = (import.meta.env.VITE_SITE_URL || 'https://brandpixo.com').replace(/\/$/, '');
 const SHARE_IMAGE = `${SITE_URL}/brandpixo-share.png`;
 const EMAIL = 'brandpixo@gmail.com';
-const PHONE = '+91-98053-12402';
+const PHONE = '+91-76508-37963';
 const SOCIALS = ['https://www.instagram.com/', 'https://www.facebook.com/'];
 
 const staticMeta = {

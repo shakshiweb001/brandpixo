@@ -3,14 +3,16 @@
 .footer {
   background-color: $dark;
   color: $white;
-  padding: 8rem 4rem 3rem 4rem;
+  padding: 5rem max(2.5rem, calc((100% - 1400px) / 2)) 2rem;
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 4.5rem;
+  overflow: hidden;
 
   @media (max-width: $tablet) {
-    padding: 6rem 2rem 2rem 2rem;
+    padding: 3rem .75rem 1.5rem;
+    gap: 3.5rem;
   }
 }
 
@@ -18,55 +20,79 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  padding-bottom: 4rem;
+  gap: 2rem;
+  padding: clamp(2rem, 4vw, 3.5rem);
+  border: 2px solid $dark;
+  border-radius: 28px;
+  background: $primary;
+  color: $dark;
+  box-shadow: 0 9px 0 rgba(255, 255, 255, 0.14);
 
   @media (max-width: $tablet) {
     flex-direction: column;
     align-items: flex-start;
-    gap: 2rem;
+    border-radius: 22px;
   }
 }
 
+// .dark-section forces white headings globally, so these need the extra specificity.
+.footer .ctaText h2 { color: $dark !important; }
+.footer .linksCol h4 { color: $primary !important; }
+
 .ctaText {
+  span {
+    font-size: .7rem;
+    font-weight: 800;
+    letter-spacing: .14rem;
+    text-transform: uppercase;
+  }
   h2 {
-    color: $white !important;
-    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin-top: .7rem;
+    color: $dark !important;
+    font-size: clamp(2.2rem, 5vw, 4.2rem);
     font-weight: 700;
+    line-height: .95;
+    letter-spacing: -2px;
   }
   p {
-    color: lighten($muted, 20%);
+    color: rgba(24, 24, 24, 0.72);
     margin-top: 1rem;
     font-size: 1.1rem;
   }
 }
 
 .btnPrimary {
-  background: linear-gradient(135deg, $primary 0%, $hover-accent 100%);
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+  background: $dark;
   color: $white;
-  border: none;
-  padding: 1.2rem 2.5rem;
-  border-radius: 50px;
-  font-weight: 600;
+  padding: 1.15rem 2rem;
+  border-radius: 999px;
+  font-weight: 800;
   font-size: 1rem;
-  cursor: pointer;
-  box-shadow: 0 10px 30px rgba(250, 172, 92, 0.2);
+  white-space: nowrap;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   &:hover {
     transform: translateY(-3px);
-    box-shadow: 0 15px 35px rgba(250, 172, 92, 0.4);
+    box-shadow: 0 8px 0 rgba(24, 24, 24, 0.2);
   }
 }
 
 .middle {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr;
-  gap: 4rem;
+  grid-template-columns: 1.5fr 1fr 1.2fr 1.2fr;
+  gap: 3rem;
+
+  @media (max-width: $desktop) {
+    grid-template-columns: 1fr 1fr;
+  }
 
   @media (max-width: $tablet) {
-    grid-template-columns: 1fr;
-    gap: 3rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem 1.5rem;
   }
 }
 
@@ -75,11 +101,21 @@
   flex-direction: column;
   gap: 1.5rem;
 
+  @media (max-width: $tablet) {
+    grid-column: 1 / -1;
+  }
+
   .logo {
+    color: $white;
     font-family: $font-heading;
     font-size: 2.2rem;
     font-weight: 700;
     letter-spacing: -1px;
+
+    i {
+      color: $primary;
+      font-style: normal;
+    }
   }
 
   p {
@@ -94,12 +130,19 @@
   flex-direction: column;
   gap: 1.5rem;
 
+  &:last-child {
+    @media (max-width: $tablet) {
+      grid-column: 1 / -1;
+    }
+  }
+
   h4 {
-    color: $white;
+    color: $primary;
     font-family: $font-heading;
-    font-size: 1.1rem;
+    font-size: .75rem;
+    font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: .14rem;
   }
 
   ul {
@@ -109,7 +152,7 @@
     gap: 0.8rem;
 
     a {
-      color: lighten($muted, 15%);
+      color: lighten($muted, 25%);
       transition: color 0.3s ease, padding-left 0.3s ease;
 
       &:hover {
@@ -120,18 +163,104 @@
   }
 }
 
+.contactList a {
+  display: inline-flex;
+  align-items: center;
+  gap: .6rem;
+  overflow-wrap: anywhere;
+
+  svg {
+    flex: 0 0 auto;
+    color: $primary;
+  }
+}
+
+.qrCard {
+  width: fit-content;
+  padding: .6rem;
+  padding-right: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: .9rem;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 16px;
+  color: lighten($muted, 25%);
+  font-size: .85rem;
+  line-height: 1.45;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    border-color: $primary;
+    transform: translateY(-3px);
+  }
+
+  img {
+    width: 96px;
+    height: 96px;
+    display: block;
+    border-radius: 10px;
+    background: $white;
+  }
+
+  strong {
+    display: block;
+    color: $white;
+    font-size: .95rem;
+  }
+}
+
+.socials {
+  display: flex;
+  gap: .6rem;
+
+  a {
+    width: 46px;
+    height: 46px;
+    display: grid;
+    place-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 50%;
+    color: $white;
+    font-size: 1.15rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+      background-color: $primary;
+      border-color: $primary;
+      color: $dark;
+      transform: translateY(-3px);
+    }
+  }
+}
+
+.wordmark {
+  margin: -1rem 0 -2.5rem;
+  color: transparent;
+  font-family: $font-heading;
+  font-size: clamp(4rem, 18.5vw, 17rem);
+  font-weight: 700;
+  line-height: .8;
+  letter-spacing: -.05em;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.16);
+  user-select: none;
+  pointer-events: none;
+}
+
 .bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  padding-top: 3rem;
+  gap: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding-top: 1.5rem;
   font-size: 0.9rem;
-  color: $muted;
+  color: lighten($muted, 10%);
 
   @media (max-width: $tablet) {
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
     text-align: center;
   }
 }
@@ -146,7 +275,7 @@
     min-height: 44px;
     display: inline-flex;
     align-items: center;
-    color: $muted;
+    color: lighten($muted, 10%);
     transition: color 0.2s ease;
 
     &:hover,
@@ -154,42 +283,24 @@
   }
 }
 
-.socials {
-  display: flex;
-  gap: 1.5rem;
-
-  a {
-    min-width: 44px;
-    min-height: 44px;
-    display: grid;
-    place-items: center;
-    color: $white;
-    font-size: 1.25rem;
-    transition: color 0.3s ease, transform 0.3s ease;
-
-    &:hover {
-      color: $primary;
-      transform: translateY(-3px);
-    }
-  }
-}
-
 .backToTop {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: $white;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
+  min-height: 46px;
+  padding: 0 1.2rem;
+  display: inline-flex;
   align-items: center;
+  gap: .5rem;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
+  color: $white;
+  font-size: .85rem;
+  font-weight: 700;
   cursor: pointer;
   transition: all 0.3s ease;
 
   &:hover {
     background-color: $primary;
     border-color: $primary;
-    color: $white;
+    color: $dark;
   }
 }

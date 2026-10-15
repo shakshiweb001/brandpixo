@@ -8,7 +8,7 @@ export default function WhatsAppButton() {
   return (
     <a
       className={`${styles.button} hover-target`}
-      href={`https://wa.me/919805312402?text=${message}`}
+      href={`https://wa.me/917650837963?text=${message}`}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat with BrandPixo on WhatsApp"

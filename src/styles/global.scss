@@ -13,6 +13,7 @@ html, body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 body {
@@ -35,10 +36,21 @@ select {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-heading;
-  font-weight: 500;
-  line-height: 1.1;
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
   color: $dark;
   overflow-wrap: anywhere;
+}
+
+::selection {
+  background: $primary;
+  color: $dark;
+}
+
+:focus-visible {
+  outline: 2px solid $dark;
+  outline-offset: 3px;
 }
 
 a {

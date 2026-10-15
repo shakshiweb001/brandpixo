@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ProjectGallery from '../components/ProjectGallery';
+import Contact from '../components/Contact';
 import styles from './WorkPage.module.scss';
 
 const categories = [
@@ -25,5 +26,6 @@ export default function WorkPage() {
       <div className={styles.galleryHeading}><span>All work</span><p>16 selected projects across digital experiences, commerce and product design.</p></div>
       <ProjectGallery />
     </section>
+    <Contact />
   </main>;
 }

@@ -44,7 +44,7 @@ export default function ContactPage() {
       </section>
 
       <section className={styles.contactCards}>
-        <a href="https://wa.me/919805312402" target="_blank" rel="noreferrer"><FaWhatsapp /><FiArrowUpRight /><span>WhatsApp our team</span><strong>+91 98053 12402</strong><small>Chat directly with a strategist.</small></a>
+        <a href="https://wa.me/917650837963" target="_blank" rel="noreferrer"><FaWhatsapp /><FiArrowUpRight /><span>WhatsApp our team</span><strong>+91 76508 37963</strong><small>Chat directly with a strategist.</small></a>
         <a href="mailto:brandpixo@gmail.com"><FiMail /><FiArrowUpRight /><span>Email us</span><strong>brandpixo@gmail.com</strong><small>Send project details or attach a brief.</small></a>
         <div><FiMapPin /><FiArrowUpRight /><span>Service area</span><strong>India</strong><small>Working with ambitious brands across India.</small></div>
       </section>
@@ -84,7 +84,7 @@ export default function ContactPage() {
 
       <section className={styles.assuranceStrip}><span>Before you begin</span><div><strong>One business day</strong><small>Typical response time</small></div><div><strong>Worldwide</strong><small>Remote collaboration</small></div><div><strong>Clear proposals</strong><small>Scope before commitment</small></div></section>
 
-      <section className={styles.cta}><span>Ready when you are</span><h2>Let’s build<br /><em>something exceptional.</em></h2><p>Your next digital chapter can start with one clear conversation.</p><a href="https://wa.me/919805312402" target="_blank" rel="noreferrer">WhatsApp our studio <FiArrowUpRight /></a></section>
+      <section className={styles.cta}><span>Ready when you are</span><h2>Let’s build<br /><em>something exceptional.</em></h2><p>Your next digital chapter can start with one clear conversation.</p><a href="https://wa.me/917650837963" target="_blank" rel="noreferrer">WhatsApp our studio <FiArrowUpRight /></a></section>
     </main>
   );
 }

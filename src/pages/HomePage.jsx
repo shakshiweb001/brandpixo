@@ -1,11 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { FiArrowDown, FiArrowUpRight, FiCode, FiCompass, FiPenTool } from 'react-icons/fi';
+import { FiArrowUpRight, FiCode, FiCompass, FiPenTool } from 'react-icons/fi';
 import styles from './HomePage.module.scss';
 import FAQ from '../components/FAQ';
 import Contact from '../components/Contact';
 import ProjectGallery from '../components/ProjectGallery';
+import HomeHero from '../components/HomeHero';
+import { servicesData } from '../data/servicesData';
+import { blogPosts } from '../data/blogPosts';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 28 },
@@ -25,21 +28,23 @@ const steps = [
   ['Deliver', 'We build, refine, launch, and keep momentum moving.']
 ];
 
+const marqueeItems = Object.values(servicesData).map((service) => service.title);
+const latestPosts = blogPosts.slice(0, 3);
+
 export default function HomePage() {
   return (
     <main className={styles.page}>
-      <section className={styles.hero} id="home">
-        <div className={styles.heroIconStack} aria-hidden="true"><span><FiCompass /></span><span><FiPenTool /></span><span><FiCode /></span></div>
-        <motion.div className={styles.heroIntro} initial="hidden" animate="visible" variants={fadeUp}>
-          <span>Independent digital studio</span>
-          <h1>We make ambitious brands<br /><mark>impossible to ignore.</mark></h1>
-        </motion.div>
-        <div className={styles.heroBottom}>
-          <p>Strategy, design, and development brought together to create brands and digital experiences with real commercial impact.</p>
-          <Link to="/contact">Start a project <FiArrowUpRight /></Link>
+      <HomeHero />
+
+      <div className={styles.marquee}>
+        <div className={styles.marqueeTrack}>
+          {[0, 1].map((group) => (
+            <div key={group} aria-hidden={group === 1}>
+              {marqueeItems.map((item) => <span key={item}>{item}</span>)}
+            </div>
+          ))}
         </div>
-        <a className={styles.scrollCue} href="#studio"><FiArrowDown /><span>Explore our studio</span></a>
-      </section>
+      </div>
 
       <section className={styles.studio} id="studio">
         <motion.div className={styles.studioCopy} initial="hidden" whileInView="visible" viewport={{ once: true, margin: '-80px' }} variants={fadeUp}>
@@ -65,7 +70,7 @@ export default function HomePage() {
         <div className={styles.sectionHead}><span>Capabilities</span><h2>Built to move brands forward.</h2><Link to="/services">View all services <FiArrowUpRight /></Link></div>
         <div className={styles.serviceGrid}>
           {services.map((service) => (
-            <motion.article key={service.title} initial="hidden" whileInView="visible" viewport={{ once: true, margin: '-60px' }} variants={fadeUp}>
+            <motion.article key={service.title} initial="hidden" whileInView="visible" whileHover={{ y: -8 }} viewport={{ once: true, margin: '-60px' }} variants={fadeUp}>
               <div><span>{service.number}</span>{service.icon}</div>
               <h3>{service.title}</h3><p>{service.copy}</p>
               <Link to={service.link} aria-label={`Explore ${service.title}`}><FiArrowUpRight /></Link>
@@ -92,6 +97,22 @@ export default function HomePage() {
         <div><strong>98%</strong><span>Client satisfaction</span></div>
         <div><strong>25M+</strong><span>Revenue influenced</span></div>
         <p>Measured outcomes.<br />Memorable work.</p>
+      </section>
+
+      <section className={styles.journal}>
+        <div className={styles.sectionHead}><span>From the journal</span><h2>Fresh thinking, plainly put.</h2><Link to="/blog">Read all articles <FiArrowUpRight /></Link></div>
+        <div className={styles.journalGrid}>
+          {latestPosts.map((post) => (
+            <Link key={post.slug} to={`/blog/${post.slug}`} className={styles.journalCard}>
+              <img src={post.image} alt={post.imageAlt} loading="lazy" />
+              <div>
+                <span>{post.category} · {post.readTime}</span>
+                <h3>{post.title}</h3>
+                <small>Read article <FiArrowUpRight /></small>
+              </div>
+            </Link>
+          ))}
+        </div>
       </section>
 
       <section className={styles.faqContact} id="faq-contact">

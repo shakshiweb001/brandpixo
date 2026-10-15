@@ -21,6 +21,21 @@ export default function BlogPage() {
           <h1>Digital marketing insights.<br /><mark>Sharper brands.</mark></h1>
         </div>
 
+        <div className={styles.heroBanner}>
+          <div className={styles.bannerFrame}>
+            <img 
+              src="/blog/blog-hero-banner.jpg" 
+              alt="BrandPixo Journal — The New Era of Digital Creativity" 
+              className={styles.bannerImage}
+              fetchPriority="high"
+            />
+            <div className={styles.bannerTagline}>
+              <span className={styles.bannerIssue}>Volume 2026 // Studio Notes</span>
+              <span className={styles.bannerCategory}>Digital Craft &amp; Growth Insights</span>
+            </div>
+          </div>
+        </div>
+
         <div className={styles.heroBottom}>
           <span className={styles.quoteMark}>“</span>
           <div className={styles.statementCard}>

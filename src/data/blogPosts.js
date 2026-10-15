@@ -1,5 +1,131 @@
 export const blogPosts = [
   {
+    slug: 'local-seo-for-small-businesses',
+    title: 'Local SEO for Small Businesses: How to Rank Higher in Nearby Searches',
+    metaTitle: 'Local SEO for Small Businesses: A Practical Guide | BrandPixo',
+    metaDescription: 'Learn how local SEO helps small businesses rank in nearby searches with a stronger Google Business Profile, reviews, local pages, and consistent listings.',
+    focusKeyword: 'Local SEO for Small Businesses',
+    category: 'Local SEO',
+    readTime: '10 min read',
+    date: 'October 12, 2026',
+    datePublished: '2026-10-12',
+    dateModified: '2026-10-12',
+    image: '/blog/local-seo-for-small-businesses.jpg',
+    imageAlt: '3D isometric model of a modern local storefront illuminated by a glowing golden location pin beacon and ascending growth metrics',
+    excerpt: 'Local SEO puts your business in front of people who are already nearby and ready to act. It rewards accurate information, genuine reviews, and pages built around the places you actually serve.',
+    intro: 'When someone searches for a service “near me” or adds a city name to a query, they are usually close to making a decision. Local SEO is the work that helps your business appear in those moments, across the map results and the regular listings beneath them. This guide explains how local SEO for small businesses works and the practical steps that improve visibility in nearby searches.',
+    sections: [
+      {
+        title: 'What Is Local SEO and Why Does It Matter?',
+        paragraphs: [
+          'Local SEO is the process of improving how visible a business is in searches tied to a location. That includes queries with a place name, such as “dentist in Chandigarh”, and queries where the location is implied, such as “cafe open now”.',
+          'These searches carry strong intent. A person looking for a plumber, a salon, or a coaching centre in their area is not researching a topic for later. They want a nearby option they can call, visit, or message today.',
+          'For a small business, that makes local SEO one of the most efficient forms of marketing. You are not competing with every website in the country. You are competing with the handful of businesses that serve the same area, and many of them have not done the basics well.'
+        ],
+        link: { label: 'Explore our SEO services', to: '/services/seo' }
+      },
+      {
+        title: 'How Google Decides Which Local Businesses to Show',
+        paragraphs: [
+          'Google describes local ranking in terms of three factors: relevance, distance, and prominence. Understanding them makes every later decision easier, because each local SEO task improves at least one of the three.',
+          'You cannot change where a searcher is standing, so distance is mostly outside your control. Relevance and prominence are where the effort pays off.'
+        ],
+        table: {
+          headers: ['Ranking factor', 'What it means', 'How you influence it'],
+          rows: [
+            ['Relevance', 'How well your business matches the search', 'Accurate categories, services, and page content'],
+            ['Distance', 'How far you are from the searcher or the named place', 'A correct address and clearly defined service areas'],
+            ['Prominence', 'How well known and trusted your business appears', 'Reviews, mentions, links, and a strong website']
+          ]
+        }
+      },
+      {
+        title: 'Set Up and Complete Your Google Business Profile',
+        paragraphs: [
+          'Your Google Business Profile is the listing that appears in Google Maps and in the local results panel. For many customers it is the first impression of your business, seen before they ever reach your website.',
+          'Claim and verify the profile, then fill in every field that applies. Choose the primary category that most precisely describes what you do, because it has a strong effect on which searches you can appear for. Add secondary categories only where they are genuinely accurate.',
+          'An incomplete profile looks neglected. A complete one answers the questions people ask before they contact you: what you offer, when you are open, where you are, and what the place looks like.'
+        ],
+        list: [
+          'Use your real business name without added keywords',
+          'Select one precise primary category',
+          'Add accurate opening hours, including holidays',
+          'List your services or products with short descriptions',
+          'Upload real photos of your premises, team, and work',
+          'Add your website link and a phone number that is answered',
+          'Post updates and answer questions customers leave'
+        ]
+      },
+      {
+        title: 'Keep Your Name, Address, and Phone Number Consistent',
+        paragraphs: [
+          'Your business name, address, and phone number are often shortened to NAP. These details appear on your website, your Google Business Profile, social media pages, and business directories.',
+          'When the same business is listed with different phone numbers, old addresses, or several spellings of its name, customers get confused and search engines have less confidence in which version is correct.',
+          'Pick one exact format for your details and use it everywhere. Then review the listings you already have, starting with the directories and platforms your customers actually use, and correct anything that is out of date.'
+        ]
+      },
+      {
+        title: 'Earn Reviews and Respond to Them',
+        paragraphs: [
+          'Reviews influence both rankings and decisions. A profile with recent, detailed reviews is more convincing than one with a handful of old ratings, and customers read them closely before choosing between similar businesses.',
+          'The most reliable way to earn reviews is simply to ask at the right moment, soon after a job is completed or a purchase is made. Share a direct link so the process takes seconds. Do not offer rewards for reviews or post fake ones; both break Google’s policies and can lead to reviews being removed.',
+          'Reply to reviews, including critical ones. A calm, specific response to a complaint shows future customers how you handle problems, which often matters more than the complaint itself.'
+        ]
+      },
+      {
+        title: 'Build Website Pages Around the Places You Serve',
+        paragraphs: [
+          'Your website supports your local visibility by confirming what you do and where you do it. Start with the essentials: your full contact details in the footer, a contact page with an embedded map, and service pages that describe each offering clearly.',
+          'If you serve several cities or neighbourhoods, a dedicated page for each important location can help, provided every page is genuinely useful. Include details specific to that area, such as the services offered there, local projects, directions, or customer feedback from that location.',
+          'Avoid copying one page and swapping only the city name. Near-identical pages give visitors nothing new and are unlikely to perform well. A few strong location pages are better than dozens of thin ones.',
+          'Local searches happen mostly on phones, so the site must load quickly and be easy to use on a small screen. Make phone numbers tappable and keep the route to an enquiry short.'
+        ],
+        links: [
+          { label: 'Custom Website Development', to: '/services/custom-website' },
+          { label: 'Landing Page Design', to: '/services/landing-page' },
+          { label: 'How to write an SEO-friendly blog post', to: '/blog/seo-friendly-blog-for-today' }
+        ]
+      },
+      {
+        title: 'Build Local Links and Mentions',
+        paragraphs: [
+          'Prominence grows when other credible local sources refer to your business. A link from a local news site, a trade association, a supplier, or a community organisation tells search engines that your business is an established part of the area.',
+          'These links usually come from real activity rather than outreach templates. Sponsoring a local event, partnering with a nearby business, joining an industry body, or contributing expert comment to a local publication all create natural reasons for others to mention you.',
+          'Focus on relevance over volume. A small number of genuine local references is worth more than a long list of unrelated directory entries.'
+        ]
+      },
+      {
+        title: 'Frequently Asked Questions',
+        faqs: [
+          { q: 'How long does local SEO take to show results?', a: 'It varies with competition and your starting point. Fixing an incomplete profile or incorrect details can help fairly quickly, while building reviews, content, and local links is steady work that pays off over several months.' },
+          { q: 'Do I need a website for local SEO?', a: 'You can appear in map results with only a Google Business Profile, but a website strengthens relevance and prominence and gives customers a place to learn more and enquire. Businesses with a clear, fast website generally have an advantage.' },
+          { q: 'Can a business without a shopfront rank in local searches?', a: 'Yes. Businesses that travel to customers can set service areas in their Google Business Profile instead of showing a public address, and support that with website content about the areas they cover.' },
+          { q: 'How many reviews does my business need?', a: 'There is no fixed number. Aim for a steady flow of genuine, recent reviews rather than a one-time push, and look at what nearby competitors have to understand what customers will compare you against.' }
+        ]
+      },
+      {
+        title: 'Final Thoughts',
+        paragraphs: [
+          'Local SEO for small businesses is less about tricks and more about being accurate, visible, and trustworthy wherever nearby customers look. A complete Google Business Profile, consistent details, real reviews, useful location content, and a fast mobile website cover most of what matters.',
+          'Start with the basics, measure calls, direction requests, and enquiries rather than rankings alone, and improve one area at a time. Consistent effort compounds, and the businesses that keep their local presence current are the ones customers find first.'
+        ],
+        links: [
+          { label: 'SEO Services', to: '/services/seo' },
+          { label: 'Social Media Marketing', to: '/services/social-media' },
+          { label: 'Talk to BrandPixo', to: '/contact' }
+        ]
+      }
+    ],
+    faqs: [
+      { q: 'How long does local SEO take to show results?', a: 'It varies with competition and your starting point. Fixing an incomplete profile or incorrect details can help fairly quickly, while building reviews, content, and local links is steady work that pays off over several months.' },
+      { q: 'Do I need a website for local SEO?', a: 'You can appear in map results with only a Google Business Profile, but a website strengthens relevance and prominence and gives customers a place to learn more and enquire. Businesses with a clear, fast website generally have an advantage.' },
+      { q: 'Can a business without a shopfront rank in local searches?', a: 'Yes. Businesses that travel to customers can set service areas in their Google Business Profile instead of showing a public address, and support that with website content about the areas they cover.' },
+      { q: 'How many reviews does my business need?', a: 'There is no fixed number. Aim for a steady flow of genuine, recent reviews rather than a one-time push, and look at what nearby competitors have to understand what customers will compare you against.' }
+    ],
+    pullQuote: 'Local search rewards the business that is easiest to trust, not the one that shouts the loudest.',
+    related: ['seo-friendly-blog-for-today', 'website-design-vs-seo']
+  },
+  {
     slug: 'seo-friendly-blog-for-today',
     title: 'How to Write an SEO-Friendly Blog Post That Performs Today',
     metaTitle: 'How to Write an SEO-Friendly Blog Post That Performs Today | BrandPixo',
@@ -10,8 +136,8 @@ export const blogPosts = [
     date: 'August 18, 2026',
     datePublished: '2026-08-18',
     dateModified: '2026-08-18',
-    image: '/blog/website-design-and-seo-strategy-session.png',
-    imageAlt: 'Content strategist planning an SEO-friendly blog post beside search analytics and a laptop layout',
+    image: '/blog/seo-friendly-blog-for-today.jpg',
+    imageAlt: '3D editorial workspace with floating article cards and a glowing magnifying glass analyzing SEO rankings',
     excerpt: 'A strong blog post is not just well written. It answers a clear search intent, uses structure that scanners can follow, and guides readers toward the next useful step.',
     intro: 'Publishing a blog post today means competing for attention in search results, social feeds, and inboxes all at once. The winners are not necessarily the longest articles or the ones with the most keywords. They are the posts that solve a real search problem, stay easy to read, and move the reader toward action. This guide shows how to write an SEO-friendly blog post that is useful now and still relevant later.',
     sections: [
@@ -123,8 +249,8 @@ export const blogPosts = [
     date: 'August 6, 2026',
     datePublished: '2026-08-06',
     dateModified: '2026-08-06',
-    image: '/blog/website-redesign-without-losing-seo.png',
-    imageAlt: 'Website designer reviewing a redesign interface and an organic growth chart on a studio monitor',
+    image: '/blog/website-redesign-without-losing-seo.jpg',
+    imageAlt: '3D representation of website redesign migration showing wireframe turning into rich UI with a protective SEO shield',
     excerpt: 'A website redesign should improve the experience without erasing the search visibility your business has already earned. The difference is disciplined migration planning.',
     intro: 'A website redesign can sharpen your brand, improve conversions, and make the site easier to manage. It can also damage organic traffic when URLs, content, internal links, and technical signals change without a plan. This guide explains how to protect SEO before, during, and after a redesign.',
     sections: [
@@ -256,8 +382,8 @@ export const blogPosts = [
     date: 'August 4, 2026',
     datePublished: '2026-08-04',
     dateModified: '2026-08-04',
-    image: '/blog/website-design-and-seo-strategy-session.png',
-    imageAlt: 'Designer working on a website layout beside a monitor displaying search performance analytics',
+    image: '/blog/website-design-vs-seo.jpg',
+    imageAlt: '3D concept of website design wireframes and SEO analytics connected by a glowing golden bridge',
     excerpt: 'Website design and SEO are not competitors—they are partners. One attracts visitors, while the other turns their attention into action.',
     intro: 'In today’s digital-first world, having an online presence is no longer enough. Businesses need a website that looks professional and performs well in search engines.',
     sections: [
@@ -351,8 +477,8 @@ export const blogPosts = [
     date: 'August 4, 2026',
     datePublished: '2026-08-04',
     dateModified: '2026-08-04',
-    image: '/blog/custom-website-and-builder-comparison.png',
-    imageAlt: 'Web professionals comparing a custom-developed website on a laptop with a builder layout on a tablet',
+    image: '/blog/custom-website-vs-website-builder.jpg',
+    imageAlt: '3D comparison showing custom modular architecture alongside drag-and-drop website builder template blocks',
     excerpt: 'Website builders offer speed and convenience. Custom websites offer control, performance, and room to grow. The right choice depends on what your business needs next.',
     intro: 'Creating a website is one of the most important investments a business can make. This guide compares custom websites and website builders across design, SEO, performance, cost, and long-term value.',
     sections: [
@@ -477,8 +603,8 @@ export const blogPosts = [
     date: 'August 4, 2026',
     datePublished: '2026-08-04',
     dateModified: '2026-08-04',
-    image: '/blog/ecommerce-platform-comparison-workspace.png',
-    imageAlt: 'Ecommerce strategist comparing two online storefront designs on side-by-side laptops',
+    image: '/blog/wordpress-vs-shopify.png',
+    imageAlt: 'Ecommerce strategist comparing WordPress and Shopify platforms for online business',
     excerpt: 'WordPress offers unmatched flexibility and SEO control. Shopify makes ecommerce remarkably simple. The better platform depends on how your business needs to operate and grow.',
     intro: 'Choosing the right platform is one of the most important decisions you will make when building a website or online store. This guide compares WordPress and Shopify across the factors that matter most.',
     sections: [

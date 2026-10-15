@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { FiArrowRight } from 'react-icons/fi';
 import { servicesData } from '../data/servicesData';
+import Contact from '../components/Contact';
 import styles from './ServicesPage.module.scss';
 
 export default function ServicesPage() {
@@ -66,6 +67,8 @@ export default function ServicesPage() {
           </Link>
         ))}
       </motion.section>
+
+      <Contact />
     </div>
   );
 }
