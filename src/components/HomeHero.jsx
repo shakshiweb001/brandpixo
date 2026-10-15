@@ -59,38 +59,38 @@ export default function HomeHero() {
           <div className={styles.glow} aria-hidden="true" />
 
           <figure className={styles.browser}>
-            <div className={styles.browserBar} aria-hidden="true"><i /><i /><i /><span>sola-retreats</span></div>
+            <div className={styles.browserBar} aria-hidden="true"><i /><i /><i /><span>livejunkfree.ca</span></div>
             <img
-              src="/projects/sola-retreats.webp"
-              alt="Sola Retreats travel website concept designed by BrandPixo"
-              width="1024"
-              height="1536"
+              src="/projects/live-junk-free-website.webp"
+              alt="Live Junk Free junk removal website designed and built by BrandPixo"
+              width="1400"
+              height="5436"
               fetchPriority="high"
               decoding="async"
             />
-            <figcaption>Website concept</figcaption>
+            <figcaption>Live Junk Free</figcaption>
           </figure>
 
           <motion.figure className={styles.appCard} style={{ y: driftUp }}>
             <img
-              src="/projects/pulse-habit-app.webp"
-              alt="Pulse Habit fitness app interface concept designed by BrandPixo"
-              width="1536"
-              height="1024"
+              src="/projects/arts-academy-school-website.webp"
+              alt="Arts Academy School website designed and built by BrandPixo"
+              width="1400"
+              height="9060"
               decoding="async"
             />
-            <figcaption>App concept</figcaption>
+            <figcaption>Arts Academy School</figcaption>
           </motion.figure>
 
           <motion.figure className={styles.clientCard} style={{ y: driftDown }}>
             <img
               src="/projects/aqualyx-leeds-website.webp"
-              alt="Aqualyx Leeds aesthetic healthcare website built by BrandPixo"
+              alt="Aqualyx Leeds aesthetic healthcare website designed and built by BrandPixo"
               width="1400"
               height="7248"
               decoding="async"
             />
-            <figcaption>Live client site</figcaption>
+            <figcaption>Aqualyx Leeds</figcaption>
           </motion.figure>
         </motion.div>
       </div>

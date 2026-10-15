@@ -54,9 +54,8 @@ export default function HomePage() {
           <Link to="/about">Meet BrandPixo <FiArrowUpRight /></Link>
         </motion.div>
         <div className={styles.collage}>
-          <figure><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=85" alt="Creative team collaborating around a table" /></figure>
-          <figure><img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=800&q=85" alt="Bright modern creative studio" /></figure>
-          <div><strong>10+</strong><span>Years of<br />combined craft</span></div>
+          <figure><img src="/projects/the-convoke-website.webp" alt="The Convoke community platform website designed by BrandPixo" width="1400" height="9060" loading="lazy" decoding="async" /></figure>
+          <figure><img src="/projects/specialty-pediatric-solutions-website.webp" alt="Specialty Pediatric Solutions website designed by BrandPixo" width="1400" height="5436" loading="lazy" decoding="async" /></figure>
         </div>
       </section>
 

@@ -12,7 +12,7 @@
 .detailLayout { width: min(1400px, calc(100% - 3rem)); margin: 0 auto 7rem; display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 1.5rem; align-items: start; }
 .mainColumn { min-width: 0; padding: 1rem clamp(1.25rem,3vw,3rem) 3rem; border: 1px solid rgba(24,24,24,.07); border-radius: 28px; background: rgba(255,255,255,.72); box-shadow: 0 24px 60px rgba(24,24,24,.05); }
 .heroMedia { position: relative; margin-bottom: 2.5rem; }
-.heroMedia img { width: 100%; height: 520px; object-fit: cover; border-radius: 22px; }
+.heroMedia img { width: 100%; height: 520px; object-fit: cover; object-position: top center; border-radius: 22px; }
 .heroMedia span { position: absolute; left: 1.25rem; bottom: 1.25rem; padding: .7rem 1rem; border-radius: 999px; background: rgba(24,24,24,.88); color: $white; font-size: .72rem; font-weight: 800; text-transform: uppercase; backdrop-filter: blur(10px); }
 .sectionIntro { padding-bottom: 2rem; border-bottom: 1px solid rgba(24,24,24,.13); }
 .eyebrow { display: inline-flex; align-items: center; gap: .4rem; }

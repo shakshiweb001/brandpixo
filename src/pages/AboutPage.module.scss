@@ -17,10 +17,10 @@
 .iconStack span:nth-child(3) { right: 0; bottom: 0; z-index: 3; transform: rotate(9deg); }
 .story { padding: 7rem max(2.5rem, calc((100% - 1400px) / 2)); display: grid; grid-template-columns: 1.08fr .92fr; gap: 5rem; align-items: center; background: #f0eee8; }
 .photoCollage { min-height: 620px; position: relative; }
-.photoCollage figure { position: absolute; padding: .8rem; background: $white; box-shadow: 0 20px 45px rgba(24,24,24,.15); }
+.photoCollage figure { position: absolute; padding: .6rem; overflow: hidden; background: $white; border-radius: 18px; box-shadow: 0 24px 60px rgba(17,17,17,.14); }
 .photoCollage figure:first-child { inset: 0 12% 8% 0; transform: rotate(-1deg); }
-.photoCollage figure:last-child { width: 42%; right: 0; bottom: 0; z-index: 2; transform: rotate(3deg); }
-.photoCollage img { width: 100%; height: 100%; display: block; object-fit: cover; }
+.photoCollage figure:last-child { width: 44%; aspect-ratio: 4 / 5; right: 0; bottom: 0; z-index: 2; transform: rotate(3deg); }
+.photoCollage img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: top center; }
 .photoCollage figcaption { padding-top: .6rem; color: $muted; font-size: .62rem; }
 .storyCopy h2 { margin: .8rem 0 1.4rem; font-size: clamp(3rem, 5vw, 5rem); line-height: .92; letter-spacing: -3px; }
 .storyCopy p { margin-top: 1rem; color: $muted; font-size: 1.05rem; line-height: 1.75; }

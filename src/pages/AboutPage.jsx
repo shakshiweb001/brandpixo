@@ -26,8 +26,8 @@ export default function AboutPage() {
 
       <section className={styles.story}>
         <div className={styles.photoCollage}>
-          <figure><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=85" alt="BrandPixo digital marketing team collaborating" loading="lazy" /><figcaption>Thoughtful collaboration, without unnecessary layers.</figcaption></figure>
-          <figure><img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=700&q=85" alt="BrandPixo team discussing a digital strategy" loading="lazy" /></figure>
+          <figure><img src="/projects/aqualyx-leeds-website.webp" alt="Aqualyx Leeds website designed by BrandPixo" width="1400" height="7248" loading="lazy" decoding="async" /></figure>
+          <figure><img src="/projects/arts-academy-school-website.webp" alt="Arts Academy School website designed by BrandPixo" width="1400" height="9060" loading="lazy" decoding="async" /></figure>
         </div>
         <div className={styles.storyCopy}><span>Our story</span><h2>Built for brands that have outgrown ordinary.</h2><p>We created BrandPixo to close the gap between beautiful creative work and practical business outcomes. That means positioning with substance, interfaces people understand, and technology that performs quietly in the background.</p><p>Our approach stays collaborative and direct. You work with the people shaping the strategy and making the work—not layers of account management.</p><Link to="/contact">Start a conversation <FiArrowUpRight /></Link></div>
       </section>

@@ -14,13 +14,14 @@
 .studioCopy h2, .sectionHead h2, .processLead h2 { margin: .8rem 0 1.4rem; font-size: clamp(3rem, 5vw, 5.2rem); line-height: .92; letter-spacing: -3px; }
 .studioCopy p, .processLead p { max-width: 590px; color: $muted; font-size: 1.05rem; line-height: 1.75; }
 .studioCopy a { margin-top: 1.7rem; }
+.studioCopy a, .cta a { padding: .95rem 1.4rem; display: inline-flex; align-items: center; gap: .55rem; border-radius: 999px; background: $dark; color: $white; font-weight: 600; white-space: nowrap; transition: transform .35s $ease-out, box-shadow .35s $ease-out, background-color .3s ease; }
+.studioCopy a:hover, .cta a:hover { transform: translateY(-2px); box-shadow: 0 14px 30px rgba(17,17,17,.18); }
 .collage { min-height: 590px; position: relative; }
-.collage figure { position: absolute; padding: .75rem; background: $white; box-shadow: 0 20px 45px rgba(24,24,24,.14); }
+.collage figure { position: absolute; padding: .6rem; overflow: hidden; background: $white; border-radius: 18px; box-shadow: 0 24px 60px rgba(17,17,17,.14); }
 .collage figure:first-child { inset: 0 13% 9% 0; transform: rotate(-1.5deg); }
-.collage figure:nth-child(2) { width: 42%; right: 0; bottom: 0; z-index: 2; transform: rotate(3deg); }
-.collage img { width: 100%; height: 100%; display: block; object-fit: cover; }
-.collage > div { position: absolute; z-index: 3; top: 8%; right: 1%; width: 150px; height: 150px; padding: 1.2rem; display: flex; flex-direction: column; justify-content: center; border: 2px solid $dark; border-radius: 50%; background: $primary; box-shadow: 5px 6px 0 $dark; transform: rotate(7deg); }
-.collage strong { font-size: 2.5rem; line-height: 1; }.collage span { margin-top: .4rem; font-size: .68rem; font-weight: 700; text-transform: uppercase; }
+.collage figure:nth-child(2) { width: 44%; aspect-ratio: 4 / 5; right: 0; bottom: 0; z-index: 2; transform: rotate(3deg); }
+.collage img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: top center; }
+
 .statement { padding: 7rem max(2.5rem, calc((100% - 1400px) / 2)); background: $dark; }
 .statement h2 { max-width: 1250px; margin-top: 1rem; color: $white; font-size: clamp(3.3rem, 6vw, 6.5rem); line-height: .92; letter-spacing: -4px; }.statement em { color: $primary; font-style: normal; }
 .statement p { width: min(440px, 100%); margin: 2.5rem 0 0 auto; padding-top: 1.2rem; border-top: 1px solid rgba(255,255,255,.16); color: rgba(255,255,255,.64); font-size: 1rem; line-height: 1.7; }
@@ -66,7 +67,7 @@
 .cta { padding: 9rem 2rem 10rem; text-align: center; }.cta h2 { margin: 1rem auto; font-size: clamp(4rem, 7.5vw, 7.5rem); line-height: .84; letter-spacing: -5px; }.cta h2 em { color: $primary; font-style: normal; }.cta p { margin-top: 1.5rem; color: $muted; }.cta a { margin-top: 1.7rem; background: $primary; color: $dark; }
 
 @media (max-width: $desktop) { .studio, .process { grid-template-columns: 1fr; gap: 4rem; }.serviceGrid { grid-template-columns: 1fr 1fr; }.serviceGrid article:last-child { grid-column: 1 / -1; }.sectionHead { grid-template-columns: 1fr; }.projectsHead { grid-template-columns: 1fr; gap: 1.5rem; }.projectsHead p, .projectsIntro { justify-self: start; }.proof { grid-template-columns: repeat(3, 1fr); gap: 2rem; }.proof p { grid-column: 1 / -1; padding: 1.5rem 0 0; border-left: 0; border-top: 1px solid rgba(24,24,24,.25); }.faqContact { padding-bottom: 6rem; } }
-@media (max-width: $tablet) { .studio, .statement, .services, .projects, .process, .faqContact { padding: 5rem .75rem; }.collage { min-height: 420px; }.collage > div { width: 115px; height: 115px; right: 0; }.collage strong { font-size: 2rem; }.studioCopy h2, .sectionHead h2, .projectsHead h2, .processLead h2, .statement h2 { font-size: clamp(3rem, 13vw, 4.3rem); letter-spacing: -3px; }.serviceGrid { grid-template-columns: 1fr; }.serviceGrid article:last-child { grid-column: auto; }.projectGrid { grid-template-columns: 1fr; gap: 3rem; }.projectGrid article, .projectGrid article:last-child { grid-column: auto; }.projectPreview { height: min(125vw, 560px); }.steps > div { grid-template-columns: 38px 1fr; }.steps p { grid-column: 2; }.proof { padding: 3rem 1rem; grid-template-columns: 1fr; }.proof p { grid-column: auto; }.cta { padding: 7rem .75rem; }.cta h2 { font-size: clamp(3.5rem, 15vw, 5.5rem); letter-spacing: -3px; } }
+@media (max-width: $tablet) { .studio, .statement, .services, .projects, .process, .faqContact { padding: 5rem .75rem; }.collage { min-height: 420px; }.studioCopy h2, .sectionHead h2, .projectsHead h2, .processLead h2, .statement h2 { font-size: clamp(3rem, 13vw, 4.3rem); letter-spacing: -3px; }.serviceGrid { grid-template-columns: 1fr; }.serviceGrid article:last-child { grid-column: auto; }.projectGrid { grid-template-columns: 1fr; gap: 3rem; }.projectGrid article, .projectGrid article:last-child { grid-column: auto; }.projectPreview { height: min(125vw, 560px); }.steps > div { grid-template-columns: 38px 1fr; }.steps p { grid-column: 2; }.proof { padding: 3rem 1rem; grid-template-columns: 1fr; }.proof p { grid-column: auto; }.cta { padding: 7rem .75rem; }.cta h2 { font-size: clamp(3.5rem, 15vw, 5.5rem); letter-spacing: -3px; } }
 @media (max-width: $desktop) { .processLead { grid-template-columns: 1fr; }.steps { grid-template-columns: 1fr 1fr; } }
 @media (max-width: $tablet) { .journal { padding: 5rem .75rem; }.journalGrid { grid-template-columns: 1fr; }.steps { grid-template-columns: 1fr; }.steps > div { min-height: 0; }.steps > div > span { margin-bottom: 1.5rem; }.steps h3 { margin-top: 0; } }
 @media (max-width: $tablet) {  .statement p { margin-top: 2rem; } }
