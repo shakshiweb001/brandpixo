@@ -4,11 +4,12 @@ import { useLocation } from 'react-router-dom';
 import { servicesData } from '../data/servicesData';
 import { blogPosts, getBlogPost } from '../data/blogPosts';
 import { homeFaqs } from '../data/homeFaqs';
-import { getProject } from '../data/projectsData';
+import { getProject, projects } from '../data/projectsData';
 
 const SITE_NAME = 'BrandPixo';
 const SITE_URL = (import.meta.env.VITE_SITE_URL || 'https://brandpixo.com').replace(/\/$/, '');
 const SHARE_IMAGE = `${SITE_URL}/brandpixo-share.png`;
+const LOGO = `${SITE_URL}/logo.png`;
 const EMAIL = 'brandpixo@gmail.com';
 const PHONE = '+91-76508-37963';
 // Add the real BrandPixo profile URLs here (instagram.com/<handle> etc.) to emit them as sameAs.
@@ -164,9 +165,18 @@ export default function SEO() {
     name: SITE_NAME,
     description: 'Branding, web design and digital marketing agency offering brand identity, website development, SEO, social media marketing and performance campaigns.',
     url: SITE_URL,
-    logo: { '@type': 'ImageObject', url: SHARE_IMAGE },
+    logo: { '@type': 'ImageObject', url: LOGO, width: 1600, height: 1600 },
+    image: SHARE_IMAGE,
     email: EMAIL,
     telephone: PHONE,
+    contactPoint: [{
+      '@type': 'ContactPoint',
+      contactType: 'customer service',
+      email: EMAIL,
+      telephone: PHONE,
+      areaServed: 'IN',
+      availableLanguage: 'English'
+    }],
     ...(SOCIALS.length ? { sameAs: SOCIALS } : {}),
     address: {
       '@type': 'PostalAddress',
@@ -196,7 +206,9 @@ export default function SEO() {
     articleSection: meta.post.category,
     wordCount: articleWordCount(meta.post),
     inLanguage: 'en-IN',
-    mainEntityOfPage: canonical,
+    url: canonical,
+    isAccessibleForFree: true,
+    mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
     author: { '@id': `${SITE_URL}/#organization`, name: SITE_NAME, url: SITE_URL },
     publisher: { '@id': `${SITE_URL}/#organization`, name: SITE_NAME, url: SITE_URL }
   } : meta.service ? {
@@ -208,12 +220,32 @@ export default function SEO() {
     areaServed: { '@type': 'Country', name: 'India' },
     provider: { '@id': `${SITE_URL}/#organization` },
     url: canonical
+  } : meta.project ? {
+    '@context': 'https://schema.org',
+    '@type': 'CreativeWork',
+    name: meta.project.title,
+    description: meta.description,
+    image: socialImage,
+    genre: meta.project.category,
+    url: canonical,
+    inLanguage: 'en-IN',
+    creator: { '@id': `${SITE_URL}/#organization` },
+    isPartOf: { '@id': `${SITE_URL}/#website` }
   } : {
     '@context': 'https://schema.org',
-    '@type': 'WebPage',
+    '@type': { '/about': 'AboutPage', '/contact': 'ContactPage', '/work': 'CollectionPage', '/work/websites': 'CollectionPage', '/work/ecommerce': 'CollectionPage', '/work/apps': 'CollectionPage', '/services': 'CollectionPage', '/blog': 'CollectionPage' }[pathname] || 'WebPage',
     name: meta.title,
     description: meta.description,
-    url: canonical
+    url: canonical,
+    inLanguage: 'en-IN',
+    isPartOf: { '@id': `${SITE_URL}/#website` },
+    about: { '@id': `${SITE_URL}/#organization` },
+    ...(pathname === '/work' ? {
+      mainEntity: {
+        '@type': 'ItemList',
+        itemListElement: projects.map((project, index) => ({ '@type': 'ListItem', position: index + 1, name: project.title, url: `${SITE_URL}/work/${project.slug}` }))
+      }
+    } : {})
   };
 
   const allServicesSchema = pathname === '/services' ? {
@@ -250,6 +282,12 @@ export default function SEO() {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
     mainEntity: homeFaqs.map((item) => ({ '@type': 'Question', name: item.q, acceptedAnswer: { '@type': 'Answer', text: item.a } }))
+  } : null;
+
+  const serviceFaqSchema = meta.service?.faqs?.length ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: meta.service.faqs.map((item) => ({ '@type': 'Question', name: item.q, acceptedAnswer: { '@type': 'Answer', text: item.a } }))
   } : null;
 
   const articleFaqSchema = meta.post?.faqs?.length ? {
@@ -292,6 +330,7 @@ export default function SEO() {
       {allServicesSchema && <script type="application/ld+json">{JSON.stringify(allServicesSchema)}</script>}
       {blogCollectionSchema && <script type="application/ld+json">{JSON.stringify(blogCollectionSchema)}</script>}
       {faqSchema && <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>}
+      {serviceFaqSchema && <script type="application/ld+json">{JSON.stringify(serviceFaqSchema)}</script>}
       {articleFaqSchema && <script type="application/ld+json">{JSON.stringify(articleFaqSchema)}</script>}
     </Helmet>
   );

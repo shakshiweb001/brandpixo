@@ -1,5 +1,157 @@
 export const blogPosts = [
   {
+    slug: 'core-web-vitals-for-small-business-websites',
+    title: 'Core Web Vitals for Small Business Websites: What to Fix First',
+    metaTitle: 'Core Web Vitals for Small Business Websites | BrandPixo',
+    metaDescription: 'A plain-English guide to Core Web Vitals: what LCP, INP and CLS measure, how to check your site, and the fixes that matter most for a small business website.',
+    focusKeyword: 'Core Web Vitals for Small Business Websites',
+    category: 'Technical SEO',
+    readTime: '9 min read',
+    date: 'October 15, 2026',
+    datePublished: '2026-10-15',
+    dateModified: '2026-10-15',
+    image: '/blog/core-web-vitals-for-small-business-websites.jpg',
+    imageAlt: 'Illustration of the three Core Web Vitals metrics, LCP, INP and CLS, with their good thresholds of 2.5 seconds, 200 milliseconds and 0.1',
+    excerpt: 'Core Web Vitals measure how fast a page loads, how quickly it responds and how stable it feels. This guide explains each metric and the fixes that make the biggest difference on a small business website.',
+    intro: 'Most visitors never think about page speed until a site feels slow, jumps around as it loads, or ignores their first tap. Google measures those three experiences with a set of metrics called Core Web Vitals. This guide explains what they mean in plain English, how to check your own website, and which fixes are worth doing first when you have a small team and a limited budget.',
+    sections: [
+      {
+        title: 'What Are Core Web Vitals?',
+        paragraphs: [
+          'Core Web Vitals are three measurements Google uses to describe the experience of using a page. Each one captures something a real visitor notices: how quickly the main content appears, how fast the page reacts when they interact with it, and whether things stay where they are while the page loads.',
+          'The three metrics are Largest Contentful Paint (LCP), Interaction to Next Paint (INP) and Cumulative Layout Shift (CLS). Google publishes a “good” threshold for each one, and a page is assessed against those thresholds using data from real visits rather than a single test.'
+        ],
+        table: {
+          headers: ['Metric', 'What it measures', 'Good result'],
+          rows: [
+            [
+              'LCP (Largest Contentful Paint)',
+              'How long the largest visible element, often a hero image or main heading, takes to appear',
+              '2.5 seconds or less'
+            ],
+            [
+              'INP (Interaction to Next Paint)',
+              'How quickly the page responds visually after taps, clicks and key presses',
+              '200 milliseconds or less'
+            ],
+            [
+              'CLS (Cumulative Layout Shift)',
+              'How much visible content moves unexpectedly while the page loads',
+              '0.1 or less'
+            ]
+          ]
+        },
+        closing: 'INP replaced an older metric called First Input Delay in March 2024, so any advice that still talks about FID is out of date.'
+      },
+      {
+        title: 'Do Core Web Vitals Affect Search Rankings?',
+        paragraphs: [
+          'Core Web Vitals are part of what Google calls page experience, and Google has said they are used by its ranking systems. They are one signal among many, though, and they do not outweigh relevance. A fast page with thin content will not outrank a slower page that answers the search far better.',
+          'The more reliable reason to care is what slow and unstable pages do to people. Visitors who wait, mis-tap a button that moved, or give up on a laggy form are visitors you have paid to attract and then lost. Improving these metrics usually helps conversions at the same time as it helps search visibility.'
+        ]
+      },
+      {
+        title: 'How to Check Your Own Website',
+        paragraphs: [
+          'You do not need a developer to see where you stand. Two free Google tools cover most of what a small business needs, and it helps to understand the difference between the two kinds of data they show.',
+          'Field data comes from real Chrome users visiting your site over a rolling period of roughly 28 days. It is what Google uses to assess your pages. Lab data comes from a simulated test run on a single device and connection. It is useful for finding and fixing problems, but it will not always match what real visitors experience.'
+        ],
+        list: [
+          'PageSpeed Insights: enter a page address to see field data (when the page has enough visits) alongside a lab test and a list of specific suggestions.',
+          'Google Search Console: the Core Web Vitals report groups your pages by status and shows which groups of similar pages need attention, separately for mobile and desktop.',
+          'Test on mobile first. Most small business traffic arrives on phones, and mobile results are usually the weaker of the two.',
+          'Test your most important pages, not just the homepage: your main service pages, your contact page and any landing page you run ads to.'
+        ],
+        closing: 'If the two tools show different numbers, that is normal. Trust the field data for the verdict and use the lab data to work out what to change.'
+      },
+      {
+        title: 'Fixing Slow Loading (LCP)',
+        paragraphs: [
+          'On most small business websites the largest element is a hero image, a banner or a large heading. If that element is slow, LCP is slow, so this is usually the best place to begin.'
+        ],
+        list: [
+          'Compress and resize the hero image. A photo uploaded at several thousand pixels wide and displayed at a fraction of that size is the single most common cause of a poor LCP.',
+          'Use a modern format such as WebP or AVIF, which gives smaller files at similar quality.',
+          'Do not lazy-load the main image at the top of the page. Lazy loading is for images below the fold, and applying it to the hero delays the very element LCP measures.',
+          'Tell the browser the hero image is a priority, for example with a high fetch priority, so it starts downloading early.',
+          'Check your hosting. A slow server response delays everything that follows, and an inexpensive shared plan with no caching is a frequent hidden cause.',
+          'Remove or defer scripts and stylesheets that block the page from drawing until they have finished loading.'
+        ]
+      },
+      {
+        title: 'Fixing Sluggish Interactions (INP)',
+        paragraphs: [
+          'INP looks at how long it takes for the screen to update after someone taps a menu, opens an accordion or submits a form. Delays almost always come from too much JavaScript running at the wrong moment.'
+        ],
+        list: [
+          'Audit third-party scripts. Chat widgets, heat-map tools, multiple tracking pixels and social feeds each add work for the browser, and they are often left running long after anyone looks at the data.',
+          'Load non-essential scripts after the page is usable rather than at the very start.',
+          'Keep interactive features simple. A heavy slider or animation library on a page that only needs a few static sections can cost more than it adds.',
+          'On WordPress, review plugins. Every active plugin can add scripts to every page, so remove the ones you no longer need.',
+          'If a form or menu feels slow, ask your developer to look at long tasks in the browser performance tools and break the work into smaller pieces.'
+        ]
+      },
+      {
+        title: 'Fixing Layout Shifts (CLS)',
+        paragraphs: [
+          'Layout shift is the frustrating moment when you go to tap a button and the page jumps, so you hit something else instead. It happens when the browser does not know how much space an element will need until after it has loaded.'
+        ],
+        list: [
+          'Give every image and video explicit width and height values, or an aspect ratio, so space is reserved before the file arrives.',
+          'Reserve space for banners, cookie notices, embedded maps and anything inserted after the page loads, instead of letting it push content down.',
+          'Avoid injecting new content above what the visitor is already reading, unless it is in response to something they did.',
+          'Load web fonts sensibly. Preload the fonts you actually use and choose a fallback font with similar proportions so text does not reflow when the custom font arrives.',
+          'Use animations that change transform or opacity rather than properties that move surrounding content.'
+        ]
+      },
+      {
+        title: 'Common Culprits on Small Business Websites',
+        paragraphs: [
+          'The same handful of problems appear again and again. Knowing them lets you review your own site in a few minutes before you spend any money.',
+          'Oversized images, an overloaded theme with features you never use, too many plugins and tracking scripts, low-cost hosting without caching, and sliders on the homepage account for most poor results. None of them require a rebuild to fix, although a site built carefully from the start avoids many of them entirely.'
+        ],
+        links: [
+          {
+            label: 'Custom website development',
+            to: '/services/custom-website'
+          },
+          {
+            label: 'SEO optimization',
+            to: '/services/seo'
+          }
+        ]
+      },
+      {
+        title: 'A Sensible Order of Work',
+        paragraphs: [
+          'If you are not sure where to start, work in this order. Measure your key pages in PageSpeed Insights and note which of the three metrics is failing. Fix images and hosting first, because they usually move LCP the most. Then remove scripts and plugins you do not need. Finally, fix layout shifts by reserving space for images and embedded content.',
+          'Re-test after each change, and give field data time to catch up before judging the result, since it reflects the previous few weeks of visits. Treat performance as ongoing care rather than a one-time project, because every new plugin, image or tracking tag can undo earlier gains.'
+        ],
+        closing: 'Fast, stable pages will not replace good content or a clear offer, but they make sure both get a fair chance with visitors and with search engines.'
+      }
+    ],
+    faqs: [
+      {
+        q: 'Are Core Web Vitals a Google ranking factor?',
+        a: 'They are part of Google’s page experience signals and are used by its ranking systems, but they are one factor among many. Relevance and content quality matter more, so treat Core Web Vitals as a way to make a good page perform better, not as a shortcut to ranking.'
+      },
+      {
+        q: 'What is a good Core Web Vitals score?',
+        a: 'A good result is an LCP of 2.5 seconds or less, an INP of 200 milliseconds or less and a CLS of 0.1 or less. Google assesses these at the 75th percentile of real visits, so most of your visitors need to have a good experience, not just the fastest ones.'
+      },
+      {
+        q: 'Why does PageSpeed Insights show different results from Search Console?',
+        a: 'PageSpeed Insights combines field data from real visitors with a one-off lab test, while Search Console reports field data grouped across many pages. Lab tests run on a single simulated device, so they can differ from what real visitors on varied phones and connections experience.'
+      },
+      {
+        q: 'How long does it take to see improvements after a fix?',
+        a: 'Lab results change immediately after you re-test, but field data is collected over a rolling period of about 28 days. Expect Search Console to show the effect of a fix gradually over the following weeks.'
+      }
+    ],
+    pullQuote: 'Speed is not a feature added at the end. It is the result of many small decisions about images, scripts and layout.',
+    related: ['website-design-vs-seo', 'custom-website-vs-website-builder']
+  },
+  {
     slug: 'local-seo-for-small-businesses',
     title: 'Local SEO for Small Businesses: How to Rank Higher in Nearby Searches',
     metaTitle: 'Local SEO for Small Businesses: A Practical Guide | BrandPixo',
