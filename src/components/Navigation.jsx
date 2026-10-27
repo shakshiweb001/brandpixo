@@ -202,7 +202,7 @@ export default function Navigation() {
             {!submitted ? (
               <>
                 <div className={styles.modalIntro}><span>Start a project</span><h2 id="project-modal-title">Tell us what you’re ready to build.</h2><p>A few useful details are enough. Our team will reply with a clear next step within one business day.</p><div><a href="mailto:hello@brandpixo.com"><FiMail /> hello@brandpixo.com</a><a href="https://wa.me/917650837963" target="_blank" rel="noreferrer"><FaWhatsapp /> +91 76508 37963</a></div></div>
-                <form className={styles.modalForm} onSubmit={submitProjectBrief}>
+                <form className={styles.modalForm} method="post" onSubmit={submitProjectBrief}>
                   <label>Name<input name="name" placeholder="Your name" required autoFocus /></label>
                   <label>Email<input name="email" type="email" placeholder="you@company.com" required /></label>
                   <label>What do you need?<select name="service" defaultValue=""><option value="" disabled>Select a service</option><option>Website design & development</option><option>Brand identity</option><option>UI/UX design</option><option>Digital marketing</option></select></label>

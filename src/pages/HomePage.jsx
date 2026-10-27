@@ -76,6 +76,10 @@ export default function HomePage() {
             </motion.article>
           ))}
         </div>
+        <nav className={styles.allServices} aria-label="All services">
+          <span>All services</span>
+          {Object.entries(servicesData).map(([id, service]) => <Link key={id} to={`/services/${id}`}>{service.title}</Link>)}
+        </nav>
       </section>
 
       <section className={styles.projects} id="projects">
@@ -89,13 +93,6 @@ export default function HomePage() {
       <section className={styles.process}>
         <div className={styles.processLead}><span>Our process</span><h2>Clarity from first thought to final detail.</h2><p>No mystery, no unnecessary layers. Just a thoughtful, collaborative process that keeps the work and the outcome in focus.</p></div>
         <div className={styles.steps}>{steps.map(([title, copy], index) => <div key={title}><span>0{index + 1}</span><h3>{title}</h3><p>{copy}</p></div>)}</div>
-      </section>
-
-      <section className={styles.proof}>
-        <div><strong>150+</strong><span>Projects delivered</span></div>
-        <div><strong>98%</strong><span>Client satisfaction</span></div>
-        <div><strong>25M+</strong><span>Revenue influenced</span></div>
-        <p>Measured outcomes.<br />Memorable work.</p>
       </section>
 
       <section className={styles.journal}>
@@ -117,13 +114,6 @@ export default function HomePage() {
       <section className={styles.faqContact} id="faq-contact">
         <FAQ />
         <Contact />
-      </section>
-
-      <section className={styles.cta}>
-        <span>Bring us the ambition</span>
-        <h2>Ready to become<br /><em>the obvious choice?</em></h2>
-        <p>Tell us what you’re building and where you want it to go.</p>
-        <Link to="/contact">Begin your project <FiArrowUpRight /></Link>
       </section>
     </main>
   );

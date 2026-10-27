@@ -135,6 +135,7 @@
 
 .btnSubmit {
   align-self: flex-start;
+  white-space: nowrap;
   background: linear-gradient(135deg, $primary 0%, $hover-accent 100%);
   color: $white;
   border: none;
@@ -184,4 +185,8 @@
 .successIcon {
   font-size: 4rem;
   color: $primary;
+}
+
+@media (max-width: 600px) {
+  .btnSubmit { width: 100%; align-self: stretch; padding: 1.1rem 1.5rem; }
 }

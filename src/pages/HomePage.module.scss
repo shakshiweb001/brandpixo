@@ -53,7 +53,6 @@
 .steps > div:hover { background: $primary; transform: translateY(-8px); }
 .steps > div > span { margin-bottom: auto; color: $primary; font-size: 3rem; font-weight: 800; line-height: 1; transition: color .3s ease; }.steps > div:hover > span { color: $dark; }
 .steps h3 { margin-top: 2rem; font-size: 1.5rem; }.steps p { margin-top: .5rem; color: $muted; line-height: 1.55; transition: color .3s ease; }.steps > div:hover p { color: $text; }
-.proof { padding: 3rem max(2.5rem, calc((100% - 1400px) / 2)); display: grid; grid-template-columns: repeat(3, 1fr) 1.2fr; align-items: center; border-block: 2px solid $dark; background: $primary; }.proof > div { display: flex; flex-direction: column; }.proof strong { font-size: clamp(2.2rem, 4vw, 4rem); line-height: 1; }.proof span { margin-top: .4rem; font-size: .7rem; font-weight: 700; text-transform: uppercase; }.proof p { padding-left: 2rem; border-left: 1px solid rgba(24,24,24,.25); font-size: 1.3rem; font-weight: 700; }
 .journal { padding: 7rem max(2.5rem, calc((100% - 1400px) / 2)); background: #fbfaf7; }
 .journalGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
 .journalCard { display: flex; flex-direction: column; overflow: hidden; border: 2px solid $dark; border-radius: 22px; background: $white; box-shadow: 0 7px 0 rgba(24,24,24,.15); transition: transform .3s ease, box-shadow .3s ease; }
@@ -64,10 +63,14 @@
 .journalCard h3 { margin: .7rem 0 1.4rem; font-size: clamp(1.2rem, 1.7vw, 1.5rem); line-height: 1.2; }
 .journalCard small { margin-top: auto; display: inline-flex; align-items: center; gap: .4rem; font-size: .9rem; font-weight: 800; }
 .faqContact { padding: 0 max(2.5rem, calc((100% - 1400px) / 2)) 8rem; display: grid; gap: 2rem; background: linear-gradient(180deg, #fbfaf7 0%, #f3efe7 100%); }
-.cta { padding: 9rem 2rem 10rem; text-align: center; }.cta h2 { margin: 1rem auto; font-size: clamp(4rem, 7.5vw, 7.5rem); line-height: .84; letter-spacing: -5px; }.cta h2 em { color: $primary; font-style: normal; }.cta p { margin-top: 1.5rem; color: $muted; }.cta a { margin-top: 1.7rem; background: $primary; color: $dark; }
 
 @media (max-width: $desktop) { .studio, .process { grid-template-columns: 1fr; gap: 4rem; }.serviceGrid { grid-template-columns: 1fr 1fr; }.serviceGrid article:last-child { grid-column: 1 / -1; }.sectionHead { grid-template-columns: 1fr; }.projectsHead { grid-template-columns: 1fr; gap: 1.5rem; }.projectsHead p, .projectsIntro { justify-self: start; }.proof { grid-template-columns: repeat(3, 1fr); gap: 2rem; }.proof p { grid-column: 1 / -1; padding: 1.5rem 0 0; border-left: 0; border-top: 1px solid rgba(24,24,24,.25); }.faqContact { padding-bottom: 6rem; } }
 @media (max-width: $tablet) { .studio, .statement, .services, .projects, .process, .faqContact { padding: 5rem .75rem; }.collage { min-height: 420px; }.studioCopy h2, .sectionHead h2, .projectsHead h2, .processLead h2, .statement h2 { font-size: clamp(3rem, 13vw, 4.3rem); letter-spacing: -3px; }.serviceGrid { grid-template-columns: 1fr; }.serviceGrid article:last-child { grid-column: auto; }.projectGrid { grid-template-columns: 1fr; gap: 3rem; }.projectGrid article, .projectGrid article:last-child { grid-column: auto; }.projectPreview { height: min(125vw, 560px); }.steps > div { grid-template-columns: 38px 1fr; }.steps p { grid-column: 2; }.proof { padding: 3rem 1rem; grid-template-columns: 1fr; }.proof p { grid-column: auto; }.cta { padding: 7rem .75rem; }.cta h2 { font-size: clamp(3.5rem, 15vw, 5.5rem); letter-spacing: -3px; } }
 @media (max-width: $desktop) { .processLead { grid-template-columns: 1fr; }.steps { grid-template-columns: 1fr 1fr; } }
 @media (max-width: $tablet) { .journal { padding: 5rem .75rem; }.journalGrid { grid-template-columns: 1fr; }.steps { grid-template-columns: 1fr; }.steps > div { min-height: 0; }.steps > div > span { margin-bottom: 1.5rem; }.steps h3 { margin-top: 0; } }
 @media (max-width: $tablet) {  .statement p { margin-top: 2rem; } }
+
+.allServices { margin-top: 2.5rem; padding-top: 1.75rem; display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; border-top: 1px solid rgba(17,17,17,.12); }
+.allServices > span { margin-right: .6rem; color: $muted; font-size: .78rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
+.allServices a { padding: .6rem 1.05rem; border: 1.5px solid rgba(17,17,17,.18); border-radius: 999px; font-size: .9rem; font-weight: 500; transition: background-color .3s ease, border-color .3s ease, transform .3s ease; }
+.allServices a:hover { background: $primary; border-color: $primary; transform: translateY(-2px); }

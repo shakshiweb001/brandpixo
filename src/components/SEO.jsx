@@ -5,6 +5,7 @@ import { servicesData } from '../data/servicesData';
 import { blogPosts, getBlogPost } from '../data/blogPosts';
 import { homeFaqs } from '../data/homeFaqs';
 import { getProject, projects } from '../data/projectsData';
+import { siteInfo } from '../data/siteInfo';
 
 const SITE_NAME = 'BrandPixo';
 const SITE_URL = (import.meta.env.VITE_SITE_URL || 'https://brandpixo.com').replace(/\/$/, '');
@@ -12,8 +13,8 @@ const SHARE_IMAGE = `${SITE_URL}/brandpixo-share.png`;
 const LOGO = `${SITE_URL}/logo.png`;
 const EMAIL = 'hello@brandpixo.com';
 const PHONE = '+91-76508-37963';
-// Add the real BrandPixo profile URLs here (instagram.com/<handle> etc.) to emit them as sameAs.
-const SOCIALS = [];
+// Real profile URLs live in src/data/siteInfo.js and are emitted as sameAs.
+const SOCIALS = siteInfo.socials.map(({ url }) => url);
 
 const staticMeta = {
   '/': {
@@ -181,6 +182,10 @@ export default function SEO() {
     ...(SOCIALS.length ? { sameAs: SOCIALS } : {}),
     address: {
       '@type': 'PostalAddress',
+      ...(siteInfo.address.street && { streetAddress: siteInfo.address.street }),
+      ...(siteInfo.address.locality && { addressLocality: siteInfo.address.locality }),
+      ...(siteInfo.address.region && { addressRegion: siteInfo.address.region }),
+      ...(siteInfo.address.postalCode && { postalCode: siteInfo.address.postalCode }),
       addressCountry: 'IN'
     }
   };

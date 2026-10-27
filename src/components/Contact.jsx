@@ -3,6 +3,7 @@ import { m as motion } from 'framer-motion';
 import { FiCheckCircle } from 'react-icons/fi';
 import styles from './Contact.module.scss';
 import { submitEnquiry } from '../utils/submitEnquiry';
+import { locationLabel } from '../data/siteInfo';
 
 export default function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -50,18 +51,19 @@ export default function Contact() {
             <a href="https://wa.me/917650837963" target="_blank" rel="noreferrer" className={styles.val}>+91 76508 37963</a>
           </div>
           <div className={styles.infoItem}>
-            <span className={styles.label}>Main Headquarters</span>
-            <span className={styles.val}>India</span>
+            <span className={styles.label}>Based in</span>
+            <span className={styles.val}>{locationLabel()}</span>
           </div>
         </div>
       </div>
 
       <div className={styles.right}>
         {!success ? (
-          <form className={styles.form} onSubmit={handleSubmit}>
+          <form className={styles.form} method="post" onSubmit={handleSubmit}>
             <div className={styles.inputGroup}>
               <input 
                 type="text" 
+                id="home-contact-name"
                 name="name" 
                 value={formData.name} 
                 onChange={handleInputChange} 
@@ -69,12 +71,13 @@ export default function Contact() {
                 placeholder=" "
                 required 
               />
-              <label className={styles.formLabel}>Name</label>
+              <label className={styles.formLabel} htmlFor="home-contact-name">Name</label>
             </div>
             
             <div className={styles.inputGroup}>
               <input 
                 type="email" 
+                id="home-contact-email"
                 name="email" 
                 value={formData.email} 
                 onChange={handleInputChange} 
@@ -82,11 +85,12 @@ export default function Contact() {
                 placeholder=" "
                 required 
               />
-              <label className={styles.formLabel}>Email</label>
+              <label className={styles.formLabel} htmlFor="home-contact-email">Email</label>
             </div>
 
             <div className={styles.inputGroup}>
               <textarea 
+                id="home-contact-message"
                 name="message" 
                 value={formData.message} 
                 onChange={handleInputChange} 
@@ -94,7 +98,7 @@ export default function Contact() {
                 placeholder=" "
                 required
               />
-              <label className={styles.formLabel}>Project Details</label>
+              <label className={styles.formLabel} htmlFor="home-contact-message">Project Details</label>
             </div>
 
             <button type="submit" className={`${styles.btnSubmit} hover-target`} disabled={submitting} aria-busy={submitting}>

@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FiFacebook, FiInstagram, FiArrowUp, FiArrowUpRight, FiMail, FiMessageCircle } from 'react-icons/fi';
+import { FiFacebook, FiInstagram, FiLinkedin, FiArrowUp, FiArrowUpRight, FiMail, FiMessageCircle } from 'react-icons/fi';
 import { servicesData } from '../data/servicesData';
+import { siteInfo } from '../data/siteInfo';
 import styles from './Footer.module.scss';
 
-const serviceLinks = ['custom-website', 'wordpress', 'shopify', 'seo', 'social-media'];
+const serviceLinks = Object.keys(servicesData);
+const SOCIAL_ICONS = { instagram: [FiInstagram, 'Instagram'], facebook: [FiFacebook, 'Facebook'], linkedin: [FiLinkedin, 'LinkedIn'] };
 
 export default function Footer() {
   const scrollUp = () => {
@@ -28,10 +30,14 @@ export default function Footer() {
         <div className={styles.brand}>
           <Link to="/" className={styles.logo}>BrandPixo<i>.</i></Link>
           <p>We are a full-service creative digital agency engineering high-end designs and digital marketing solutions.</p>
-          <div className={styles.socials}>
-            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" className="hover-target" aria-label="BrandPixo on Instagram"><FiInstagram /></a>
-            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" className="hover-target" aria-label="BrandPixo on Facebook"><FiFacebook /></a>
-          </div>
+          {siteInfo.socials.length > 0 && (
+            <div className={styles.socials}>
+              {siteInfo.socials.filter(({ network }) => SOCIAL_ICONS[network]).map(({ network, url }) => {
+                const [Icon, label] = SOCIAL_ICONS[network];
+                return <a key={network} href={url} target="_blank" rel="noreferrer" className="hover-target" aria-label={`BrandPixo on ${label}`}><Icon /></a>;
+              })}
+            </div>
+          )}
         </div>
 
         <div className={styles.linksCol}>

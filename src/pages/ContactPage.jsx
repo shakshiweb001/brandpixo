@@ -62,7 +62,7 @@ export default function ContactPage() {
 
         <div className={styles.formCard}>
           {!sent ? (
-            <form onSubmit={submitForm}>
+            <form method="post" onSubmit={submitForm}>
               <span>Enquiry form</span><h2>How can we help?</h2>
               <div className={styles.formGrid}>
                 <label>Your name *<input name="name" value={formData.name} onChange={updateField} placeholder="Full name" required /></label>
