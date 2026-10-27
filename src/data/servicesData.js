@@ -3,7 +3,7 @@ export const servicesData = {
     title: 'Custom Website Development',
     category: 'Development',
     tagline: 'High-performance bespoke engineering.',
-    heroImage: '/projects/the-convoke-website.webp',
+    heroImage: '/projects/the-convoke-website-card.webp',
     aboutText: 'We build tailored digital platforms from scratch using modern web technologies like React, SCSS, and GSAP. Our applications are engineered for responsiveness, luxury layout fidelity, and near-instant load times.',
     features: [
       { title: 'Hardware Acceleration', desc: 'GPU-driven smooth renders and native transitions.' },
@@ -35,7 +35,7 @@ export const servicesData = {
     title: 'WordPress Development',
     category: 'Development',
     tagline: 'Custom themes with seamless content controls.',
-    heroImage: '/projects/arts-academy-school-website.webp',
+    heroImage: '/projects/arts-academy-school-website-card.webp',
     aboutText: 'Bespoke WordPress setups developed without bulky plugins. We construct custom Gutenberg blocks and high-performance themes that are secure, responsive, and extremely easy for your marketing teams to manage.',
     features: [
       { title: 'Gutenberg Custom Blocks', desc: 'Edit content inside the editor exactly as it renders.' },
@@ -63,7 +63,7 @@ export const servicesData = {
     title: 'Landing Page Development',
     category: 'Development',
     tagline: 'Conversion-focused, high-impact interfaces.',
-    heroImage: '/projects/live-junk-free-website.webp',
+    heroImage: '/projects/live-junk-free-website-card.webp',
     aboutText: 'We build single-page landing elements structured around specific conversion metrics. By prioritizing visual hooks, micro-animations, and fast loading parameters, we ensure higher ROIs on your ad campaigns.',
     features: [
       { title: 'A/B Testing Friendly', desc: 'Built cleanly for easy variations and integration.' },
@@ -91,7 +91,7 @@ export const servicesData = {
     title: 'Shopify Development',
     category: 'Development',
     tagline: 'Bespoke e-commerce architectures that scale.',
-    heroImage: '/projects/elan-botanics.webp',
+    heroImage: '/projects/elan-botanics-card.webp',
     aboutText: 'Convert visitors into buyers with a customized Shopify checkout workflow. We write custom Liquid themes and deploy headless e-commerce integrations, ensuring your store is blazing fast and responsive.',
     features: [
       { title: 'Liquid Bespoke Themes', desc: 'Clean coding for specialized checkout pages.' },
@@ -119,7 +119,7 @@ export const servicesData = {
     title: 'UI/UX Design',
     category: 'Design',
     tagline: 'Stunning user journeys built with luxury layouts.',
-    heroImage: '/projects/pulse-habit-app.webp',
+    heroImage: '/projects/pulse-habit-app-card.webp',
     aboutText: 'We design digital products that look exceptional and operate seamlessly. By merging brand stories with deep user-behavior analytics, we deliver prototypes that minimize user friction and emphasize brand status.',
     features: [
       { title: 'Interactive Prototypes', desc: 'Figma prototypes replicating real-time application behavior.' },
@@ -147,7 +147,7 @@ export const servicesData = {
     title: 'Graphic Design',
     category: 'Design',
     tagline: 'Striking visual assets for marketing.',
-    heroImage: '/projects/kora-studio.webp',
+    heroImage: '/projects/kora-studio-card.webp',
     aboutText: 'Bespoke marketing assets, luxury deck presentations, social media banners, and advertising layouts tailored to make your campaigns stand out visually.',
     features: [
       { title: 'Presentation Design', desc: 'Sleek deck structures for investor and customer presentations.' },
@@ -175,7 +175,7 @@ export const servicesData = {
     title: 'Brand Identity Design',
     category: 'Design',
     tagline: 'Distinctive brand stories that endure.',
-    heroImage: '/projects/aleem-clubs-website.webp',
+    heroImage: '/projects/aleem-clubs-website-card.webp',
     aboutText: 'We formulate the core messaging, typography combinations, logotypes, color palettes, and guidelines that dictate how your brand presents itself globally.',
     features: [
       { title: 'Logotype Guidelines', desc: 'Comprehensive guide detailing clear spaces and alternate lockups.' },
@@ -203,7 +203,7 @@ export const servicesData = {
     title: 'SEO Optimization',
     category: 'Marketing',
     tagline: 'Organic dominance through technical search optimization.',
-    heroImage: '/projects/specialty-pediatric-solutions-website.webp',
+    heroImage: '/projects/specialty-pediatric-solutions-website-card.webp',
     aboutText: 'We implement technical code optimization, keyword mapping audits, page speed improvements, and premium content systems to scale your organic search traffic.',
     features: [
       { title: 'Technical Site Audits', desc: 'Resolving crawler indexation, schema tags, and duplicate structures.' },
@@ -231,7 +231,7 @@ export const servicesData = {
     title: 'Social Media Marketing',
     category: 'Marketing',
     tagline: 'Stunning brand narratives across social channels.',
-    heroImage: '/projects/aqualyx-leeds-website.webp',
+    heroImage: '/projects/aqualyx-leeds-website-card.webp',
     aboutText: 'We curate visual content, write compelling copy, and run campaigns that build community and drive sales conversions across Instagram, LinkedIn, and TikTok.',
     features: [
       { title: 'Luxury Content Templates', desc: 'Highly curated social grids that reflect brand prestige.' },
@@ -259,7 +259,7 @@ export const servicesData = {
     title: 'Performance Marketing',
     category: 'Marketing',
     tagline: 'ROAS-focused visual ad campaigns.',
-    heroImage: '/projects/voltly-energy.webp',
+    heroImage: '/projects/voltly-energy-card.webp',
     aboutText: 'We structure paid Google and Meta ad campaigns focused entirely on Return on Ad Spend (ROAS). By combining luxury visuals with strict audience segmentation, we maximize conversion performance.',
     features: [
       { title: 'Meta & Google Ads Management', desc: 'Continuous testing of audience bids and visual hooks.' },

@@ -4,7 +4,7 @@ import { FiArrowRight, FiCheckCircle, FiMail, FiX } from 'react-icons/fi';
 import { FaWhatsapp } from 'react-icons/fa';
 import styles from './Navigation.module.scss';
 import { submitEnquiry } from '../utils/submitEnquiry';
-import logo from '../assets/brandpixo-logo.png';
+import logo from '../assets/brandpixo-logo-nav.webp';
 
 function MegaMenu({ openMega, scheduleMegaClose }) {
   const menuCategories = [
@@ -151,7 +151,7 @@ export default function Navigation() {
   return (
     <nav className={navClass} aria-label="Main navigation">
       <Link to="/" className={styles.logo} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} aria-label="BrandPixo home">
-        <img src={logo} alt="BrandPixo digital marketing and branding agency" width="1600" height="1600" fetchPriority="high" />
+        <img src={logo} alt="BrandPixo digital marketing and branding agency" width="690" height="198" fetchPriority="high" />
       </Link>
       
       <div className={styles.links}>

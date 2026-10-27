@@ -22,8 +22,9 @@ export default function HomeHero() {
   const driftDown = useTransform(scrollY, [0, 700], [0, reduceMotion ? 0 : 36]);
 
   const reveal = (delay = 0) => ({
-    initial: reduceMotion ? false : { opacity: 0, y: 24 },
-    animate: { opacity: 1, y: 0 },
+    // Content is never hidden (opacity stays 1) so text and images can paint immediately.
+    initial: reduceMotion ? false : { y: 16 },
+    animate: { y: 0 },
     transition: { duration: 0.8, ease, delay },
   });
 
@@ -52,8 +53,8 @@ export default function HomeHero() {
 
         <motion.div
           className={styles.visual}
-          initial={reduceMotion ? false : { opacity: 0, scale: 0.97 }}
-          animate={{ opacity: 1, scale: 1 }}
+          initial={reduceMotion ? false : { scale: 0.97 }}
+          animate={{ scale: 1 }}
           transition={{ duration: 1, ease, delay: 0.2 }}
         >
           <div className={styles.glow} aria-hidden="true" />
@@ -61,10 +62,10 @@ export default function HomeHero() {
           <figure className={styles.browser}>
             <div className={styles.browserBar} aria-hidden="true"><i /><i /><i /><span>livejunkfree.ca</span></div>
             <img
-              src="/projects/live-junk-free-website.webp"
+              src="/projects/live-junk-free-website-card.webp"
               alt="Live Junk Free junk removal website designed and built by BrandPixo"
-              width="1400"
-              height="5436"
+              width="1000"
+              height="1250"
               fetchPriority="high"
               decoding="async"
             />
@@ -73,10 +74,10 @@ export default function HomeHero() {
 
           <motion.figure className={styles.appCard} style={{ y: driftUp }}>
             <img
-              src="/projects/arts-academy-school-website.webp"
+              src="/projects/arts-academy-school-website-card.webp"
               alt="Arts Academy School website designed and built by BrandPixo"
-              width="1400"
-              height="9060"
+              width="1000"
+              height="1250"
               decoding="async"
             />
             <figcaption>Arts Academy School</figcaption>
@@ -84,10 +85,10 @@ export default function HomeHero() {
 
           <motion.figure className={styles.clientCard} style={{ y: driftDown }}>
             <img
-              src="/projects/aqualyx-leeds-website.webp"
+              src="/projects/aqualyx-leeds-website-card.webp"
               alt="Aqualyx Leeds aesthetic healthcare website designed and built by BrandPixo"
-              width="1400"
-              height="7248"
+              width="1000"
+              height="1250"
               decoding="async"
             />
             <figcaption>Aqualyx Leeds</figcaption>

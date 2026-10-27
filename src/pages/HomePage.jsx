@@ -54,8 +54,8 @@ export default function HomePage() {
           <Link to="/about">Meet BrandPixo <FiArrowUpRight /></Link>
         </motion.div>
         <div className={styles.collage}>
-          <figure><img src="/projects/the-convoke-website.webp" alt="The Convoke community platform website designed by BrandPixo" width="1400" height="9060" loading="lazy" decoding="async" /></figure>
-          <figure><img src="/projects/specialty-pediatric-solutions-website.webp" alt="Specialty Pediatric Solutions website designed by BrandPixo" width="1400" height="5436" loading="lazy" decoding="async" /></figure>
+          <figure><img src="/projects/the-convoke-website-card.webp" alt="The Convoke community platform website designed by BrandPixo" width="1000" height="1250" loading="lazy" decoding="async" /></figure>
+          <figure><img src="/projects/specialty-pediatric-solutions-website-card.webp" alt="Specialty Pediatric Solutions website designed by BrandPixo" width="1000" height="1250" loading="lazy" decoding="async" /></figure>
         </div>
       </section>
 
