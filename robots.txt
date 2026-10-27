@@ -2,4 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://brandpixo.com/sitemap.xml
-Host: brandpixo.com
