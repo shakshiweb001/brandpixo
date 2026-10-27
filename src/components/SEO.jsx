@@ -163,6 +163,7 @@ export default function SEO() {
     '@type': ['Organization', 'ProfessionalService'],
     '@id': `${SITE_URL}/#organization`,
     name: SITE_NAME,
+    alternateName: 'Brand Pixo',
     description: 'Branding, web design and digital marketing agency offering brand identity, website development, SEO, social media marketing and performance campaigns.',
     url: SITE_URL,
     logo: { '@type': 'ImageObject', url: LOGO, width: 1600, height: 1600 },
@@ -189,6 +190,7 @@ export default function SEO() {
     '@type': 'WebSite',
     '@id': `${SITE_URL}/#website`,
     name: SITE_NAME,
+    alternateName: 'Brand Pixo',
     url: SITE_URL,
     inLanguage: 'en-IN',
     publisher: { '@id': `${SITE_URL}/#organization` }
