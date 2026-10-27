@@ -62,12 +62,20 @@ export default function ServiceDetailPage() {
   return (
     <main className={styles.page}>
       <section className={styles.titleBanner}>
-        <motion.div initial="hidden" animate="visible" variants={fadeUp}>
-          <span className={styles.kicker}>BrandPixo / Services</span>
-          <h1>{service.title} Services</h1>
+        <motion.div className={styles.bannerInner} initial={{ y: 16 }} animate={{ y: 0 }} transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}>
           <nav className={styles.breadcrumbs} aria-label="Breadcrumb">
             <Link to="/">Home</Link><span>/</span><Link to="/services">Services</Link><span>/</span><strong>{service.title}</strong>
           </nav>
+          <span className={styles.kicker}>{service.category}</span>
+          <h1>{service.title} <em>Services</em></h1>
+          <p className={styles.lead}>{service.tagline}</p>
+          <div className={styles.bannerActions}>
+            <Link to="/contact" className={styles.bannerPrimary}>Start a project <FiArrowUpRight /></Link>
+            <a href="https://wa.me/917650837963" target="_blank" rel="noreferrer" className={styles.bannerSecondary}><FaWhatsapp /> WhatsApp an expert</a>
+          </div>
+          <ul className={styles.bannerFeatures} aria-label={`What's included in ${service.title}`}>
+            {service.features.slice(0, 4).map((feature) => <li key={feature.title}>{feature.title}</li>)}
+          </ul>
         </motion.div>
       </section>
 
