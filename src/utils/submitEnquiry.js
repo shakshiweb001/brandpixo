@@ -14,7 +14,7 @@ export async function submitEnquiry(fields, formName = 'Website enquiry') {
       subject: `${formName} from ${fields.name || 'a website visitor'}`,
       from_name: 'BrandPixo Website',
       replyto: fields.email,
-      recipient: 'brandpixo@gmail.com',
+      recipient: 'hello@brandpixo.com',
       ...fields,
     }),
   });

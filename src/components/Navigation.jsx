@@ -128,7 +128,7 @@ export default function Navigation() {
       }, 'Project brief');
       setSubmitted(true);
     } catch {
-      setSubmitError('We could not send your brief. Please try again or email brandpixo@gmail.com.');
+      setSubmitError('We could not send your brief. Please try again or email hello@brandpixo.com.');
     } finally {
       setSubmitting(false);
     }
@@ -201,7 +201,7 @@ export default function Navigation() {
             <button className={styles.modalClose} onClick={() => setProjectOpen(false)} aria-label="Close project enquiry"><FiX /></button>
             {!submitted ? (
               <>
-                <div className={styles.modalIntro}><span>Start a project</span><h2 id="project-modal-title">Tell us what you’re ready to build.</h2><p>A few useful details are enough. Our team will reply with a clear next step within one business day.</p><div><a href="mailto:brandpixo@gmail.com"><FiMail /> brandpixo@gmail.com</a><a href="https://wa.me/917650837963" target="_blank" rel="noreferrer"><FaWhatsapp /> +91 76508 37963</a></div></div>
+                <div className={styles.modalIntro}><span>Start a project</span><h2 id="project-modal-title">Tell us what you’re ready to build.</h2><p>A few useful details are enough. Our team will reply with a clear next step within one business day.</p><div><a href="mailto:hello@brandpixo.com"><FiMail /> hello@brandpixo.com</a><a href="https://wa.me/917650837963" target="_blank" rel="noreferrer"><FaWhatsapp /> +91 76508 37963</a></div></div>
                 <form className={styles.modalForm} onSubmit={submitProjectBrief}>
                   <label>Name<input name="name" placeholder="Your name" required autoFocus /></label>
                   <label>Email<input name="email" type="email" placeholder="you@company.com" required /></label>

@@ -25,7 +25,7 @@ export default function Contact() {
       setSuccess(true);
       setFormData({ name: '', email: '', message: '' });
     } catch {
-      setError('We could not send your enquiry. Please try again or email brandpixo@gmail.com.');
+      setError('We could not send your enquiry. Please try again or email hello@brandpixo.com.');
     } finally {
       setSubmitting(false);
     }
@@ -43,7 +43,7 @@ export default function Contact() {
         <div className={styles.infoList}>
           <div className={styles.infoItem}>
             <span className={styles.label}>General Inquiries</span>
-            <a href="mailto:brandpixo@gmail.com" className={styles.val}>brandpixo@gmail.com</a>
+            <a href="mailto:hello@brandpixo.com" className={styles.val}>hello@brandpixo.com</a>
           </div>
           <div className={styles.infoItem}>
             <span className={styles.label}>WhatsApp Us</span>

@@ -56,7 +56,7 @@ export default function Footer() {
         <div className={styles.linksCol}>
           <h4>Connect</h4>
           <ul className={styles.contactList}>
-            <li><a href="mailto:brandpixo@gmail.com" className="hover-target"><FiMail /> brandpixo@gmail.com</a></li>
+            <li><a href="mailto:hello@brandpixo.com" className="hover-target"><FiMail /> hello@brandpixo.com</a></li>
             <li><a href="https://wa.me/917650837963" target="_blank" rel="noreferrer" className="hover-target"><FiMessageCircle /> +91 76508 37963</a></li>
             <li><Link to="/contact" className="hover-target"><FiArrowUpRight /> Get a Quote</Link></li>
           </ul>

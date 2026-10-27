@@ -21,7 +21,7 @@ export default function BlogComments({ slug }) {
     setSubmitting(true);
     setMessage('');
     try {
-      await submitEnquiry({ name: name.slice(0, 60), email: 'brandpixo@gmail.com', article: slug, message: comment.slice(0, 1000) }, 'New blog comment');
+      await submitEnquiry({ name: name.slice(0, 60), email: 'hello@brandpixo.com', article: slug, message: comment.slice(0, 1000) }, 'New blog comment');
       const next = [{ id: `${Date.now()}-${Math.random()}`, name: name.slice(0, 60), comment: comment.slice(0, 1000), date: new Date().toISOString() }, ...comments];
       localStorage.setItem(storageKey, JSON.stringify(next));
       setComments(next); setForm({ name: '', comment: '' }); setMessage('Thanks - your comment has been sent for review.');

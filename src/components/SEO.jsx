@@ -10,7 +10,7 @@ const SITE_NAME = 'BrandPixo';
 const SITE_URL = (import.meta.env.VITE_SITE_URL || 'https://brandpixo.com').replace(/\/$/, '');
 const SHARE_IMAGE = `${SITE_URL}/brandpixo-share.png`;
 const LOGO = `${SITE_URL}/logo.png`;
-const EMAIL = 'brandpixo@gmail.com';
+const EMAIL = 'hello@brandpixo.com';
 const PHONE = '+91-76508-37963';
 // Add the real BrandPixo profile URLs here (instagram.com/<handle> etc.) to emit them as sameAs.
 const SOCIALS = [];

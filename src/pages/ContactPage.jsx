@@ -29,7 +29,7 @@ export default function ContactPage() {
       }, 'Contact page enquiry');
       setSent(true);
     } catch {
-      setError('We could not send your enquiry. Please try again or email brandpixo@gmail.com.');
+      setError('We could not send your enquiry. Please try again or email hello@brandpixo.com.');
     } finally {
       setSubmitting(false);
     }
@@ -45,7 +45,7 @@ export default function ContactPage() {
 
       <section className={styles.contactCards}>
         <a href="https://wa.me/917650837963" target="_blank" rel="noreferrer"><FaWhatsapp /><FiArrowUpRight /><span>WhatsApp our team</span><strong>+91 76508 37963</strong><small>Chat directly with a strategist.</small></a>
-        <a href="mailto:brandpixo@gmail.com"><FiMail /><FiArrowUpRight /><span>Email us</span><strong>brandpixo@gmail.com</strong><small>Send project details or attach a brief.</small></a>
+        <a href="mailto:hello@brandpixo.com"><FiMail /><FiArrowUpRight /><span>Email us</span><strong>hello@brandpixo.com</strong><small>Send project details or attach a brief.</small></a>
         <div><FiMapPin /><FiArrowUpRight /><span>Service area</span><strong>India</strong><small>Working with ambitious brands across India.</small></div>
       </section>
 

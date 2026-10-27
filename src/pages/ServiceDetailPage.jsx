@@ -125,7 +125,7 @@ export default function ServiceDetailPage() {
           <div className={styles.contactCard}>
             <span>Start a conversation</span>
             <a href="https://wa.me/917650837963" target="_blank" rel="noreferrer"><FaWhatsapp /><div><small>WhatsApp an expert</small><strong>+91 76508 37963</strong></div></a>
-            <a href="mailto:brandpixo@gmail.com"><FiMail /><div><small>Email us</small><strong>brandpixo@gmail.com</strong></div></a>
+            <a href="mailto:hello@brandpixo.com"><FiMail /><div><small>Email us</small><strong>hello@brandpixo.com</strong></div></a>
             <button className="hover-target" onClick={() => navigate('/contact')}>Get in touch <FiArrowRight /></button>
           </div>
         </aside>
@@ -161,7 +161,7 @@ export default function ServiceDetailPage() {
         <div><span>Build with BrandPixo</span><h2>Is your business ready for the <em>digital leap?</em></h2><p>Let’s shape a premium digital experience around your next stage of growth.</p></div>
         <div className={styles.ctaContact}>
           <a href="https://wa.me/917650837963" target="_blank" rel="noreferrer"><FaWhatsapp /><span><small>WhatsApp an expert</small><strong>+91 76508 37963</strong></span></a>
-          <a href="mailto:brandpixo@gmail.com"><FiMail /><span><small>Email us</small><strong>brandpixo@gmail.com</strong></span></a>
+          <a href="mailto:hello@brandpixo.com"><FiMail /><span><small>Email us</small><strong>hello@brandpixo.com</strong></span></a>
           <button className="hover-target" onClick={() => navigate('/contact')}>Start your project <FiArrowRight /></button>
         </div>
       </section>
