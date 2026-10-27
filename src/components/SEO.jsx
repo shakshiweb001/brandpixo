@@ -13,8 +13,6 @@ const SHARE_IMAGE = `${SITE_URL}/brandpixo-share.png`;
 const LOGO = `${SITE_URL}/logo.png`;
 const EMAIL = 'hello@brandpixo.com';
 const PHONE = '+91-76508-37963';
-// Real profile URLs live in src/data/siteInfo.js and are emitted as sameAs.
-const SOCIALS = siteInfo.socials.map(({ url }) => url);
 
 const staticMeta = {
   '/': {
@@ -179,7 +177,6 @@ export default function SEO() {
       areaServed: 'IN',
       availableLanguage: 'English'
     }],
-    ...(SOCIALS.length ? { sameAs: SOCIALS } : {}),
     address: {
       '@type': 'PostalAddress',
       ...(siteInfo.address.street && { streetAddress: siteInfo.address.street }),
