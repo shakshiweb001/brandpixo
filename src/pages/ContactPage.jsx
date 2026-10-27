@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { m as motion } from 'framer-motion';
 import { FiArrowUpRight, FiCheck, FiCheckCircle, FiClock, FiMail, FiMapPin, FiSend } from 'react-icons/fi';
 import { FaWhatsapp } from 'react-icons/fa';
 import styles from './ContactPage.module.scss';

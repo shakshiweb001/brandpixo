@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { motion, useScroll, useSpring } from 'framer-motion';
+import { m as motion, useScroll, useSpring } from 'framer-motion';
 import { FiArrowLeft, FiArrowRight, FiArrowUpRight, FiClock, FiMonitor, FiSearch, FiTrendingUp } from 'react-icons/fi';
 import { blogPosts, getBlogPost } from '../data/blogPosts';
 import BlogComments from '../components/BlogComments';

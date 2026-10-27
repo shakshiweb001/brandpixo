@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion';
+import { m as motion, useReducedMotion, useScroll, useTransform } from 'framer-motion';
 import { FiArrowDown, FiArrowUpRight } from 'react-icons/fi';
 import styles from './HomeHero.module.scss';
 import { projects } from '../data/projectsData';

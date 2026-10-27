@@ -92,7 +92,7 @@ async function render(route) {
     });
     await new Promise((done) => setTimeout(done, 400));
 
-    const html = await page.evaluate((original) => {
+    let html = await page.evaluate((original) => {
       document.querySelectorAll('.custom-cursor, .custom-cursor-dot').forEach((node) => node.remove());
       document.body.removeAttribute('style');
       document.documentElement.removeAttribute('style');
@@ -121,6 +121,9 @@ async function render(route) {
       });
       return `<!doctype html>\n${document.documentElement.outerHTML}`;
     }, shellScripts);
+    // Vite's preload helper records absolute URLs of the temporary local server; make them root-relative.
+    html = html.split(origin).join('');
+    if (/127.0.0.1|localhost/.test(html)) throw new Error('local address leaked into prerendered HTML');
 
     const target = route === '/' ? join(buildDir, 'index.html') : join(buildDir, route);
     if (route === '/') {

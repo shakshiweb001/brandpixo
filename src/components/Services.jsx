@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { m as motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { FiCode, FiLayers, FiTrendingUp, FiArrowRight } from 'react-icons/fi';
 import styles from './Services.module.scss';

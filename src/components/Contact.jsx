@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import { m as motion } from 'framer-motion';
 import { FiCheckCircle } from 'react-icons/fi';
 import styles from './Contact.module.scss';
 import { submitEnquiry } from '../utils/submitEnquiry';

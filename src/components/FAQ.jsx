@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { m as motion, AnimatePresence } from 'framer-motion';
 import { FiChevronDown } from 'react-icons/fi';
 import styles from './FAQ.module.scss';
 import { homeFaqs } from '../data/homeFaqs';

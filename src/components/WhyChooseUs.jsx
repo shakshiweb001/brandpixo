@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { m as motion } from 'framer-motion';
 import { FiTrendingUp, FiEye, FiZap } from 'react-icons/fi';
 import styles from './WhyChooseUs.module.scss';
 
