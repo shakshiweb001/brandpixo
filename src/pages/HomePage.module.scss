@@ -33,7 +33,7 @@
 .projects { padding: 8rem max(2.5rem, calc((100% - 1400px) / 2)); background: $dark; color: $white; }
 .projectsHead { margin-bottom: 3.5rem; display: grid; grid-template-columns: 1.2fr .8fr; gap: 4rem; align-items: end; }
 .projectsHead > div > span { color: $primary; font-size: .7rem; font-weight: 800; letter-spacing: .14rem; text-transform: uppercase; }
-.projectsHead h2 { margin-top: .8rem; font-size: clamp(3.2rem, 5.8vw, 6rem); line-height: .9; letter-spacing: -3px; }
+.projectsHead h2 { margin-top: .8rem; color: $white; font-size: clamp(3.2rem, 5.8vw, 6rem); line-height: .9; letter-spacing: -3px; }
 .projectsHead p { max-width: 480px; justify-self: end; color: rgba(255,255,255,.62); font-size: 1.05rem; line-height: 1.7; }
 .projectsIntro { justify-self: end; }.projectsIntro a { margin-top: 1rem; display: inline-flex; align-items: center; gap: .45rem; color: $white; font-weight: 800; }
 .projectGrid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 3.5rem 1.25rem; }
@@ -43,7 +43,7 @@
 .projectPreview iframe { width: 100%; height: 100%; display: block; border: 0; pointer-events: none; }
 .projectPreview > span { position: absolute; top: 1rem; left: 1rem; width: 42px; height: 42px; display: grid; place-items: center; border: 1px solid $dark; background: $primary; color: $dark; font-size: .72rem; font-weight: 800; }
 .projectMeta { padding-top: 1.25rem; display: flex; justify-content: space-between; align-items: center; gap: 1rem; border-top: 1px solid rgba(255,255,255,.16); }
-.projectMeta span { color: rgba(255,255,255,.55); font-size: .68rem; font-weight: 700; letter-spacing: .08rem; text-transform: uppercase; }
+.projectMeta span { color: rgba(255,255,255,.55); font-size: .7rem; font-weight: 700; letter-spacing: .08rem; text-transform: uppercase; }
 .projectMeta h3 { margin-top: .35rem; font-size: clamp(1.6rem, 2.5vw, 2.35rem); }
 .projectMeta > a { width: 48px; height: 48px; flex: 0 0 auto; display: grid; place-items: center; border: 1px solid rgba(255,255,255,.35); border-radius: 50%; color: $white; font-size: 1.15rem; }
 .process { padding: 8rem max(2.5rem, calc((100% - 1400px) / 2)); background: #f0eee8; }
@@ -59,7 +59,7 @@
 .journalCard:hover { transform: translateY(-8px); box-shadow: 0 15px 0 rgba(24,24,24,.15); }
 .journalCard img { width: 100%; aspect-ratio: 16 / 10; display: block; object-fit: cover; border-bottom: 2px solid $dark; }
 .journalCard > div { padding: 1.5rem; flex: 1; display: flex; flex-direction: column; }
-.journalCard span { color: $muted; font-size: .68rem; font-weight: 700; letter-spacing: .08rem; text-transform: uppercase; }
+.journalCard span { color: $muted; font-size: .7rem; font-weight: 700; letter-spacing: .08rem; text-transform: uppercase; }
 .journalCard h3 { margin: .7rem 0 1.4rem; font-size: clamp(1.2rem, 1.7vw, 1.5rem); line-height: 1.2; }
 .journalCard small { margin-top: auto; display: inline-flex; align-items: center; gap: .4rem; font-size: .9rem; font-weight: 800; }
 .faqContact { padding: 0 max(2.5rem, calc((100% - 1400px) / 2)) 8rem; display: grid; gap: 2rem; background: linear-gradient(180deg, #fbfaf7 0%, #f3efe7 100%); }
@@ -74,3 +74,5 @@
 .allServices > span { margin-right: .6rem; color: $muted; font-size: .78rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
 .allServices a { padding: .6rem 1.05rem; border: 1.5px solid rgba(17,17,17,.18); border-radius: 999px; font-size: .9rem; font-weight: 500; transition: background-color .3s ease, border-color .3s ease, transform .3s ease; }
 .allServices a:hover { background: $primary; border-color: $primary; transform: translateY(-2px); }
+
+@media (max-width: $tablet) { .serviceGrid article { min-height: 0; }.serviceGrid article > div { margin-bottom: 2.5rem; } }

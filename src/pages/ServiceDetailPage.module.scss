@@ -52,11 +52,11 @@
 
 .sidebar { position: sticky; top: 7.5rem; display: grid; gap: .9rem; }
 .sideHeading { padding-bottom: .7rem; border-bottom: 1px solid rgba(24,24,24,.16); }
-.sideHeading span { color: $primary; font-size: .68rem; font-weight: 800; text-transform: uppercase; }
+.sideHeading span { color: $primary; font-size: .7rem; font-weight: 800; text-transform: uppercase; }
 .sideHeading h3 { color: $dark; font-size: 1.4rem; }
 .serviceLink { position: relative; min-height: 130px; padding: 1.3rem; display: flex; flex-direction: column; justify-content: flex-end; border-radius: 16px; background: linear-gradient(135deg, $primary, $hover-accent); color: $white; overflow: hidden; }
 .serviceLink::after { content: ''; position: absolute; width: 130px; height: 130px; right: -45px; top: -60px; border: 25px solid rgba(255,255,255,.13); border-radius: 50%; }
-.serviceLink span { font-size: .65rem; font-weight: 800; text-transform: uppercase; opacity: .82; }
+.serviceLink span { font-size: .7rem; font-weight: 800; text-transform: uppercase; opacity: .82; }
 .serviceLink strong { max-width: 220px; margin-top: .3rem; font-size: 1.15rem; line-height: 1.15; }
 .serviceLink svg { position: absolute; right: 1.2rem; bottom: 1.25rem; }
 .contactCard { margin-top: .2rem; padding: 1.4rem; display: grid; gap: 1rem; border-radius: 18px; background: $dark; }

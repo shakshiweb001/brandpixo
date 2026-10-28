@@ -175,3 +175,39 @@ html.lenis {
   .custom-cursor,
   .custom-cursor-dot { display: none !important; }
 }
+
+// Mobile usability: 16px form text stops iOS Safari zooming into fields, and links get a
+// comfortable (44px) tap area without changing their look.
+@media (max-width: 900px) {
+  input:not([type='checkbox']):not([type='radio']):not([type='submit']):not([type='hidden']),
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+}
+
+@media (pointer: coarse) {
+  [class*='breadcrumbs'] {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  footer a,
+  nav[aria-label='Breadcrumb'] a,
+  nav[aria-label='Breadcrumb'] strong,
+  [class*='breadcrumbs'] a,
+  [class*='breadcrumbs'] strong,
+  [class*='heroMeta'] > a,
+  [class*='tapLink'],
+  [class*='inlineLink'],
+  [class*='serviceLinks'] a,
+  [class*='contactCard'] a,
+  [class*='sectionHead'] > a,
+  [class*='projectsIntro'] a,
+  [class*='infoItem'] a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+}

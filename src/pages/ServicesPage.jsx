@@ -40,9 +40,9 @@ export default function ServicesPage() {
         animate="visible"
         variants={containerVariants}
       >
-        <motion.span className={styles.tag} variants={itemVariants}>BrandPixo / Capabilities</motion.span>
-        <motion.h1 className={styles.title} variants={itemVariants}>Digital Marketing and Branding Services</motion.h1>
-        <motion.nav className={styles.breadcrumbs} variants={itemVariants}><Link to="/">Home</Link><span>/</span><strong>Services</strong></motion.nav>
+        <motion.nav className={styles.breadcrumbs} variants={itemVariants} aria-label="Breadcrumb"><Link to="/">Home</Link><span>/</span><strong>Services</strong></motion.nav>
+        <motion.span className={styles.tag} variants={itemVariants}>Capabilities</motion.span>
+        <motion.h1 className={styles.title} variants={itemVariants}>Digital Marketing and Branding <em>Services</em></motion.h1>
         <motion.p className={styles.desc} variants={itemVariants}>Design, development, and marketing systems built to make ambitious brands clearer, faster, and more valuable.</motion.p>
       </motion.section>
 

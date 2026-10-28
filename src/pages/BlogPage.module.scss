@@ -99,16 +99,16 @@
 .cardImage { position: relative; height: 285px; border-bottom: 2px solid $dark; overflow: hidden; }
 .cardImage img { width: 100%; height: 100%; object-fit: cover; transition: transform .55s ease; }
 .blogCard:hover img { transform: scale(1.05); }
-.cardImage > span { position: absolute; left: 1rem; bottom: 1rem; padding: .45rem .7rem; border-radius: 999px; background: $white; color: $dark; font-size: .6rem; font-weight: 800; text-transform: uppercase; }
+.cardImage > span { position: absolute; left: 1rem; bottom: 1rem; padding: .45rem .7rem; border-radius: 999px; background: $white; color: $dark; font-size: .7rem; font-weight: 800; text-transform: uppercase; }
 .cardBody { min-height: 340px; padding: 1.4rem; display: flex; flex-direction: column; }
-.blogMeta { display: flex; justify-content: space-between; gap: .5rem; color: $muted; font-size: .62rem; font-weight: 800; text-transform: uppercase; }
+.blogMeta { display: flex; justify-content: space-between; gap: .5rem; color: $muted; font-size: .7rem; font-weight: 800; text-transform: uppercase; }
 .accentCard .blogMeta { color: rgba(24,24,24,.68); }
 .cardBody h3 { margin: 1.4rem 0 .8rem; color: $dark; font-size: clamp(1.7rem, 2.4vw, 2.6rem); line-height: .98; letter-spacing: -1px; }
 .cardBody p { color: $muted; font-size: .84rem; line-height: 1.6; }
 .accentCard .cardBody p { color: rgba(24,24,24,.7); }
 .cardLink { width: 45px; height: 45px; margin-top: auto; display: grid; place-items: center; border: 2px solid $dark; border-radius: 12px; background: $secondary; color: $dark; font-size: 1.15rem; box-shadow: 3px 3px 0 $dark; }
 .accentCard .cardLink { background: $white; }
-.cardCount { margin-top: 2rem; display: flex; justify-content: center; align-items: center; gap: .8rem; color: $muted; font-size: .65rem; }
+.cardCount { margin-top: 2rem; display: flex; justify-content: center; align-items: center; gap: .8rem; color: $muted; font-size: .7rem; }
 .cardCount div { width: 110px; height: 2px; background: rgba(24,24,24,.15); }
 .cardCount i { display: block; width: 38%; height: 100%; background: $primary; }
 
@@ -136,7 +136,7 @@
   .heroBanner { margin-top: 2.2rem; }
   .bannerFrame { height: 220px; border-radius: 18px; box-shadow: 5px 6px 0 rgba(24,24,24,.16); }
   .bannerTagline { left: 0.8rem; bottom: 0.8rem; gap: 0.5rem; }
-  .bannerIssue, .bannerCategory { font-size: 0.6rem; padding: 0.35rem 0.65rem; }
+  .bannerIssue, .bannerCategory { font-size: .7rem; padding: 0.35rem 0.65rem; }
   .heroBottom { margin-top: 3rem; }
   .quoteMark { display: none; }
   .statementCard { padding: 1.4rem; }

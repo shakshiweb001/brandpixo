@@ -3,17 +3,8 @@ import { Link } from 'react-router-dom';
 import { m as motion, useReducedMotion, useScroll, useTransform } from 'framer-motion';
 import { FiArrowDown, FiArrowUpRight } from 'react-icons/fi';
 import styles from './HomeHero.module.scss';
-import { projects } from '../data/projectsData';
-import { servicesData } from '../data/servicesData';
 
 const ease = [0.16, 1, 0.3, 1];
-
-// Counts come straight from the site's own data, so they never drift out of date.
-const facts = [
-  { value: projects.length, label: 'portfolio projects' },
-  { value: Object.keys(servicesData).length, label: 'services' },
-  { value: 3, label: 'disciplines: design, development, marketing' },
-];
 
 export default function HomeHero() {
   const reduceMotion = useReducedMotion();
@@ -44,11 +35,6 @@ export default function HomeHero() {
             <Link to="/contact" className={styles.primary}>Start a project <FiArrowUpRight /></Link>
             <Link to="/work" className={styles.secondary}>See our work</Link>
           </motion.div>
-          <motion.ul className={styles.facts} {...reveal(0.42)}>
-            {facts.map((fact) => (
-              <li key={fact.label}><strong>{fact.value}</strong><span>{fact.label}</span></li>
-            ))}
-          </motion.ul>
         </div>
 
         <motion.div
