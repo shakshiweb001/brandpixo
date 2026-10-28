@@ -1,5 +1,155 @@
 export const blogPosts = [
   {
+    slug: 'how-to-choose-a-web-design-agency',
+    title: 'How to Choose a Web Design Agency: 10 Questions to Ask Before You Hire',
+    metaTitle: 'How to Choose a Web Design Agency | BrandPixo',
+    metaDescription: 'A practical guide to hiring a web design agency: what to look for in a portfolio, the questions to ask, red flags to avoid, and how to compare quotes fairly.',
+    focusKeyword: 'how to choose a web design agency',
+    category: 'Website Strategy',
+    readTime: '9 min read',
+    date: 'October 28, 2026',
+    datePublished: '2026-10-28',
+    dateModified: '2026-10-28',
+    image: '/blog/how-to-choose-a-web-design-agency.jpg',
+    imageAlt: 'Checklist graphic with five questions to ask before hiring a web design agency, including process, ownership, SEO, launch support and revisions',
+    excerpt: 'Choosing a web design agency is easier when you know what to ask. This guide covers what to look for in a portfolio, ten questions worth asking, the red flags to watch for, and how to compare quotes on equal terms.',
+    intro: 'A website is one of the most visible things your business owns, and hiring the wrong team for it is expensive to undo. Most agencies show polished portfolios and confident proposals, so the difference usually appears in the details: how they work, what is included, and who owns what when the project ends. This guide gives you a practical way to compare agencies, with the questions to ask and the warning signs to look out for.',
+    sections: [
+      {
+        title: 'Start With What You Need, Not What You Can Buy',
+        paragraphs: [
+          'Agencies can only quote accurately when they understand the job. Before you speak to anyone, write down what the website must achieve for the business. A site that exists to bring in enquiries is built differently from one that sells products or explains a complex service.',
+          'You do not need a perfect brief, but you will get better answers and comparable quotes if you can describe the basics.'
+        ],
+        list: [
+          'The goal: more enquiries, online sales, bookings, credibility or something else.',
+          'Your audience: who visits, what they want to know and what makes them hesitate.',
+          'Scope: roughly how many pages, and whether you need a blog, online payments or integrations.',
+          'Content: who will write the text and supply the photos, you or the agency.',
+          'Timeline and budget range: even an approximate range stops you receiving proposals that do not fit.'
+        ]
+      },
+      {
+        title: 'What to Look For in a Portfolio',
+        paragraphs: [
+          'A portfolio shows taste, but it should also show judgement. Look beyond whether the pages look attractive and ask what each project was trying to achieve.',
+          'Open a few of the sites yourself. Check how they behave on a phone, how quickly they load and whether the navigation is clear. A site that looks good in a screenshot but is slow or confusing in real use tells you more than any case study.'
+        ],
+        list: [
+          'Work for businesses similar to yours, or at least with a similar goal.',
+          'Live websites you can visit, not only images in a presentation.',
+          'Variety: a distinct solution for each client rather than the same template with different colours.',
+          'Clear explanations of the problem and the approach, not just finished visuals.',
+          'Honest labelling of concept work and real client work.'
+        ],
+        link: {
+          label: 'See our selected work',
+          to: '/work'
+        }
+      },
+      {
+        title: 'Ten Questions to Ask Before You Hire',
+        paragraphs: [
+          'These questions are simple, but the answers show how an agency really works. Good agencies answer them clearly and without defensiveness. Vague or evasive replies are useful information too.'
+        ],
+        list: [
+          'What does your process look like, from first call to launch?',
+          'Who will I speak to day to day, and who actually does the design and development?',
+          'How many rounds of revisions are included, and what happens if we need more?',
+          'Do you build custom or from templates, and what are the trade-offs for my project?',
+          'How do you handle SEO, page speed and mobile layouts?',
+          'Who owns the website files, the design and the domain once the project is paid for?',
+          'Where will the site be hosted, and who is responsible for it after launch?',
+          'What support is included after launch, and what does ongoing maintenance cost?',
+          'How will I update the content myself, and will I get training?',
+          'Can I speak to a past client, or visit a few live sites you have built?'
+        ]
+      },
+      {
+        title: 'Understand the Process and the People',
+        paragraphs: [
+          'A clear process protects both sides. Most good projects move through discovery, structure and content planning, design, development, testing and launch, with a review point at the end of each stage so nothing is a surprise.',
+          'Ask who your point of contact is and how often you will hear from them. Slow or scattered communication is one of the most common reasons projects drift, and it is easier to agree expectations at the start than to fix them halfway through.'
+        ]
+      },
+      {
+        title: 'SEO, Speed and Accessibility Should Be Part of the Build',
+        paragraphs: [
+          'Search engine basics are far easier to build in than to add later. Sensible page titles and descriptions, a logical heading structure, a sitemap, fast loading and a layout that works on phones should be standard, not an optional extra.',
+          'Ask how the agency tests these things before launch, and whether they will set up analytics and Search Console. If the proposal treats all of it as an add-on, find out exactly what is missing and what it would cost.'
+        ],
+        links: [
+          {
+            label: 'Custom website development',
+            to: '/services/custom-website'
+          },
+          {
+            label: 'SEO optimization',
+            to: '/services/seo'
+          }
+        ]
+      },
+      {
+        title: 'Ownership, Hosting and Life After Launch',
+        paragraphs: [
+          'This is where many businesses are caught out. You should own your domain name, have access to your hosting and analytics accounts, and receive the files or access you need if you ever change provider. Make sure this is written into the agreement rather than assumed.',
+          'Also ask what happens after the site goes live. Websites need updates, security fixes and occasional changes, so understand whether support is included for a period, what ongoing care costs and how quickly issues are handled.'
+        ],
+        closing: 'A good agency is comfortable being transparent about ownership. If the answer is unclear, treat that as a reason to ask more questions.'
+      },
+      {
+        title: 'How to Compare Quotes Fairly',
+        paragraphs: [
+          'Two quotes with very different prices rarely describe the same work. Compare what is included before you compare the total, and ask each agency to clarify anything that is missing.'
+        ],
+        table: {
+          headers: ['What to compare', 'What to check'],
+          rows: [
+            ['Scope', 'Number of pages, features, integrations and content work included'],
+            ['Timeline', 'Realistic dates for each stage and what you need to provide'],
+            ['Revisions', 'How many rounds are included and what extra changes cost'],
+            ['Ownership', 'Who owns the design, code, domain and accounts at handover'],
+            ['Support', 'What is covered after launch and for how long'],
+            ['Payment', 'How the cost is split across milestones']
+          ]
+        }
+      },
+      {
+        title: 'Red Flags to Watch For',
+        paragraphs: ['Most problems show up before the contract is signed, if you know what to look for.'],
+        list: [
+          'A price far below everyone else with no explanation of what is left out.',
+          'No clear scope, timeline or process, only a confident promise.',
+          'Pressure to decide quickly or pay the full amount upfront.',
+          'Reluctance to show live work or put ownership terms in writing.',
+          'A portfolio that cannot be visited, or that looks the same for every client.',
+          'Guarantees about search rankings. Nobody can guarantee a position on Google.'
+        ],
+        closing: 'Hiring well comes down to clarity: a defined goal, honest answers to your questions and an agreement that spells out who does what.'
+      }
+    ],
+    faqs: [
+      {
+        q: 'How much does a website cost?',
+        a: 'It depends on the scope, the amount of custom design and development, and the features you need. A brochure site with a few pages costs far less than an online store with integrations. Ask each agency for a written breakdown of what is included so you can compare quotes on equal terms.'
+      },
+      {
+        q: 'How long does it take to build a business website?',
+        a: 'A small site can take a few weeks, while larger or more complex projects take longer. Much of the timeline depends on how quickly content and feedback are supplied, so agree dates for both sides at the start.'
+      },
+      {
+        q: 'Should I choose a freelancer or an agency?',
+        a: 'A freelancer can be a good fit for a small, well-defined project, while an agency usually offers a wider team across design, development and marketing. The right choice depends on the size of the project and how much ongoing support you expect. Ask either one the same questions about process, ownership and support.'
+      },
+      {
+        q: 'Do I need to own my website files and domain?',
+        a: 'Yes. You should own your domain and have access to your hosting, analytics and the files for your site, so you can change provider or make updates without being locked in. Confirm this in writing before the project starts.'
+      }
+    ],
+    pullQuote: 'The best agency answers the awkward questions before you have to ask them.',
+    related: ['custom-website-vs-website-builder', 'website-design-vs-seo']
+  },
+  {
     slug: 'core-web-vitals-for-small-business-websites',
     title: 'Core Web Vitals for Small Business Websites: What to Fix First',
     metaTitle: 'Core Web Vitals for Small Business Websites | BrandPixo',
