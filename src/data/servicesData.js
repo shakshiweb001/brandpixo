@@ -1,71 +1,398 @@
 export const servicesData = {
   'custom-website': {
-    title: 'Custom Website Development',
-    category: 'Development',
-    tagline: 'High-performance bespoke engineering.',
-    heroImage: '/projects/the-convoke-website-card.webp',
-    aboutText: 'We build tailored digital platforms from scratch using modern web technologies like React, SCSS, and GSAP. Our applications are engineered for responsiveness, luxury layout fidelity, and near-instant load times.',
+    title: "Custom Website Development",
+    category: "Development",
+    tagline: "Websites built around your business, not a template.",
+    metaTitle: "Custom Website Development Services | BrandPixo",
+    metaDescription: "Fast, custom-coded business websites built in React or WordPress. Unique design, clean code, strong SEO foundations and a site your team can update.",
+    defaultFaqs: false,
+    heroImage: "/projects/the-convoke-website-card.webp",
+    aboutText: "A custom website is designed and coded for your business from the first line, so it looks the way your brand should look, loads quickly and does exactly what your customers need. We plan the structure around how people search and buy, design every page with intent, and build it with clean, modern code that is easy to maintain and ready to grow with you.",
+    featuresHeading: "What our custom website development includes",
     features: [
-      { title: 'Hardware Acceleration', desc: 'GPU-driven smooth renders and native transitions.' },
-      { title: 'Dynamic Layout Animations', desc: 'Fluid, interactive UI states designed to keep users engaged.' },
-      { title: 'Optimized Frameworks', desc: 'Lightweight codebases achieving 90+ Lighthouse speeds.' }
+      {
+        "title": "Discovery and site planning",
+        "desc": "We map your services, audience and goals into a clear sitemap and page plan before any design starts, so every page has a job to do."
+      },
+      {
+        "title": "Unique UI design",
+        "desc": "Layouts, typography and colours designed for your brand. No recycled theme that a hundred other businesses are already using."
+      },
+      {
+        "title": "Clean, modern development",
+        "desc": "We build with React or WordPress depending on what suits your team, using lightweight code that loads fast and is easy to extend later."
+      },
+      {
+        "title": "Mobile-first and responsive",
+        "desc": "Every page is designed and tested for phones first, then tablets and desktops, because that is where most of your visitors arrive."
+      },
+      {
+        "title": "SEO foundations built in",
+        "desc": "Proper headings, page titles, meta descriptions, structured data, a sitemap and fast loading are part of the build, not an add-on."
+      },
+      {
+        "title": "Forms, WhatsApp and analytics",
+        "desc": "Enquiry forms, click-to-WhatsApp, Google Analytics and conversion tracking are set up so you can see where your leads come from."
+      }
     ],
+    contentSections: [
+      {
+        "title": "Custom website or website builder?",
+        "paragraphs": [
+          "Website builders and ready-made themes are a fine starting point for a very small budget. They become a problem when you want your site to look different from competitors, load fast on mobile, or rank on Google for competitive searches. Builders often add heavy code you cannot remove, and themes limit how far you can change layouts.",
+          "A custom website gives you full control over design, speed and SEO. You own the code, you are not locked into a monthly platform, and the site can grow with new pages and features without being rebuilt."
+        ]
+      },
+      {
+        "title": "Who this is for",
+        "paragraphs": [
+          "Custom development suits businesses that want their website to bring in enquiries rather than just exist online."
+        ],
+        "list": [
+          "Service businesses, clinics, schools and agencies that need a professional, trustworthy site.",
+          "Businesses whose current website is slow, outdated or hard to update.",
+          "Brands that have outgrown a template and want a distinctive design.",
+          "Companies planning to run ads or SEO and needing pages that convert."
+        ]
+      },
+      {
+        "title": "What happens after launch",
+        "paragraphs": [
+          "Launch is not the end of the project. We submit your site to Google Search Console, check that every page is indexed, and fix anything that comes up in the first weeks. You get a short walkthrough on updating content, and ongoing support is available if you want us to look after updates, backups and improvements."
+        ]
+      }
+    ],
+    processHeading: "Our custom website process",
     process: [
-      { title: 'Discovery & Concept', desc: 'Detailing system requirements and wireframing state machines.' },
-      { title: 'High-Fidelity Engineering', desc: 'Translating custom graphics and animation specs into clean code.' },
-      { title: 'Performance Audits', desc: 'Rigorous bundle size compression and load testing.' }
+      {
+        "title": "Discovery",
+        "desc": "We learn about your business, customers and competitors, and agree on goals, pages and timeline."
+      },
+      {
+        "title": "Structure and wireframes",
+        "desc": "We plan the sitemap and page layouts so content and calls to action sit in the right place."
+      },
+      {
+        "title": "Design",
+        "desc": "We design the key pages in full detail and refine them with your feedback before development."
+      },
+      {
+        "title": "Development and testing",
+        "desc": "We build the site, then test it on different devices and browsers for speed, forms and SEO basics."
+      },
+      {
+        "title": "Launch and support",
+        "desc": "We go live, connect Search Console and analytics, and stay available for fixes and improvements."
+      }
     ],
     benefits: [
-      { title: 'Unmatched Brand Prestige', desc: 'Move away from generic templates to stand out.' },
-      { title: 'Scale With Ease', desc: 'Architecture built to support growing traffic and feature additions.' }
+      {
+        "title": "A distinctive brand presence",
+        "desc": "Move away from generic templates to stand out."
+      },
+      {
+        "title": "Room to grow",
+        "desc": "Architecture built to support new pages and features."
+      }
     ],
-    technologies: ['React', 'JavaScript', 'GSAP', 'Framer Motion', 'Lenis Scroll', 'SCSS Modules'],
+    technologies: [
+      "React",
+      "JavaScript",
+      "WordPress",
+      "SCSS",
+      "Framer Motion",
+      "Vite",
+      "Google Analytics 4",
+      "Google Search Console"
+    ],
     faqs: [
-      { q: 'Why choose custom development over templates?', a: 'Templates restrict customization and limit optimization. Custom builds are completely tailored, faster, and highly secure.' }
+      {
+        "q": "How long does a custom website take?",
+        "a": "Most business websites take four to eight weeks from discovery to launch, depending on the number of pages and how quickly content and feedback are ready."
+      },
+      {
+        "q": "Will I be able to update the website myself?",
+        "a": "Yes. We set up an editing workflow that suits your team, such as WordPress or a simple content file, and show you how to update text, images and blog posts."
+      },
+      {
+        "q": "Do you write the website content?",
+        "a": "We can. We can work from your existing material or write new, SEO-friendly copy for each page as part of the project."
+      },
+      {
+        "q": "Is SEO included in a custom website?",
+        "a": "SEO foundations are included: page titles, meta descriptions, heading structure, sitemap, structured data and fast loading. Ongoing SEO work is a separate service."
+      },
+      {
+        "q": "Can you redesign my existing website?",
+        "a": "Yes. We review your current site, keep what works, and carry over your important pages and redirects so you do not lose existing Google rankings."
+      },
+      {
+        "q": "Who owns the website after launch?",
+        "a": "You do. The code, design and domain belong to your business, and you are free to host or maintain it wherever you like."
+      }
     ]
   },
   'wordpress': {
-    title: 'WordPress Development',
-    category: 'Development',
-    tagline: 'Custom themes with seamless content controls.',
-    heroImage: '/projects/arts-academy-school-website-card.webp',
-    aboutText: 'Bespoke WordPress setups developed without bulky plugins. We construct custom Gutenberg blocks and high-performance themes that are secure, responsive, and extremely easy for your marketing teams to manage.',
+    title: "WordPress Development",
+    category: "Development",
+    tagline: "Fast WordPress websites your team can actually manage.",
+    metaTitle: "WordPress Website Development Services | BrandPixo",
+    metaDescription: "Custom WordPress websites that load fast, rank well and are easy to edit. Theme development, speed fixes, redesigns and ongoing WordPress support.",
+    defaultFaqs: false,
+    heroImage: "/projects/arts-academy-school-website-card.webp",
+    aboutText: "WordPress powers a large share of the web because it is flexible and easy to update. The problem is that many WordPress sites are slowed down by heavy page builders, too many plugins and themes that were never built for the business using them. We build lean, custom WordPress websites that look professional, load quickly and give your team a simple editor for day-to-day updates.",
+    featuresHeading: "What our WordPress development covers",
     features: [
-      { title: 'Gutenberg Custom Blocks', desc: 'Edit content inside the editor exactly as it renders.' },
-      { title: 'Lighthouse Optimized Speed', desc: 'Clean database query setups and zero page builder bloat.' }
+      {
+        "title": "Custom WordPress themes",
+        "desc": "A theme designed and coded for your brand, without the bloat of multipurpose themes that load features you never use."
+      },
+      {
+        "title": "Easy content editing",
+        "desc": "Custom Gutenberg blocks and clear page templates so your team can edit pages and add blog posts without breaking the layout."
+      },
+      {
+        "title": "Speed optimisation",
+        "desc": "Image compression, caching, script clean-up and a minimal plugin list so pages load fast and pass Core Web Vitals."
+      },
+      {
+        "title": "SEO-ready setup",
+        "desc": "Clean URLs, heading structure, schema, XML sitemap and an SEO plugin configured properly from day one."
+      },
+      {
+        "title": "Security and backups",
+        "desc": "Updates, security hardening, spam protection and automatic backups so your site stays safe and recoverable."
+      },
+      {
+        "title": "WooCommerce when you need it",
+        "desc": "Product catalogues, enquiry carts or full online stores built on WooCommerce when your business needs to sell online."
+      }
     ],
+    contentSections: [
+      {
+        "title": "Why businesses choose WordPress",
+        "paragraphs": [
+          "WordPress gives you full ownership of your website and content, a huge range of integrations, and an editor that non-technical teams learn quickly. It works well for service businesses, blogs, schools, clinics and catalogue-style stores.",
+          "The difference is in how it is built. A WordPress site built with care is fast and secure. One assembled from a heavy theme and dozens of plugins is slow, fragile and hard to rank. We build the first kind."
+        ]
+      },
+      {
+        "title": "Already have a WordPress site?",
+        "paragraphs": [
+          "We also improve existing WordPress websites. Common jobs include:"
+        ],
+        "list": [
+          "Fixing slow loading and poor PageSpeed scores.",
+          "Replacing a heavy page builder with lightweight custom templates.",
+          "Redesigning an outdated site while keeping your Google rankings.",
+          "Cleaning up plugins, fixing errors and securing a hacked site.",
+          "Adding new pages, landing pages or a blog section."
+        ]
+      },
+      {
+        "title": "Built to rank and convert",
+        "paragraphs": [
+          "Every page we build has a clear purpose, a keyword it targets and a call to action. Enquiry forms and WhatsApp buttons are connected to analytics so you can see which pages bring in leads, not just visitors."
+        ]
+      }
+    ],
+    processHeading: "Our WordPress development process",
     process: [
-      { title: 'Wireframing & Setup', desc: 'Designing post formats and database taxonomies.' },
-      { title: 'Theme Integration', desc: 'Building responsive templates matching the exact design.' }
+      {
+        "title": "Planning",
+        "desc": "We agree on pages, content types, features and the plugins you genuinely need."
+      },
+      {
+        "title": "Design",
+        "desc": "We design the main page templates around your brand and get your approval before building."
+      },
+      {
+        "title": "Theme development",
+        "desc": "We code a custom theme and editor blocks that match the design exactly."
+      },
+      {
+        "title": "Content and SEO setup",
+        "desc": "We add your content, configure SEO, analytics, forms, caching and backups."
+      },
+      {
+        "title": "Training and launch",
+        "desc": "We show your team how to edit the site, launch it, and stay available for support."
+      }
     ],
     benefits: [
-      { title: 'User Friendly Admin', desc: 'Marketing team updates content without developer intervention.' }
+      {
+        "title": "Easy updates for your team",
+        "desc": "Edit pages and posts without a developer."
+      },
+      {
+        "title": "Fast, secure and scalable",
+        "desc": "Lean code that is easy to maintain and grow."
+      }
     ],
-    technologies: ['WordPress', 'PHP', 'Gutenberg', 'JavaScript', 'Tailwind', 'Sass'],
+    technologies: [
+      "WordPress",
+      "PHP",
+      "Gutenberg",
+      "WooCommerce",
+      "JavaScript",
+      "Sass",
+      "Rank Math / Yoast",
+      "Google Search Console"
+    ],
     faqs: [
-      { q: 'Do you use page builders?', a: 'No, we build themes using Gutenberg or custom block engines for clean code and maximum speed.' }
+      {
+        "q": "Do you use page builders like Elementor?",
+        "a": "We prefer custom themes and Gutenberg blocks because they are faster and easier to maintain. If your team already relies on a page builder, we can work with it and keep it as light as possible."
+      },
+      {
+        "q": "How long does a WordPress website take?",
+        "a": "A typical business website takes three to six weeks, depending on the number of pages, features and how quickly content is ready."
+      },
+      {
+        "q": "Can you speed up my existing WordPress site?",
+        "a": "Yes. We audit images, plugins, theme code, hosting and caching, then fix the issues that slow your pages down the most."
+      },
+      {
+        "q": "Will my WordPress site be secure?",
+        "a": "We keep WordPress, the theme and plugins updated, add security hardening and spam protection, and set up automatic backups."
+      },
+      {
+        "q": "Can you build an online store on WordPress?",
+        "a": "Yes. We build WooCommerce stores for businesses that want to sell online while keeping the flexibility of WordPress."
+      },
+      {
+        "q": "Do you offer WordPress maintenance?",
+        "a": "Yes. We offer ongoing maintenance covering updates, backups, uptime checks, small content changes and speed monitoring."
+      }
     ]
   },
   'landing-page': {
-    title: 'Landing Page Development',
-    category: 'Development',
-    tagline: 'Conversion-focused, high-impact interfaces.',
-    heroImage: '/projects/live-junk-free-website-card.webp',
-    aboutText: 'We build single-page landing elements structured around specific conversion metrics. By prioritizing visual hooks, micro-animations, and fast loading parameters, we ensure higher ROIs on your ad campaigns.',
+    title: "Landing Page Development",
+    category: "Development",
+    tagline: "Focused pages that turn ad clicks into enquiries.",
+    metaTitle: "Landing Page Design & Development | BrandPixo",
+    metaDescription: "High-converting landing pages for Google and Meta ads. Clear copy, fast loading, strong calls to action and tracking set up so you can measure every lead.",
+    defaultFaqs: false,
+    heroImage: "/projects/live-junk-free-website-card.webp",
+    aboutText: "A landing page has one job: get the visitor who clicked your ad or link to take the next step. That might be filling in a form, booking a call or messaging you on WhatsApp. We design and build focused landing pages with clear messaging, fast loading and tracking in place, so you can see exactly how many leads your campaigns are producing.",
+    featuresHeading: "What our landing page service includes",
     features: [
-      { title: 'A/B Testing Friendly', desc: 'Built cleanly for easy variations and integration.' },
-      { title: 'Bespoke UI Elements', desc: 'High visual impact to keep users moving down the funnel.' }
+      {
+        "title": "Conversion-focused copy",
+        "desc": "A clear headline, benefits, proof and answers to common objections, written for the audience your campaign targets."
+      },
+      {
+        "title": "Design that guides action",
+        "desc": "A single goal per page, with layout, visuals and buttons that lead the visitor towards it without distractions."
+      },
+      {
+        "title": "Fast loading on mobile",
+        "desc": "Lightweight pages that load quickly on phones, because every second of delay costs clicks you have already paid for."
+      },
+      {
+        "title": "Lead capture that works",
+        "desc": "Short forms, click-to-call and WhatsApp buttons, connected to your email or CRM so no enquiry is missed."
+      },
+      {
+        "title": "Tracking and pixels",
+        "desc": "Google Analytics, Google Ads conversions and the Meta Pixel set up so each lead is counted against the right campaign."
+      },
+      {
+        "title": "Easy A/B testing",
+        "desc": "Pages built so headlines, offers and sections can be changed or duplicated quickly to test what converts better."
+      }
     ],
+    contentSections: [
+      {
+        "title": "Why send ads to a landing page instead of your homepage?",
+        "paragraphs": [
+          "A homepage tries to speak to everyone, with many links and messages. When someone clicks an ad about one service, they want to see that service, the offer and how to get it. A dedicated landing page matches the ad, removes distractions and makes the next step obvious. That usually means more enquiries from the same ad budget."
+        ]
+      },
+      {
+        "title": "Landing pages we build",
+        "list": [
+          "Lead generation pages for Google Ads and Meta Ads campaigns.",
+          "Service pages for a specific offer, location or audience.",
+          "Event, webinar and launch pages.",
+          "Product and app launch pages.",
+          "Thank-you pages that set up the next step and track conversions."
+        ]
+      },
+      {
+        "title": "Measured, not guessed",
+        "paragraphs": [
+          "Before launch, we test every form, button and tracking event. After launch, you can see visits, form submissions and WhatsApp clicks per campaign. If a page underperforms, the data shows where people drop off, so changes are based on evidence rather than opinion."
+        ]
+      }
+    ],
+    processHeading: "Our landing page process",
     process: [
-      { title: 'Funnel Optimization Analysis', desc: 'Establishing copy hierarchy and visual hooks.' },
-      { title: 'Development & Analytics Setup', desc: 'Configuring event trackers and pixel nodes.' }
+      {
+        "title": "Campaign brief",
+        "desc": "We learn your offer, audience, ad platform and the single action you want visitors to take."
+      },
+      {
+        "title": "Copy and structure",
+        "desc": "We write the headline and sections in an order that answers questions and builds trust."
+      },
+      {
+        "title": "Design and build",
+        "desc": "We design the page and build it to load fast on mobile, matching your brand and ad creative."
+      },
+      {
+        "title": "Tracking setup",
+        "desc": "We connect forms, analytics, ad conversions and pixels, and test every event."
+      },
+      {
+        "title": "Launch and improve",
+        "desc": "We go live with your campaign and suggest changes once real data comes in."
+      }
     ],
     benefits: [
-      { title: 'Higher Ad Conversions', desc: 'Drive more conversions from search and social campaigns.' }
+      {
+        "title": "More enquiries from your ad budget",
+        "desc": "Drive more conversions from search and social campaigns."
+      },
+      {
+        "title": "Clear campaign reporting",
+        "desc": "Every lead tracked to its source."
+      }
     ],
-    technologies: ['React', 'JavaScript', 'Framer Motion', 'Google Analytics', 'Vite'],
+    technologies: [
+      "React",
+      "WordPress",
+      "Google Analytics 4",
+      "Google Tag Manager",
+      "Google Ads",
+      "Meta Pixel",
+      "Framer Motion"
+    ],
     faqs: [
-      { q: 'Can this connect to our HubSpot/Salesforce CRM?', a: 'Yes, we seamlessly integrate form collection endpoints with major CRM systems.' }
+      {
+        "q": "How quickly can a landing page be ready?",
+        "a": "A single landing page usually takes one to two weeks, including copy, design, development and tracking setup."
+      },
+      {
+        "q": "Do you write the landing page copy?",
+        "a": "Yes. Copywriting is part of the service, based on your offer, audience and the ad that sends traffic to the page."
+      },
+      {
+        "q": "Can the landing page be on my existing website?",
+        "a": "Yes. We can build it inside your current website or on a separate page, whichever works best for your tracking and hosting."
+      },
+      {
+        "q": "Will you set up Google Ads and Meta tracking?",
+        "a": "Yes. We set up Google Analytics, Google Ads conversion tracking and the Meta Pixel so every lead is recorded against the right campaign."
+      },
+      {
+        "q": "Can you also run the ads?",
+        "a": "Yes. Our performance marketing service covers planning and managing Google and Meta ad campaigns that send traffic to the page."
+      },
+      {
+        "q": "What if the page does not convert well?",
+        "a": "We review the data, find where visitors drop off, and test changes to the headline, offer, form or layout."
+      }
     ]
   },
   'shopify': {
