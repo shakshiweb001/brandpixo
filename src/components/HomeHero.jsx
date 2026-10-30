@@ -25,7 +25,7 @@ export default function HomeHero() {
         <div className={styles.copy}>
           <motion.span className={styles.eyebrow} {...reveal(0.05)}>Branding · Web design · Development</motion.span>
           <motion.h1 {...reveal(0.12)}>
-            We design brands people remember{' '}
+            Branding &amp; web design agency for brands people remember{' '}
             <span className={styles.highlight}>and websites that <em>work.</em></span>
           </motion.h1>
           <motion.p className={styles.lead} {...reveal(0.22)}>
