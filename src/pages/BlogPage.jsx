@@ -21,20 +21,18 @@ export default function BlogPage() {
           <h1>Digital marketing insights.<br /><mark>Sharper brands.</mark></h1>
         </div>
 
-        <div className={styles.heroBanner}>
-          <div className={styles.bannerFrame}>
-            <img 
-              src="/blog/blog-hero-banner.jpg" 
-              alt="BrandPixo Journal — The New Era of Digital Creativity" 
-              className={styles.bannerImage}
-              fetchPriority="high"
-            />
-            <div className={styles.bannerTagline}>
-              <span className={styles.bannerIssue}>Volume 2026 // Studio Notes</span>
-              <span className={styles.bannerCategory}>Digital Craft &amp; Growth Insights</span>
+        {blogPosts[0] && (
+          <Link to={`/blog/${blogPosts[0].slug}`} className={styles.featured} aria-label={`Read the latest article: ${blogPosts[0].title}`}>
+            <img src={blogPosts[0].image} alt={blogPosts[0].imageAlt} width="1376" height="768" fetchPriority="high" />
+            <div className={styles.featuredBody}>
+              <span className={styles.featuredLabel}>Latest article</span>
+              <h2>{blogPosts[0].title}</h2>
+              <p>{blogPosts[0].excerpt}</p>
+              <div className={styles.featuredMeta}><span>{blogPosts[0].category}</span><span>{blogPosts[0].readTime}</span></div>
+              <span className={styles.featuredCta}>Read article <FiArrowUpRight /></span>
             </div>
-          </div>
-        </div>
+          </Link>
+        )}
 
         <div className={styles.heroBottom}>
           <span className={styles.quoteMark}>“</span>
@@ -55,8 +53,7 @@ export default function BlogPage() {
           {blogPosts.map((post, index) => (
             <article className={`${styles.blogCard} ${index === 1 ? styles.accentCard : ''}`} key={post.slug}>
               <div className={styles.cardImage}>
-                <img src={post.image} alt={post.imageAlt} loading="lazy" />
-                <span>BrandPixo Journal</span>
+                <img src={post.image} alt={post.imageAlt} width="1376" height="768" loading="lazy" decoding="async" />
               </div>
               <div className={styles.cardBody}>
                 <div className={styles.blogMeta}><span>0{index + 1} · {post.category}</span><span>{post.readTime}</span></div>

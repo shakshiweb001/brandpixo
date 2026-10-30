@@ -17,7 +17,7 @@
 .heroCopy p { max-width: 820px; color: $muted; font-size: clamp(1rem, 2vw, 1.2rem); font-weight: 500; line-height: 1.65; }
 .heroPhoto, .photoPair figure, .widePhoto { position: relative; background: $white; box-shadow: 0 18px 40px rgba(24,24,24,.14); }
 .heroPhoto { padding: 1rem 1rem .7rem; margin-bottom: 6rem; transform: rotate(-.35deg); }
-.heroPhoto img { width: 100%; height: 610px; display: block; object-fit: cover; }
+.heroPhoto img { width: 100%; height: auto; aspect-ratio: 16 / 9; display: block; object-fit: cover; }
 .heroPhoto figcaption, .photoPair figcaption, .widePhoto figcaption { padding-top: .55rem; color: $muted; font-size: .7rem; }
 .tape { position: absolute; z-index: 2; right: 8%; top: -20px; width: 25px; height: 70px; background: rgba(250,172,92,.82); transform: rotate(7deg); }
 
@@ -29,9 +29,9 @@
 .relatedLabel { color: $primary; font-size: .7rem; font-weight: 800; letter-spacing: .14rem; text-transform: uppercase; }
 .relatedRail h2 { margin: .55rem 0 1.35rem; color: $dark; font-size: 2rem; letter-spacing: -1px; }
 .relatedList { display: grid; grid-template-columns: 1fr; gap: 1rem; }
-.relatedCard { display: grid; grid-template-columns: 92px 1fr; gap: .9rem; align-items: stretch; padding: .65rem; border: 1px solid rgba(24,24,24,.12); border-radius: 14px; background: rgba(255,255,255,.58); transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
+.relatedCard { display: grid; grid-template-columns: 112px 1fr; gap: .9rem; align-items: stretch; padding: .65rem; border: 1px solid rgba(24,24,24,.12); border-radius: 14px; background: rgba(255,255,255,.58); transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
 .relatedCard:hover { transform: translateY(-3px); border-color: rgba(250,172,92,.75); box-shadow: 0 12px 25px rgba(24,24,24,.09); }
-.relatedCard img { width: 92px; height: 112px; display: block; border-radius: 9px; object-fit: cover; }
+.relatedCard img { width: 112px; height: 63px; display: block; border-radius: 9px; object-fit: cover; }
 .relatedCard > div { min-width: 0; display: flex; flex-direction: column; }
 .relatedCard span { color: $primary; font-size: .7rem; font-weight: 800; letter-spacing: .05rem; text-transform: uppercase; }
 .relatedCard h3 { margin: .35rem 0 .6rem; color: $dark; font-size: .95rem; line-height: 1.15; letter-spacing: -.2px; }
@@ -60,10 +60,10 @@
 .photoPair figure, .widePhoto { padding: .7rem .7rem .55rem; }
 .photoPair figure:nth-child(2) { transform: rotate(1.4deg) translateY(25px); }
 .photoPair figure > span, .widePhoto > span { display: block; padding: 0 0 .45rem; color: $primary; font-size: .7rem; font-weight: 800; letter-spacing: .08rem; text-transform: uppercase; }
-.photoPair img { width: 100%; height: 360px; display: block; object-fit: cover; }
-.photoPair figure:nth-child(2) img { height: 290px; }
+.photoPair img { width: 100%; height: auto; aspect-ratio: 16 / 9; display: block; object-fit: cover; }
+.photoPair figure:nth-child(2) img { height: auto; }
 .widePhoto { width: min(900px, 100%); margin: -1rem 0 5rem auto; transform: rotate(.25deg); }
-.widePhoto img { width: 100%; height: 490px; display: block; object-fit: cover; object-position: center 45%; }
+.widePhoto img { width: 100%; height: auto; aspect-ratio: 16 / 9; display: block; object-fit: cover; }
 .summary { width: min(820px, 100%); margin: 0 0 4rem auto; }
 .summary > span { display: block; padding-bottom: .8rem; border-bottom: 1px solid rgba(24,24,24,.16); }
 .summary div { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; padding: .85rem 0; border-bottom: 1px solid rgba(24,24,24,.1); font-size: .72rem; }
@@ -94,19 +94,16 @@
   .relatedRailInner { position: static; }
   .relatedList { grid-template-columns: 1fr; }
   .relatedCard { grid-template-columns: 120px 1fr; }
-  .relatedCard img { width: 120px; height: 120px; }
+  .relatedCard img { width: 120px; height: 68px; }
   .heroCopy { margin: 3.5rem 0 2rem; }
   .iconStack { top: 3.5rem; right: 0; transform: scale(.62); transform-origin: top right; opacity: .85; }
   .heroCopy h1 { font-size: clamp(3.1rem, 16vw, 5rem); line-height: .88; letter-spacing: -3px; }
   .heroPhoto { margin-bottom: 4rem; padding: .65rem; }
-  .heroPhoto img { height: 330px; }
   .openingGrid { margin-bottom: 4rem; }
   .articleSection { margin-bottom: 3.5rem; }
   .articleSection h2 { font-size: clamp(2.4rem, 12vw, 3.6rem); }
   .photoPair { gap: .6rem; }
-  .photoPair img { height: 220px; }
   .photoPair figure:nth-child(2) img { height: 170px; }
-  .widePhoto img { height: 300px; }
   .authorCard { grid-template-columns: 64px 1fr; }
   .authorMark { width: 64px; height: 64px; }
   .authorCard > a { grid-column: 1 / -1; justify-content: center; }
@@ -115,16 +112,14 @@
 @media (max-width: 480px) {
   .heroMeta { align-items: flex-start; }
   .heroMeta div { flex-direction: column; align-items: flex-end; gap: .25rem; }
-  .heroPhoto img { height: 255px; }
   .photoPair { grid-template-columns: 1fr; gap: 1.5rem; }
   .photoPair figure:nth-child(2) { transform: rotate(1deg); }
-  .photoPair img, .photoPair figure:nth-child(2) img, .widePhoto img { height: 240px; }
   .summary div, .postNav { grid-template-columns: 1fr; }
   .articleList { grid-template-columns: 1fr; }
   .authorCard { grid-template-columns: 1fr; }
   .askButton { margin-left: 0; }
-  .relatedCard { grid-template-columns: 92px 1fr; }
-  .relatedCard img { width: 92px; height: 112px; }
+  .relatedCard { grid-template-columns: 104px 1fr; }
+  .relatedCard img { width: 104px; height: 58px; }
 }
 
 .tapLink { display: inline-flex; align-items: center; gap: .4rem; }

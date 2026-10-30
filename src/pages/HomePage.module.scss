@@ -57,7 +57,7 @@
 .journalGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
 .journalCard { display: flex; flex-direction: column; overflow: hidden; border: 2px solid $dark; border-radius: 22px; background: $white; box-shadow: 0 7px 0 rgba(24,24,24,.15); transition: transform .3s ease, box-shadow .3s ease; }
 .journalCard:hover { transform: translateY(-8px); box-shadow: 0 15px 0 rgba(24,24,24,.15); }
-.journalCard img { width: 100%; aspect-ratio: 16 / 10; display: block; object-fit: cover; border-bottom: 2px solid $dark; }
+.journalCard img { width: 100%; aspect-ratio: 16 / 9; display: block; object-fit: cover; border-bottom: 2px solid $dark; }
 .journalCard > div { padding: 1.5rem; flex: 1; display: flex; flex-direction: column; }
 .journalCard span { color: $muted; font-size: .7rem; font-weight: 700; letter-spacing: .08rem; text-transform: uppercase; }
 .journalCard h3 { margin: .7rem 0 1.4rem; font-size: clamp(1.2rem, 1.7vw, 1.5rem); line-height: 1.2; }
