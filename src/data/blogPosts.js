@@ -1,5 +1,151 @@
 export const blogPosts = [
   {
+    slug: 'what-is-a-brand-identity',
+    title: 'What Is a Brand Identity? The 6 Building Blocks Every Business Needs',
+    metaTitle: 'What Is a Brand Identity? 6 Building Blocks | BrandPixo',
+    metaDescription: 'Brand identity is more than a logo. Learn the six building blocks of a strong identity, how they work together, and how to start building one for your business.',
+    focusKeyword: 'what is a brand identity',
+    category: 'Brand Identity',
+    readTime: '8 min read',
+    date: 'October 30, 2026',
+    datePublished: '2026-10-30',
+    dateModified: '2026-10-30',
+    image: '/blog/what-is-a-brand-identity.jpg',
+    imageAlt: 'Graphic showing the six building blocks of a brand identity: logo, colour, typography, imagery, voice and guidelines',
+    excerpt: 'A brand identity is the visible and verbal system that makes a business recognisable. This guide explains the six building blocks, how they fit together and where a small business should start.',
+    intro: 'Many businesses say they need a logo when what they really need is a brand identity. A logo is one piece. The identity is the whole system of visuals and words that makes your business recognisable and consistent, whether someone meets it on your website, a social post, an invoice or a delivery box. This guide explains what a brand identity includes, how the parts work together and how to begin building one.',
+    sections: [
+      {
+        title: 'Brand, Brand Identity and Logo: What Is the Difference?',
+        paragraphs: [
+          'These terms are often used as if they mean the same thing, which is part of why identity projects go wrong. They describe three different layers.',
+          'Your brand is the impression people form of your business: what they expect, trust and remember. You influence it, but you do not fully control it. Your brand identity is the set of deliberate choices you make to shape that impression. Your logo is one element inside the identity.'
+        ],
+        table: {
+          headers: ['Term', 'What it is', 'Who controls it'],
+          rows: [
+            [
+              'Brand',
+              'The overall perception people hold of your business',
+              'Shared: you and your customers'
+            ],
+            ['Brand identity', 'The visual and verbal system you design and apply', 'You'],
+            ['Logo', 'The main mark that identifies the business', 'You']
+          ]
+        }
+      },
+      {
+        title: 'The Six Building Blocks of a Brand Identity',
+        paragraphs: [
+          'Strong identities are built from a small number of clear elements used consistently. Most small businesses need these six.'
+        ],
+        list: [
+          'Logo: the main mark, with versions for different sizes and backgrounds.',
+          'Colour: a limited palette with a clear main colour and supporting tones.',
+          'Typography: one or two typefaces with a clear hierarchy for headings and text.',
+          'Imagery: the style of photography, illustration and icons you use.',
+          'Voice: how the business sounds in writing, from headlines to emails.',
+          'Guidelines: a short document that records the rules so everyone applies them the same way.'
+        ],
+        link: {
+          label: 'Explore brand identity design',
+          to: '/services/brand-identity'
+        }
+      },
+      {
+        title: 'Logo and Visual Mark',
+        paragraphs: [
+          'A good logo is simple enough to be recognised quickly and flexible enough to be used almost anywhere. It has to work as a tiny icon on a phone, as a one-colour stamp, on a dark background and on a printed card.',
+          'Ask your designer for the practical set rather than a single file: a primary logo, a compact version, a single-colour version and a version for dark backgrounds. Be cautious of designs that rely on a passing trend, because the identity should still look right years from now.'
+        ]
+      },
+      {
+        title: 'Colour and Typography',
+        paragraphs: [
+          'Colour is one of the fastest ways people recognise a brand, and fewer colours used consistently are almost always stronger than many used loosely. Choose a main colour, one or two supporting colours and neutral tones for backgrounds and text.',
+          'Check legibility as well as taste. Text needs enough contrast against its background to be readable, especially on phones and for people with weaker eyesight. A beautiful colour that cannot carry readable text will cause problems on your website and in print.',
+          'Typography works the same way. Pick one or two typefaces that suit the personality of the business, then define how headings, subheadings and body text should look so every page and document feels related.'
+        ]
+      },
+      {
+        title: 'Imagery, Layout and Graphic Elements',
+        paragraphs: [
+          'Imagery is the style of picture and graphic you use, and it shapes how the brand feels as much as colour does. Decide what your photos should look like, whether you use illustration or icons, and how much space and structure your layouts have.',
+          'Where you can, use real photography of your own work, team or products rather than generic stock images. Authentic images build trust, while images that visitors recognise from elsewhere can quietly make a business feel interchangeable.'
+        ]
+      },
+      {
+        title: 'Voice and Messaging',
+        paragraphs: [
+          'Brand identity is not only visual. The words you use are part of it. Decide whether your business sounds formal or friendly, technical or plain, and then write that way consistently across your website, social posts, proposals and emails.',
+          'A simple voice guide is enough: three or four adjectives that describe how you sound, a few words and phrases you like to use, and a few you avoid. It saves time and keeps different people writing in the same voice.'
+        ]
+      },
+      {
+        title: 'Brand Guidelines: Keeping It Consistent',
+        paragraphs: [
+          'Guidelines turn good design decisions into something a whole team can follow. They do not need to be long. A clear, practical document is far more useful than an elaborate one nobody opens.'
+        ],
+        list: [
+          'Logo versions, minimum sizes and the clear space to keep around it.',
+          'Colour codes for screen and print.',
+          'Fonts, sizes and examples of heading and text styles.',
+          'Photography and graphic style, with a few examples.',
+          'Voice notes and example wording.',
+          'Examples of correct and incorrect use.'
+        ],
+        closing: 'Without guidelines, small inconsistencies accumulate. With them, a new designer, freelancer or team member can produce work that still looks and sounds like your business.'
+      },
+      {
+        title: 'Where a Small Business Should Start',
+        paragraphs: [
+          'You do not have to build everything at once. Start with clarity about who you serve and what makes you different, then build the elements in a sensible order and apply them first where customers see you most.'
+        ],
+        list: [
+          'Clarify your positioning: who you help, what you offer and why you are different.',
+          'Review what you already have and note what is inconsistent or outdated.',
+          'Define the core elements: logo, colour, typography and voice.',
+          'Apply them first to your website, social profiles and the documents customers receive.',
+          'Record the rules in a short set of guidelines and review them once a year.'
+        ],
+        links: [
+          {
+            label: 'Brand identity design',
+            to: '/services/brand-identity'
+          },
+          {
+            label: 'Graphic design',
+            to: '/services/graphic-design'
+          },
+          {
+            label: 'UI/UX design',
+            to: '/services/ui-ux'
+          }
+        ]
+      }
+    ],
+    faqs: [
+      {
+        q: 'Do I need a logo before I build a website?',
+        a: 'It helps to have at least a primary logo, colours and fonts agreed first, because the website will use them everywhere. A full identity is not required on day one, but deciding the basics early avoids redoing the design later.'
+      },
+      {
+        q: 'What is the difference between a rebrand and a refresh?',
+        a: 'A refresh updates the look of an existing identity, for example a cleaner logo, a tidier palette or better typography, while keeping its core idea. A rebrand changes the positioning or direction of the business and usually involves more of the identity.'
+      },
+      {
+        q: 'How long does a brand identity project take?',
+        a: 'It depends on the scope and how quickly feedback is given. A focused identity for a small business takes less time than a full system with extensive guidelines. Ask your designer for a written timeline for each stage.'
+      },
+      {
+        q: 'Can I create a brand identity myself?',
+        a: 'You can start by defining your positioning, voice and a simple palette, and many businesses do. A designer adds the skill to turn those decisions into a distinctive, flexible system, especially for the logo and the guidelines.'
+      }
+    ],
+    pullQuote: 'A logo makes you recognisable. A brand identity makes you consistent, and consistency is what builds trust.',
+    related: ['how-to-choose-a-web-design-agency', 'custom-website-vs-website-builder']
+  },
+  {
     slug: 'how-to-choose-a-web-design-agency',
     title: 'How to Choose a Web Design Agency: 10 Questions to Ask Before You Hire',
     metaTitle: 'How to Choose a Web Design Agency | BrandPixo',
