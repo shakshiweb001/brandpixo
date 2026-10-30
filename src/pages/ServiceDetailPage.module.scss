@@ -134,3 +134,23 @@
 .relatedAll { margin-top: 1.1rem; display: inline-flex; align-items: center; gap: .4rem; min-height: 44px; font-weight: 600; border-bottom: 2px solid $primary; }
 @media (max-width: 900px) { .related { grid-template-columns: 1fr; gap: 2.5rem; margin-bottom: 4rem; } }
 @media (max-width: 600px) { .relatedItem { grid-template-columns: 104px 1fr; }.relatedItem img { width: 104px; height: 62px; } }
+
+// Long-form service content: feature details, content sections, process and tools.
+.detailBlock { padding: 2.5rem 0 .5rem; border-top: 1px solid rgba(24,24,24,.08); }
+.detailBlock h2 { margin: .6rem 0 1.1rem; color: $dark; font-size: clamp(1.7rem, 2.6vw, 2.4rem); line-height: 1.15; }
+.detailBlock > p { margin: 0 0 1rem; color: $muted; font-size: 1.05rem; line-height: 1.8; }
+.detailGrid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+.detailGrid article { padding: 1.4rem; border: 1px solid rgba(24,24,24,.1); border-radius: 16px; background: #fff; }
+.detailGrid h3 { margin: 0 0 .5rem; color: $dark; font-size: 1.1rem; }
+.detailGrid p { margin: 0; color: $muted; font-size: .98rem; line-height: 1.65; }
+.detailList { display: grid; gap: .7rem; margin: .5rem 0 1rem; padding: 0; list-style: none; }
+.detailList li { display: flex; align-items: flex-start; gap: .7rem; color: $muted; font-size: 1.02rem; line-height: 1.65; }
+.detailList svg { flex: none; margin-top: .3rem; color: $primary; }
+.processList { display: grid; gap: 1rem; margin: 0; padding: 0; list-style: none; }
+.processList li { display: grid; grid-template-columns: 3rem 1fr; gap: 1rem; padding: 1.2rem 0; border-bottom: 1px solid rgba(24,24,24,.08); }
+.processList strong { color: $primary; font-size: 1.1rem; }
+.processList h3 { margin: 0 0 .35rem; color: $dark; font-size: 1.1rem; }
+.processList p { margin: 0; color: $muted; line-height: 1.65; }
+.toolTags { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1rem; }
+.toolTags span { padding: .5rem .95rem; border: 1px solid rgba(24,24,24,.12); border-radius: 999px; background: #fff; color: $dark; font-size: .9rem; }
+@media (max-width: 700px) { .detailGrid { grid-template-columns: 1fr; } }

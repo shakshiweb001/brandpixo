@@ -48,7 +48,7 @@ export default function ServiceDetailPage() {
     .slice(0, 2);
   const readingPosts = (serviceReading[serviceId] || []).map((slug) => blogPosts.find((post) => post.slug === slug)).filter(Boolean);
   const workProjects = (serviceWork[serviceId] || []).map((slug) => getProject(slug)).filter(Boolean);
-  const faqItems = [
+  const faqItems = service.defaultFaqs === false ? service.faqs : [
     ...service.faqs,
     {
       q: `What is included in a ${service.title} engagement?`,
@@ -113,6 +113,57 @@ export default function ServiceDetailPage() {
               </ul>
             </article>
           </div>
+
+          {service.features.some((feature) => feature.desc) && (
+            <div className={styles.detailBlock}>
+              <span className={styles.eyebrow}>What's included</span>
+              <h2>{service.featuresHeading || `What our ${service.title.toLowerCase()} covers`}</h2>
+              <div className={styles.detailGrid}>
+                {service.features.map((feature) => (
+                  <article key={feature.title}>
+                    <h3>{feature.title}</h3>
+                    <p>{feature.desc}</p>
+                  </article>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {(service.contentSections || []).map((section) => (
+            <div className={styles.detailBlock} key={section.title}>
+              <h2>{section.title}</h2>
+              {(section.paragraphs || []).map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+              {section.list && (
+                <ul className={styles.detailList}>
+                  {section.list.map((item) => <li key={item}><FiCheck /> <span>{item}</span></li>)}
+                </ul>
+              )}
+            </div>
+          ))}
+
+          {service.process?.length > 0 && (
+            <div className={styles.detailBlock}>
+              <span className={styles.eyebrow}>How we work</span>
+              <h2>{service.processHeading || `Our ${service.title.toLowerCase()} process`}</h2>
+              <ol className={styles.processList}>
+                {service.process.map((step, index) => (
+                  <li key={step.title}>
+                    <strong>{String(index + 1).padStart(2, '0')}</strong>
+                    <div><h3>{step.title}</h3><p>{step.desc}</p></div>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          )}
+
+          {service.technologies?.length > 0 && (
+            <div className={styles.detailBlock}>
+              <span className={styles.eyebrow}>Tools we use</span>
+              <div className={styles.toolTags}>
+                {service.technologies.map((tool) => <span key={tool}>{tool}</span>)}
+              </div>
+            </div>
+          )}
 
           <div className={styles.whyChoose}>
             <span className={styles.eyebrow}>Why choose BrandPixo</span>
