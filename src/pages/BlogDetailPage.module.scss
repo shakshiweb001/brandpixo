@@ -103,7 +103,6 @@
   .articleSection { margin-bottom: 3.5rem; }
   .articleSection h2 { font-size: clamp(2.4rem, 12vw, 3.6rem); }
   .photoPair { gap: .6rem; }
-  .photoPair figure:nth-child(2) img { height: 170px; }
   .authorCard { grid-template-columns: 64px 1fr; }
   .authorMark { width: 64px; height: 64px; }
   .authorCard > a { grid-column: 1 / -1; justify-content: center; }
