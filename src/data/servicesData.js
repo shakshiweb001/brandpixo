@@ -396,69 +396,381 @@ export const servicesData = {
     ]
   },
   'shopify': {
-    title: 'Shopify Development',
-    category: 'Development',
-    tagline: 'Bespoke e-commerce architectures that scale.',
-    heroImage: '/projects/elan-botanics-card.webp',
-    aboutText: 'Convert visitors into buyers with a customized Shopify checkout workflow. We write custom Liquid themes and deploy headless e-commerce integrations, ensuring your store is blazing fast and responsive.',
+    title: "Shopify Development",
+    category: "Development",
+    tagline: "Shopify stores built to sell, not just to look good.",
+    metaTitle: "Shopify Store Development Services | BrandPixo",
+    metaDescription: "Custom Shopify store design and development. Fast themes, clean product pages, smooth checkout, payment and shipping setup, and SEO built in.",
+    defaultFaqs: false,
+    heroImage: "/projects/elan-botanics-card.webp",
+    aboutText: "Shopify makes it easy to start selling online, but a store that actually converts needs more than a default theme. We design and develop Shopify stores around your products and customers: clear product pages, easy navigation, fast loading and a checkout that people finish. Whether you are launching a new store or fixing one that is not selling, we build it so it is simple for you to manage every day.",
+    featuresHeading: "What our Shopify development includes",
     features: [
-      { title: 'Liquid Bespoke Themes', desc: 'Clean coding for specialized checkout pages.' },
-      { title: 'Cart Interactions', desc: 'Micro-animations triggering side carts and quick views.' }
+      {
+        "title": "Store setup from scratch",
+        "desc": "Products, collections, variants, payment gateways, shipping rates, taxes and policies configured correctly before launch."
+      },
+      {
+        "title": "Custom theme design",
+        "desc": "A Shopify theme designed for your brand, or a premium theme customised so your store does not look like every other shop."
+      },
+      {
+        "title": "Product pages that convert",
+        "desc": "Clear photos, benefit-led descriptions, size guides, reviews and trust badges placed where buyers look before adding to cart."
+      },
+      {
+        "title": "Speed and mobile performance",
+        "desc": "Optimised images, fewer heavy apps and clean Liquid code so your store loads fast on phones."
+      },
+      {
+        "title": "Shopify SEO",
+        "desc": "Product and collection titles, meta descriptions, clean URLs, structured data and internal links set up so products can be found on Google."
+      },
+      {
+        "title": "Apps and integrations",
+        "desc": "Reviews, WhatsApp, email marketing, analytics and the Meta and Google sales channels connected and tested."
+      }
     ],
+    contentSections: [
+      {
+        "title": "Who this is for",
+        "list": [
+          "Brands launching their first online store.",
+          "Sellers moving from Instagram or marketplaces to their own website.",
+          "Existing Shopify stores with low conversion or slow loading.",
+          "Businesses migrating from WooCommerce or another platform."
+        ]
+      },
+      {
+        "title": "Shopify or WordPress?",
+        "paragraphs": [
+          "Shopify is a strong choice when selling products online is the main goal: it handles hosting, security, payments and checkout reliably, and it is easy for a small team to manage orders. WordPress with WooCommerce gives more flexibility for content-heavy sites. If you are unsure, we will recommend the platform that suits your products, budget and team."
+        ]
+      },
+      {
+        "title": "Built for everyday management",
+        "paragraphs": [
+          "After launch, you should be able to add products, run discounts and update banners without calling a developer. We hand over a store that is organised logically and show your team how to run it."
+        ]
+      }
+    ],
+    processHeading: "Our Shopify development process",
     process: [
-      { title: 'Store Modeling', desc: 'Structuring custom product fields and collection hierarchies.' },
-      { title: 'Theme Development & App Setup', desc: 'Configuring payment gateways and shipping configurations.' }
+      {
+        "title": "Store planning",
+        "desc": "We map your products, collections, variants, shipping zones and the apps you need."
+      },
+      {
+        "title": "Design",
+        "desc": "We design the homepage, collection and product pages around how your customers shop."
+      },
+      {
+        "title": "Theme development",
+        "desc": "We build or customise the theme in Liquid, keeping code light and pages fast."
+      },
+      {
+        "title": "Setup and testing",
+        "desc": "We configure payments, shipping and apps, then place test orders on mobile and desktop."
+      },
+      {
+        "title": "Launch and handover",
+        "desc": "We launch the store, connect analytics and sales channels, and train your team."
+      }
     ],
     benefits: [
-      { title: 'Increased Conversion Rate', desc: 'Optimized checkouts minimize cart abandonment rates.' }
+      {
+        "title": "Higher conversion rate",
+        "desc": "Optimised checkouts minimise cart abandonment."
+      },
+      {
+        "title": "A store you can run yourself",
+        "desc": "Simple day-to-day product and order management."
+      }
     ],
-    technologies: ['Shopify', 'Liquid', 'JavaScript', 'React', 'Sass', 'Webpack'],
+    technologies: [
+      "Shopify",
+      "Liquid",
+      "JavaScript",
+      "Shopify Payments / Razorpay",
+      "Google Analytics 4",
+      "Meta Pixel",
+      "Klaviyo"
+    ],
     faqs: [
-      { q: 'Do you develop Headless Shopify stores?', a: 'Yes, we use Shopify Hydrogen or custom Next.js setups to develop fully headless e-commerce platforms.' }
+      {
+        "q": "How long does a Shopify store take to build?",
+        "a": "A typical store takes three to six weeks, depending on the number of products, custom design work and integrations."
+      },
+      {
+        "q": "Can you migrate my store to Shopify?",
+        "a": "Yes. We move products, customers and content from WooCommerce or other platforms and set up redirects to protect your search rankings."
+      },
+      {
+        "q": "Which payment gateways can you set up?",
+        "a": "We can set up Shopify Payments where available, or gateways such as Razorpay, PayPal and Stripe, depending on your country and needs."
+      },
+      {
+        "q": "Will my products show up on Google?",
+        "a": "We set up Shopify SEO basics and connect the Google sales channel. Ranking for competitive product searches also needs ongoing SEO work."
+      },
+      {
+        "q": "Can I add products myself after launch?",
+        "a": "Yes. Shopify's admin is easy to use, and we walk your team through adding products, collections and discounts."
+      },
+      {
+        "q": "Can you improve my existing Shopify store?",
+        "a": "Yes. We audit speed, design and checkout, then fix the issues most likely to be costing you sales."
+      }
     ]
   },
   'ui-ux': {
-    title: 'UI/UX Design',
-    category: 'Design',
-    tagline: 'Stunning user journeys built with luxury layouts.',
-    heroImage: '/projects/pulse-habit-app-card.webp',
-    aboutText: 'We design digital products that look exceptional and operate seamlessly. By merging brand stories with deep user-behavior analytics, we deliver prototypes that minimize user friction and emphasize brand status.',
+    title: "UI/UX Design",
+    category: "Design",
+    tagline: "Interfaces people understand at first glance.",
+    metaTitle: "UI/UX Design Services for Websites & Apps | BrandPixo",
+    metaDescription: "UI/UX design for websites, web apps and mobile apps. User flows, wireframes, high-fidelity Figma designs and clickable prototypes ready for development.",
+    defaultFaqs: false,
+    heroImage: "/projects/pulse-habit-app-card.webp",
+    aboutText: "Good UI/UX design makes a website or app feel obvious to use. Visitors find what they need, understand what to do next and trust what they see. We design interfaces for websites, web apps and mobile apps, starting from how your users think and what they are trying to do, then shaping layouts, flows and visuals that make those tasks easy.",
+    featuresHeading: "What our UI/UX design service covers",
     features: [
-      { title: 'Interactive Prototypes', desc: 'Figma prototypes replicating real-time application behavior.' },
-      { title: 'Typography Scaling', desc: 'Carefully curated type hierarchies designed to focus user attention.' }
+      {
+        "title": "User research and flows",
+        "desc": "We understand your users and their goals, then map the steps they take so every screen supports a real task."
+      },
+      {
+        "title": "Information architecture",
+        "desc": "Navigation, page hierarchy and content grouping organised so people can find things without thinking."
+      },
+      {
+        "title": "Wireframes",
+        "desc": "Low-detail layouts that let us agree on structure and priorities before spending time on visual polish."
+      },
+      {
+        "title": "High-fidelity UI design",
+        "desc": "Polished screens in Figma with your brand colours, typography, icons and imagery, designed for mobile and desktop."
+      },
+      {
+        "title": "Interactive prototypes",
+        "desc": "Clickable prototypes you can test with real people and share with stakeholders before development begins."
+      },
+      {
+        "title": "Design systems and handoff",
+        "desc": "Reusable components, styles and clear specs so developers build exactly what was designed."
+      }
     ],
+    contentSections: [
+      {
+        "title": "What is the difference between UI and UX?",
+        "paragraphs": [
+          "UX (user experience) is about how something works: the steps, the structure and how easy it is to get a task done. UI (user interface) is how it looks: layout, colour, typography and visual detail. A beautiful interface with a confusing flow still loses users, and a logical flow that looks untrustworthy does too. We design both together."
+        ]
+      },
+      {
+        "title": "What we design",
+        "list": [
+          "Business and marketing websites.",
+          "Web apps, dashboards and SaaS products.",
+          "Mobile apps for iOS and Android.",
+          "Redesigns of existing products with usability problems.",
+          "Checkout, booking and onboarding flows."
+        ]
+      },
+      {
+        "title": "Design that developers can build",
+        "paragraphs": [
+          "Because we also develop websites, our designs are practical to build. Components are consistent, spacing follows a system, and every state, such as hover, error, empty and loading, is designed, so nothing is left to guesswork during development."
+        ]
+      }
+    ],
+    processHeading: "Our UI/UX design process",
     process: [
-      { title: 'User Journey Mapping', desc: 'Charting screen paths to target conversion goals.' },
-      { title: 'High-Fidelity Wireframes', desc: 'Developing luxury screen visuals with pixel perfection.' }
+      {
+        "title": "Discover",
+        "desc": "We review your product, users, competitors and goals, and identify the key tasks to design for."
+      },
+      {
+        "title": "Structure",
+        "desc": "We map user flows and information architecture, then create wireframes for the main screens."
+      },
+      {
+        "title": "Design",
+        "desc": "We create high-fidelity screens and a component library in Figma."
+      },
+      {
+        "title": "Prototype and test",
+        "desc": "We build a clickable prototype, gather feedback and refine the design."
+      },
+      {
+        "title": "Handoff",
+        "desc": "We prepare specs and assets and support developers during the build."
+      }
     ],
     benefits: [
-      { title: 'Frictionless Experience', desc: 'Increase usability scores and retention metrics.' }
+      {
+        "title": "Easier to use, easier to trust",
+        "desc": "Clear interfaces that keep users moving."
+      },
+      {
+        "title": "Fewer development surprises",
+        "desc": "Every state designed before code is written."
+      }
     ],
-    technologies: ['Figma', 'Adobe Creative Suite', 'Principle', 'Satoshi Font', 'Space Grotesk'],
+    technologies: [
+      "Figma",
+      "FigJam",
+      "Adobe Illustrator",
+      "Adobe Photoshop",
+      "Framer",
+      "Lottie"
+    ],
     faqs: [
-      { q: 'What design assets will we receive?', a: 'You will receive full source Figma files, comprehensive interactive component sheets, styling guidelines, and SVG/PNG image exports.' }
+      {
+        "q": "What do I receive at the end of a UI/UX project?",
+        "a": "You receive Figma design files for all agreed screens, a component library, a clickable prototype and developer-ready specs and assets."
+      },
+      {
+        "q": "How long does UI/UX design take?",
+        "a": "A marketing website usually takes two to four weeks of design. Apps and dashboards take longer depending on the number of screens and flows."
+      },
+      {
+        "q": "Can you redesign an existing app or website?",
+        "a": "Yes. We start by reviewing where users struggle, then redesign the flows and screens that have the biggest impact."
+      },
+      {
+        "q": "Do you also develop the designs?",
+        "a": "Yes. We can build websites and web apps from our designs, or hand off clean files to your own developers."
+      },
+      {
+        "q": "Do you design mobile apps?",
+        "a": "Yes. We design iOS and Android app interfaces following each platform's conventions while keeping your brand consistent."
+      },
+      {
+        "q": "How many revisions are included?",
+        "a": "Each phase includes rounds of feedback and refinement. The exact number is agreed in the project scope before work begins."
+      }
     ]
   },
   'graphic-design': {
-    title: 'Graphic Design',
-    category: 'Design',
-    tagline: 'Striking visual assets for marketing.',
-    heroImage: '/projects/kora-studio-card.webp',
-    aboutText: 'Bespoke marketing assets, luxury deck presentations, social media banners, and advertising layouts tailored to make your campaigns stand out visually.',
+    title: "Graphic Design",
+    category: "Design",
+    tagline: "Consistent visuals that make your brand look established.",
+    metaTitle: "Graphic Design Services for Businesses | BrandPixo",
+    metaDescription: "Graphic design for social media, ads, brochures, packaging and presentations. On-brand, consistent visuals delivered in the right formats.",
+    defaultFaqs: false,
+    heroImage: "/projects/kora-studio-card.webp",
+    aboutText: "Every flyer, social post, brochure and ad shapes how people see your business. When visuals are inconsistent or rushed, a good business can look unprofessional. Our graphic design service creates clear, consistent designs that follow your brand, communicate one message well and are delivered in the exact formats you need for print and digital use.",
+    featuresHeading: "What our graphic design service covers",
     features: [
-      { title: 'Presentation Design', desc: 'Sleek deck structures for investor and customer presentations.' },
-      { title: 'Vector Illustrations', desc: 'Bespoke icons and illustrations fitting the luxury theme.' }
+      {
+        "title": "Social media creatives",
+        "desc": "Posts, carousels, stories and highlight covers designed in a consistent style for Instagram, Facebook and LinkedIn."
+      },
+      {
+        "title": "Ad creatives",
+        "desc": "Static and carousel ads for Meta and Google, with variations for testing different headlines and visuals."
+      },
+      {
+        "title": "Print design",
+        "desc": "Brochures, flyers, posters, business cards, banners and menus prepared with correct bleed and print-ready files."
+      },
+      {
+        "title": "Presentations and documents",
+        "desc": "Pitch decks, company profiles, proposals and reports that are easy to read and look professional."
+      },
+      {
+        "title": "Packaging and labels",
+        "desc": "Product packaging, labels and stickers designed to stand out on the shelf and meet printer requirements."
+      },
+      {
+        "title": "Brand templates",
+        "desc": "Editable templates for posts, stories and documents so your team can create on-brand content quickly."
+      }
     ],
+    contentSections: [
+      {
+        "title": "Why consistency matters",
+        "paragraphs": [
+          "People recognise a brand through repetition: the same colours, fonts, style of imagery and tone. When every design follows the same rules, your business looks established and trustworthy, and your content is recognised in a busy feed before anyone reads the name. We design within your brand guidelines, or help you create them if you do not have any yet."
+        ]
+      },
+      {
+        "title": "Who this is for",
+        "list": [
+          "Businesses that post regularly on social media and want a consistent look.",
+          "Teams running ads that need fresh creatives every month.",
+          "Companies preparing brochures, profiles or pitch decks.",
+          "Product brands that need packaging and labels."
+        ]
+      },
+      {
+        "title": "One-off projects or monthly design support",
+        "paragraphs": [
+          "You can hire us for a single project, such as a brochure or a set of launch creatives, or for ongoing monthly design support with a set number of designs and a quick turnaround."
+        ]
+      }
+    ],
+    processHeading: "Our graphic design process",
     process: [
-      { title: 'Mood Board Setting', desc: 'Defining the visual palette and texture parameters.' },
-      { title: 'Asset Production', desc: 'Rendering vector assets and presentation slides.' }
+      {
+        "title": "Brief",
+        "desc": "We confirm the purpose, audience, message, sizes and where the design will be used."
+      },
+      {
+        "title": "Concept",
+        "desc": "We create first concepts within your brand style and share them for feedback."
+      },
+      {
+        "title": "Refine",
+        "desc": "We refine the chosen direction based on your comments."
+      },
+      {
+        "title": "Deliver",
+        "desc": "We export final files in every format needed for print, web and social."
+      }
     ],
     benefits: [
-      { title: 'Cohesive Visual Identity', desc: 'Maintain clean, premium aesthetics across print and web channels.' }
+      {
+        "title": "A more professional brand image",
+        "desc": "Consistent visuals across every touchpoint."
+      },
+      {
+        "title": "Faster content production",
+        "desc": "Templates and a clear style speed up every post."
+      }
     ],
-    technologies: ['Illustrator', 'Photoshop', 'InDesign', 'Figma', 'After Effects'],
+    technologies: [
+      "Adobe Illustrator",
+      "Adobe Photoshop",
+      "Adobe InDesign",
+      "Figma",
+      "Canva"
+    ],
     faqs: [
-      { q: 'Do you handle print production specifications?', a: 'Yes, we deliver print-ready assets with proper CMYK offsets, bleeds, and resolution profiles.' }
+      {
+        "q": "What file formats will I receive?",
+        "a": "You get print-ready PDFs for printed items, PNG or JPG files for digital use, and editable source files where agreed."
+      },
+      {
+        "q": "Can you design using my existing brand guidelines?",
+        "a": "Yes. We follow your logo, colours and fonts. If you do not have guidelines, we can create a simple brand style first."
+      },
+      {
+        "q": "Do you offer monthly social media design?",
+        "a": "Yes. We offer monthly packages with a set number of posts, stories and ad creatives each month."
+      },
+      {
+        "q": "How long does a design take?",
+        "a": "Simple designs such as social posts are usually ready in one to three working days. Larger items such as brochures or packaging take longer."
+      },
+      {
+        "q": "Can you make Canva templates my team can edit?",
+        "a": "Yes. We create editable Canva templates so your team can produce on-brand content without starting from scratch."
+      },
+      {
+        "q": "Do you handle printing?",
+        "a": "We prepare print-ready files to your printer's specifications and can coordinate with your printer if needed."
+      }
     ]
   },
   'brand-identity': {
