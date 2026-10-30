@@ -774,25 +774,128 @@ export const servicesData = {
     ]
   },
   'brand-identity': {
-    title: 'Brand Identity Design',
-    category: 'Design',
-    tagline: 'Distinctive brand stories that endure.',
-    heroImage: '/projects/aleem-clubs-website-card.webp',
-    aboutText: 'We formulate the core messaging, typography combinations, logotypes, color palettes, and guidelines that dictate how your brand presents itself globally.',
+    title: "Brand Identity Design",
+    category: "Design",
+    tagline: "A brand people recognise, remember and trust.",
+    metaTitle: "Brand Identity & Logo Design Services | BrandPixo",
+    metaDescription: "Brand identity design for growing businesses: logo, colours, typography, brand voice and guidelines that keep every touchpoint consistent.",
+    defaultFaqs: false,
+    heroImage: "/projects/aleem-clubs-website-card.webp",
+    aboutText: "Your brand identity is how people recognise your business before they read a word: the logo, colours, typography, imagery and tone of voice. A strong identity makes a small business look established and makes it easier to charge what your work is worth. We create brand identities rooted in strategy, so every visual choice has a reason and works across your website, social media, print and packaging.",
+    featuresHeading: "What our brand identity design includes",
     features: [
-      { title: 'Logotype Guidelines', desc: 'Comprehensive guide detailing clear spaces and alternate lockups.' },
-      { title: 'Typographical Selection', desc: 'Unique display fonts selected to deliver maximum brand prestige.' }
+      {
+        "title": "Brand strategy",
+        "desc": "We define your audience, positioning, values and personality so the visual identity is built on a clear foundation."
+      },
+      {
+        "title": "Logo design",
+        "desc": "A primary logo plus alternate versions and an icon mark that work at every size, from a favicon to a signboard."
+      },
+      {
+        "title": "Colour palette",
+        "desc": "Primary and supporting colours chosen for recognition, accessibility and consistency on screen and in print."
+      },
+      {
+        "title": "Typography",
+        "desc": "Font pairings for headings and body text that reflect your personality and stay readable."
+      },
+      {
+        "title": "Brand voice and messaging",
+        "desc": "A tagline, key messages and simple tone-of-voice rules so your writing sounds consistent too."
+      },
+      {
+        "title": "Brand guidelines",
+        "desc": "A clear guide showing how to use your logo, colours, fonts and imagery, so anyone can create on-brand work."
+      }
     ],
+    contentSections: [
+      {
+        "title": "Logo or brand identity?",
+        "paragraphs": [
+          "A logo is one part of your brand. A brand identity is the full system around it: colours, fonts, imagery style, layouts and voice. Businesses with only a logo often end up with inconsistent posts, brochures and websites because there are no rules to follow. A complete identity solves that and saves time on every design you make afterwards."
+        ]
+      },
+      {
+        "title": "When it is time for a new brand identity",
+        "list": [
+          "You are launching a new business, product or service line.",
+          "Your current logo looks dated or was made in a hurry.",
+          "Your visuals are inconsistent across website, social media and print.",
+          "You are moving into a more premium market and your brand does not reflect it."
+        ]
+      },
+      {
+        "title": "Ready to use from day one",
+        "paragraphs": [
+          "Along with the guidelines, you get logo files in every format you need, plus starter templates for social media and business stationery, so your new identity can be used straight away."
+        ]
+      }
+    ],
+    processHeading: "Our brand identity process",
     process: [
-      { title: 'Competitive Brand Audits', desc: 'Analyzing color and logotype trends in your vertical.' },
-      { title: 'Style Guide Finalization', desc: 'Compiling brand assets, palettes, and rule structures.' }
+      {
+        "title": "Discovery",
+        "desc": "We learn about your business, audience, competitors and ambitions through a short workshop."
+      },
+      {
+        "title": "Strategy",
+        "desc": "We define positioning, personality and the direction the visuals should take."
+      },
+      {
+        "title": "Concepts",
+        "desc": "We present logo and identity concepts with real-world mockups."
+      },
+      {
+        "title": "Refinement",
+        "desc": "We refine the chosen direction and build out the colours, typography and supporting elements."
+      },
+      {
+        "title": "Guidelines and delivery",
+        "desc": "We deliver final files, brand guidelines and starter templates."
+      }
     ],
     benefits: [
-      { title: 'Instantly Recognizable', desc: 'Build visual equity that is immediately identifiable.' }
+      {
+        "title": "Instant recognition",
+        "desc": "A consistent look people remember."
+      },
+      {
+        "title": "Premium perception",
+        "desc": "A brand that reflects the quality of your work."
+      }
     ],
-    technologies: ['Figma', 'Illustrator', 'Space Grotesk Font', 'Adobe Fonts'],
+    technologies: [
+      "Adobe Illustrator",
+      "Adobe Photoshop",
+      "Figma",
+      "Adobe InDesign"
+    ],
     faqs: [
-      { q: 'How many logotype options do you present?', a: 'We typically present three distinct, thoroughly developed directions and refine the selected path with you.' }
+      {
+        "q": "How long does a brand identity project take?",
+        "a": "Most brand identity projects take three to five weeks, from discovery to final files and guidelines."
+      },
+      {
+        "q": "What files will I receive?",
+        "a": "You receive your logo in AI, SVG, PDF, PNG and JPG formats, in colour, black and white versions, plus brand guidelines and templates."
+      },
+      {
+        "q": "Can you refresh my existing logo instead of replacing it?",
+        "a": "Yes. If your current logo has recognition you want to keep, we can modernise it while keeping its core elements."
+      },
+      {
+        "q": "Do I own the rights to my logo?",
+        "a": "Yes. Once the project is complete, full ownership of the final logo and identity is transferred to your business."
+      },
+      {
+        "q": "How many logo concepts do you show?",
+        "a": "We present a small number of strong, strategy-led concepts rather than dozens of random options. The exact number is agreed in the scope."
+      },
+      {
+        "q": "Can you apply the new brand to my website and social media?",
+        "a": "Yes. We can redesign your website, social media templates and print materials so everything matches the new identity."
+      }
     ]
   },
   'seo': {
@@ -864,47 +967,259 @@ export const servicesData = {
     ]
   },
   'social-media': {
-    title: 'Social Media Marketing',
-    category: 'Marketing',
-    tagline: 'Stunning brand narratives across social channels.',
-    heroImage: '/projects/aqualyx-leeds-website-card.webp',
-    aboutText: 'We curate visual content, write compelling copy, and run campaigns that build community and drive sales conversions across Instagram, LinkedIn, and TikTok.',
+    title: "Social Media Marketing",
+    category: "Marketing",
+    tagline: "Consistent social media that builds trust and brings enquiries.",
+    metaTitle: "Social Media Marketing Services | BrandPixo",
+    metaDescription: "Social media management for Instagram, Facebook and LinkedIn: strategy, content calendars, post and reel design, captions, scheduling and monthly reports.",
+    defaultFaqs: false,
+    heroImage: "/projects/aqualyx-leeds-website-card.webp",
+    aboutText: "For many customers, your social media is the first place they check before contacting you. An inactive or inconsistent profile raises doubts, while a regular, well-designed feed builds trust. Our social media marketing service plans, creates and publishes content for Instagram, Facebook and LinkedIn, so your brand stays visible and your profiles turn followers into enquiries.",
+    featuresHeading: "What our social media marketing covers",
     features: [
-      { title: 'Luxury Content Templates', desc: 'Highly curated social grids that reflect brand prestige.' },
-      { title: 'Bespoke Copywriting', desc: 'Refined brand voice designed for high audience retention.' }
+      {
+        "title": "Social media strategy",
+        "desc": "We define your audience, content pillars, posting frequency and goals for each platform."
+      },
+      {
+        "title": "Monthly content calendar",
+        "desc": "A planned calendar of posts, carousels, reels and stories shared with you for approval before anything goes live."
+      },
+      {
+        "title": "Design and reels",
+        "desc": "On-brand graphics, carousels and short-form video edits designed to stop the scroll."
+      },
+      {
+        "title": "Captions and hashtags",
+        "desc": "Clear captions with a call to action and relevant hashtags written for each platform."
+      },
+      {
+        "title": "Scheduling and publishing",
+        "desc": "Posts scheduled at the times your audience is most active, so your profiles stay consistent."
+      },
+      {
+        "title": "Monthly reporting",
+        "desc": "A simple report on reach, engagement, follower growth and enquiries, with what we will change next month."
+      }
     ],
+    contentSections: [
+      {
+        "title": "Platforms we manage",
+        "list": [
+          "Instagram: posts, carousels, reels, stories and highlight covers.",
+          "Facebook: page posts, events and community updates.",
+          "LinkedIn: company page content and thought leadership for founders.",
+          "Google Business Profile: regular updates and offers."
+        ]
+      },
+      {
+        "title": "Organic content and paid ads together",
+        "paragraphs": [
+          "Organic posting builds credibility with people who already know you. Paid ads reach new people who do not. The two work best together: ads bring visitors to your profile, and a strong, consistent feed convinces them to get in touch. Our performance marketing service can run ads alongside your content when you are ready."
+        ]
+      },
+      {
+        "title": "Who this is for",
+        "paragraphs": [
+          "Our social media service suits businesses that know they should post regularly but do not have the time or in-house design skills to do it well, including clinics, schools, restaurants, service providers and product brands."
+        ]
+      }
+    ],
+    processHeading: "Our social media process",
     process: [
-      { title: 'Content Board Setup', desc: 'Defining visual aesthetic guidelines for video and images.' },
-      { title: 'Campaign & Engagement Tracking', desc: 'Measuring follower growth, reach parameters, and direct sales.' }
+      {
+        "title": "Audit",
+        "desc": "We review your current profiles, competitors and audience to find quick wins."
+      },
+      {
+        "title": "Strategy",
+        "desc": "We agree on platforms, content pillars, posting frequency and goals."
+      },
+      {
+        "title": "Create",
+        "desc": "We plan the monthly calendar and design posts, reels and captions."
+      },
+      {
+        "title": "Approve and publish",
+        "desc": "You approve the content, then we schedule and publish it."
+      },
+      {
+        "title": "Report and improve",
+        "desc": "We share monthly results and adjust the plan based on what performs best."
+      }
     ],
     benefits: [
-      { title: 'Community Trust', desc: 'Build an active follower base that advocates for your brand.' }
+      {
+        "title": "A consistent, trusted presence",
+        "desc": "Active profiles that reassure new customers."
+      },
+      {
+        "title": "More enquiries from social",
+        "desc": "Content with clear calls to action."
+      }
     ],
-    technologies: ['Instagram API', 'TikTok Ads Manager', 'Figma', 'Premier Pro', 'Buffer'],
+    technologies: [
+      "Instagram",
+      "Facebook",
+      "LinkedIn",
+      "Meta Business Suite",
+      "Canva",
+      "Adobe Photoshop",
+      "CapCut",
+      "Metricool"
+    ],
     faqs: [
-      { q: 'Do you create original video content?', a: 'Yes, we storyboard, shoot, edit, and optimize short-form video content tailored for TikTok and Reels.' }
+      {
+        "q": "How many posts do you create each month?",
+        "a": "It depends on the package. Most businesses start with three to four posts per week plus stories, and we agree the exact number before starting."
+      },
+      {
+        "q": "Do you make reels?",
+        "a": "Yes. We plan, edit and design short-form reels. You can share raw clips with us, or we can use stock footage and motion graphics."
+      },
+      {
+        "q": "Will I approve posts before they are published?",
+        "a": "Yes. You see the full monthly calendar in advance and nothing is posted without your approval."
+      },
+      {
+        "q": "Do you reply to comments and messages?",
+        "a": "Community management can be added to any package. Otherwise we guide your team on how to respond quickly."
+      },
+      {
+        "q": "How soon will I see results?",
+        "a": "Consistency and engagement usually improve within the first month. Steady follower growth and enquiries build over three months or more."
+      },
+      {
+        "q": "Is paid advertising included?",
+        "a": "Ad spend and campaign management are separate from organic content. We can run Meta ads alongside your content through our performance marketing service."
+      }
     ]
   },
   'performance-marketing': {
-    title: 'Performance Marketing',
-    category: 'Marketing',
-    tagline: 'ROAS-focused visual ad campaigns.',
-    heroImage: '/projects/voltly-energy-card.webp',
-    aboutText: 'We structure paid Google and Meta ad campaigns focused entirely on Return on Ad Spend (ROAS). By combining luxury visuals with strict audience segmentation, we maximize conversion performance.',
+    title: "Performance Marketing",
+    category: "Marketing",
+    tagline: "Paid ads measured by leads and sales, not likes.",
+    metaTitle: "Performance Marketing: Google & Meta Ads | BrandPixo",
+    metaDescription: "Google Ads and Meta Ads campaigns managed for leads and sales. Targeting, ad creatives, landing pages, conversion tracking and clear monthly reporting.",
+    defaultFaqs: false,
+    heroImage: "/projects/voltly-energy-card.webp",
+    aboutText: "Performance marketing means every rupee of ad spend is measured against real results: enquiries, calls, WhatsApp messages and sales. We plan, launch and manage Google Ads and Meta Ads campaigns, set up the tracking that shows what each campaign produces, and keep improving targeting, creatives and landing pages so your cost per lead comes down over time.",
+    featuresHeading: "What our performance marketing covers",
     features: [
-      { title: 'Meta & Google Ads Management', desc: 'Continuous testing of audience bids and visual hooks.' },
-      { title: 'Conversion Rate Optimization', desc: 'Tweaking form flows and product details to boost buy triggers.' }
+      {
+        "title": "Google Ads",
+        "desc": "Search, Performance Max and remarketing campaigns that reach people actively searching for what you offer."
+      },
+      {
+        "title": "Meta Ads",
+        "desc": "Facebook and Instagram campaigns for lead generation, sales and brand awareness, with audiences built around your ideal customer."
+      },
+      {
+        "title": "Conversion tracking",
+        "desc": "Google Analytics, Google Ads conversions, the Meta Pixel and Conversions API set up so every lead is counted correctly."
+      },
+      {
+        "title": "Ad creatives and copy",
+        "desc": "Static, carousel and video ads with headlines written to test different angles and find what works."
+      },
+      {
+        "title": "Landing page optimisation",
+        "desc": "Recommendations or new landing pages so the clicks you pay for turn into enquiries."
+      },
+      {
+        "title": "Budget management and reporting",
+        "desc": "Daily monitoring, budget shifts towards what performs, and a clear monthly report on cost per lead and results."
+      }
     ],
+    contentSections: [
+      {
+        "title": "Google Ads or Meta Ads?",
+        "paragraphs": [
+          "Google Ads reach people who are already searching for your service, so they often bring high-intent leads quickly. Meta Ads reach people based on interests and behaviour before they search, which makes them strong for new products, offers and building demand. Many businesses use both. We recommend a mix based on your offer, audience and budget."
+        ]
+      },
+      {
+        "title": "Tracking comes first",
+        "paragraphs": [
+          "Before spending on ads, we make sure conversions are tracked properly. Without it, platforms optimise for clicks instead of customers and reports cannot be trusted. Correct tracking is often the single biggest improvement for businesses already running ads."
+        ]
+      },
+      {
+        "title": "Who this is for",
+        "list": [
+          "Businesses that want a predictable flow of leads.",
+          "Brands launching a new product, service or offer.",
+          "Companies already running ads without clear results.",
+          "Online stores wanting more sales at a lower cost."
+        ]
+      }
+    ],
+    processHeading: "Our performance marketing process",
     process: [
-      { title: 'Audience Strategy Formulation', desc: 'Mapping user search queries and intent clusters.' },
-      { title: 'Ad Creative Production & Run', desc: 'Writing copy variations and launching targeted graphics.' }
+      {
+        "title": "Audit and goals",
+        "desc": "We review existing accounts and tracking, and agree on target cost per lead or sale."
+      },
+      {
+        "title": "Tracking setup",
+        "desc": "We install and test conversion tracking across Google and Meta."
+      },
+      {
+        "title": "Campaign build",
+        "desc": "We create audiences, keywords, ad creatives and landing page recommendations."
+      },
+      {
+        "title": "Launch and optimise",
+        "desc": "We monitor daily, pause what is not working and scale what is."
+      },
+      {
+        "title": "Monthly reporting",
+        "desc": "You get a plain-language report on spend, leads, cost per lead and next steps."
+      }
     ],
     benefits: [
-      { title: 'Measurable ROI Scale', desc: 'Track exactly how much revenue is driven by every dollar spent.' }
+      {
+        "title": "Predictable lead flow",
+        "desc": "Campaigns tuned for enquiries and sales."
+      },
+      {
+        "title": "Spend you can measure",
+        "desc": "Every result tracked back to its campaign."
+      }
     ],
-    technologies: ['Meta Ads Manager', 'Google Ads', 'GA4', 'Shopify Analytics', 'Excel'],
+    technologies: [
+      "Google Ads",
+      "Meta Ads Manager",
+      "Google Analytics 4",
+      "Google Tag Manager",
+      "Meta Pixel & Conversions API",
+      "LinkedIn Ads"
+    ],
     faqs: [
-      { q: 'What ad spend budgets do you work with?', a: 'We manage campaigns starting from $5,000/month up to enterprise budgets of $100,000+/month.' }
+      {
+        "q": "How much should I spend on ads?",
+        "a": "It depends on your industry, location and goals. We recommend a starting budget after reviewing your market, then scale it once campaigns show results."
+      },
+      {
+        "q": "Is ad spend included in your fee?",
+        "a": "No. Ad spend is paid directly to Google or Meta from your own account. Our fee covers strategy, setup, creatives and management."
+      },
+      {
+        "q": "How soon will I get leads?",
+        "a": "Search campaigns can bring enquiries within the first days. Results usually improve over the first four to eight weeks as campaigns gather data and are optimised."
+      },
+      {
+        "q": "Do I keep ownership of my ad accounts?",
+        "a": "Yes. Campaigns run in ad accounts owned by your business, and you keep full access and all data."
+      },
+      {
+        "q": "Can you fix campaigns that are not performing?",
+        "a": "Yes. We audit your accounts, tracking, targeting and landing pages, then fix the issues that waste the most budget."
+      },
+      {
+        "q": "Do you guarantee a number of leads?",
+        "a": "No honest agency can guarantee results on platforms it does not control. We commit to clear targets, transparent reporting and continuous improvement."
+      }
     ]
   }
 };
