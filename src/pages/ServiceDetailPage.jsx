@@ -10,6 +10,9 @@ import {
   FiPlus
 } from 'react-icons/fi';
 import { FaWhatsapp } from 'react-icons/fa';
+import { blogPosts } from '../data/blogPosts';
+import { getProject, cardImage } from '../data/projectsData';
+import { serviceReading, serviceWork } from '../data/internalLinks';
 import { servicesData } from '../data/servicesData';
 import styles from './ServiceDetailPage.module.scss';
 
@@ -43,6 +46,8 @@ export default function ServiceDetailPage() {
   const otherServices = Object.entries(servicesData)
     .filter(([id]) => id !== serviceId)
     .slice(0, 2);
+  const readingPosts = (serviceReading[serviceId] || []).map((slug) => blogPosts.find((post) => post.slug === slug)).filter(Boolean);
+  const workProjects = (serviceWork[serviceId] || []).map((slug) => getProject(slug)).filter(Boolean);
   const faqItems = [
     ...service.faqs,
     {
@@ -134,10 +139,44 @@ export default function ServiceDetailPage() {
             <span>Start a conversation</span>
             <a href="https://wa.me/917650837963" target="_blank" rel="noreferrer"><FaWhatsapp /><div><small>WhatsApp an expert</small><strong>+91 76508 37963</strong></div></a>
             <a href="mailto:hello@brandpixo.com"><FiMail /><div><small>Email us</small><strong>hello@brandpixo.com</strong></div></a>
-            <button className="hover-target" onClick={() => navigate('/contact')}>Get in touch <FiArrowRight /></button>
+            <Link to="/contact" className={`${styles.ctaLink} hover-target`}>Get in touch <FiArrowRight /></Link>
           </div>
         </aside>
       </section>
+
+      {(readingPosts.length > 0 || workProjects.length > 0) && (
+        <section className={styles.related}>
+          {readingPosts.length > 0 && (
+            <div>
+              <span className={styles.eyebrow}><FiPlus /> From the journal</span>
+              <h2>Helpful reading</h2>
+              <div className={styles.relatedList}>
+                {readingPosts.map((post) => (
+                  <Link key={post.slug} to={`/blog/${post.slug}`} className={`${styles.relatedItem} hover-target`}>
+                    <img src={post.image} alt="" width="1376" height="768" loading="lazy" decoding="async" />
+                    <div><span>{post.category}</span><strong>{post.title}</strong></div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
+          {workProjects.length > 0 && (
+            <div>
+              <span className={styles.eyebrow}><FiPlus /> Selected work</span>
+              <h2>Projects we have designed and built</h2>
+              <div className={styles.relatedList}>
+                {workProjects.map((project) => (
+                  <Link key={project.slug} to={`/work/${project.slug}`} className={`${styles.relatedItem} hover-target`}>
+                    <img src={cardImage(project)} alt="" width="1000" height="1250" loading="lazy" decoding="async" />
+                    <div><span>{project.category}</span><strong>{project.title}</strong></div>
+                  </Link>
+                ))}
+              </div>
+              <Link to="/work" className={styles.relatedAll}>View all work <FiArrowUpRight /></Link>
+            </div>
+          )}
+        </section>
+      )}
 
       <section className={styles.faqSection}>
         <div className={styles.faqHeader}>
@@ -170,7 +209,7 @@ export default function ServiceDetailPage() {
         <div className={styles.ctaContact}>
           <a href="https://wa.me/917650837963" target="_blank" rel="noreferrer"><FaWhatsapp /><span><small>WhatsApp an expert</small><strong>+91 76508 37963</strong></span></a>
           <a href="mailto:hello@brandpixo.com"><FiMail /><span><small>Email us</small><strong>hello@brandpixo.com</strong></span></a>
-          <button className="hover-target" onClick={() => navigate('/contact')}>Start your project <FiArrowRight /></button>
+          <Link to="/contact" className={`${styles.ctaLink} hover-target`}>Start your project <FiArrowRight /></Link>
         </div>
       </section>
     </main>

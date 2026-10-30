@@ -1,11 +1,12 @@
 import React from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import ProjectGallery from '../components/ProjectGallery';
 import { projectTypes } from '../data/projectsData';
 import styles from './WorkPage.module.scss';
 
 export default function WorkCategoryPage() {
-  const { category } = useParams();
+  // These pages are routed as /work/websites, /work/ecommerce and /work/apps (no :param), so read the last path segment.
+  const category = useLocation().pathname.split('/').filter(Boolean).pop();
   const section = projectTypes[category];
   if (!section) return <main className={styles.page}><section className={styles.hero}><h1>Work category not found.</h1><Link to="/work">Back to work</Link></section></main>;
   return <main className={styles.page}>

@@ -122,3 +122,6 @@
 }
 
 .tapLink { display: inline-flex; align-items: center; gap: .4rem; }
+
+.textLink { color: inherit; font-weight: 600; text-decoration: underline; text-decoration-color: $primary; text-decoration-thickness: 2px; text-underline-offset: 3px; transition: background-color .25s ease; }
+.textLink:hover { background: rgba(239, 174, 106, .35); }

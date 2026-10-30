@@ -64,7 +64,7 @@ export const blogPosts = [
         paragraphs: [
           'Colour is one of the fastest ways people recognise a brand, and fewer colours used consistently are almost always stronger than many used loosely. Choose a main colour, one or two supporting colours and neutral tones for backgrounds and text.',
           'Check legibility as well as taste. Text needs enough contrast against its background to be readable, especially on phones and for people with weaker eyesight. A beautiful colour that cannot carry readable text will cause problems on your website and in print.',
-          'Typography works the same way. Pick one or two typefaces that suit the personality of the business, then define how headings, subheadings and body text should look so every page and document feels related.'
+          'Typography works the same way. Pick one or two typefaces that suit the personality of the business, then define how headings, subheadings and body text should look so every page and document feels related. The same principles apply to your website; see how [website design and SEO work together](/blog/website-design-vs-seo).'
         ]
       },
       {
@@ -99,7 +99,7 @@ export const blogPosts = [
       {
         title: 'Where a Small Business Should Start',
         paragraphs: [
-          'You do not have to build everything at once. Start with clarity about who you serve and what makes you different, then build the elements in a sensible order and apply them first where customers see you most.'
+          'You do not have to build everything at once. Start with clarity about who you serve and what makes you different, then build the elements in a sensible order and apply them first where customers see you most. When you are ready to bring in a designer, [these ten questions](/blog/how-to-choose-a-web-design-agency) help you compare agencies.'
         ],
         list: [
           'Clarify your positioning: who you help, what you offer and why you are different.',
@@ -179,7 +179,7 @@ export const blogPosts = [
         title: 'What to Look For in a Portfolio',
         paragraphs: [
           'A portfolio shows taste, but it should also show judgement. Look beyond whether the pages look attractive and ask what each project was trying to achieve.',
-          'Open a few of the sites yourself. Check how they behave on a phone, how quickly they load and whether the navigation is clear. A site that looks good in a screenshot but is slow or confusing in real use tells you more than any case study.'
+          'Open a few of the sites yourself. Check how they behave on a phone, how quickly they load and whether the navigation is clear. A site that looks good in a screenshot but is slow or confusing in real use tells you more than any case study. Strong branding work is a good sign; see what a full [brand identity](/blog/what-is-a-brand-identity) includes.'
         ],
         list: [
           'Work for businesses similar to yours, or at least with a similar goal.',
@@ -200,10 +200,10 @@ export const blogPosts = [
         ],
         list: [
           'What does your process look like, from first call to launch?',
-          'Who will I speak to day to day, and who actually does the design and development?',
+          'Who will I speak to day to day, and who actually does the [design](/services/ui-ux) and development?',
           'How many rounds of revisions are included, and what happens if we need more?',
-          'Do you build custom or from templates, and what are the trade-offs for my project?',
-          'How do you handle SEO, page speed and mobile layouts?',
+          'Do you build [custom or from templates](/blog/custom-website-vs-website-builder), and what are the trade-offs for my project?',
+          'How do you handle SEO, [page speed](/blog/core-web-vitals-for-small-business-websites) and mobile layouts?',
           'Who owns the website files, the design and the domain once the project is paid for?',
           'Where will the site be hosted, and who is responsible for it after launch?',
           'What support is included after launch, and what does ongoing maintenance cost?',
@@ -239,7 +239,7 @@ export const blogPosts = [
         title: 'Ownership, Hosting and Life After Launch',
         paragraphs: [
           'This is where many businesses are caught out. You should own your domain name, have access to your hosting and analytics accounts, and receive the files or access you need if you ever change provider. Make sure this is written into the agreement rather than assumed.',
-          'Also ask what happens after the site goes live. Websites need updates, security fixes and occasional changes, so understand whether support is included for a period, what ongoing care costs and how quickly issues are handled.'
+          'Also ask what happens after the site goes live. Websites need updates, security fixes and occasional changes, so understand whether support is included for a period, what ongoing care costs and how quickly issues are handled. If you are replacing an existing site, ask how your rankings will be protected; our guide to a [redesign without losing SEO](/blog/website-redesign-without-losing-seo) explains what to expect.'
         ],
         closing: 'A good agency is comfortable being transparent about ownership. If the answer is unclear, treat that as a reason to ask more questions.'
       },
@@ -343,7 +343,7 @@ export const blogPosts = [
         title: 'Do Core Web Vitals Affect Search Rankings?',
         paragraphs: [
           'Core Web Vitals are part of what Google calls page experience, and Google has said they are used by its ranking systems. They are one signal among many, though, and they do not outweigh relevance. A fast page with thin content will not outrank a slower page that answers the search far better.',
-          'The more reliable reason to care is what slow and unstable pages do to people. Visitors who wait, mis-tap a button that moved, or give up on a laggy form are visitors you have paid to attract and then lost. Improving these metrics usually helps conversions at the same time as it helps search visibility.'
+          'The more reliable reason to care is what slow and unstable pages do to people. Visitors who wait, mis-tap a button that moved, or give up on a laggy form are visitors you have paid to attract and then lost. Improving these metrics usually helps conversions at the same time as it helps [search visibility](/blog/website-design-vs-seo).'
         ]
       },
       {
@@ -356,7 +356,7 @@ export const blogPosts = [
           'PageSpeed Insights: enter a page address to see field data (when the page has enough visits) alongside a lab test and a list of specific suggestions.',
           'Google Search Console: the Core Web Vitals report groups your pages by status and shows which groups of similar pages need attention, separately for mobile and desktop.',
           'Test on mobile first. Most small business traffic arrives on phones, and mobile results are usually the weaker of the two.',
-          'Test your most important pages, not just the homepage: your main service pages, your contact page and any landing page you run ads to.'
+          'Test your most important pages, not just the homepage: your main service pages, your contact page and any [landing page](/services/landing-page) you run ads to.'
         ],
         closing: 'If the two tools show different numbers, that is normal. Trust the field data for the verdict and use the lab data to work out what to change.'
       },
@@ -383,7 +383,7 @@ export const blogPosts = [
           'Audit third-party scripts. Chat widgets, heat-map tools, multiple tracking pixels and social feeds each add work for the browser, and they are often left running long after anyone looks at the data.',
           'Load non-essential scripts after the page is usable rather than at the very start.',
           'Keep interactive features simple. A heavy slider or animation library on a page that only needs a few static sections can cost more than it adds.',
-          'On WordPress, review plugins. Every active plugin can add scripts to every page, so remove the ones you no longer need.',
+          'On [WordPress](/blog/wordpress-vs-shopify), review plugins. Every active plugin can add scripts to every page, so remove the ones you no longer need.',
           'If a form or menu feels slow, ask your developer to look at long tasks in the browser performance tools and break the work into smaller pieces.'
         ]
       },
@@ -526,7 +526,7 @@ export const blogPosts = [
           'Your website supports your local visibility by confirming what you do and where you do it. Start with the essentials: your full contact details in the footer, a contact page with an embedded map, and service pages that describe each offering clearly.',
           'If you serve several cities or neighbourhoods, a dedicated page for each important location can help, provided every page is genuinely useful. Include details specific to that area, such as the services offered there, local projects, directions, or customer feedback from that location.',
           'Avoid copying one page and swapping only the city name. Near-identical pages give visitors nothing new and are unlikely to perform well. A few strong location pages are better than dozens of thin ones.',
-          'Local searches happen mostly on phones, so the site must load quickly and be easy to use on a small screen. Make phone numbers tappable and keep the route to an enquiry short.'
+          'Local searches happen mostly on phones, so the site must load quickly and be easy to use on a small screen. Make phone numbers tappable and keep the route to an enquiry short. These pages also need to load quickly on phones, which our guide to [Core Web Vitals](/blog/core-web-vitals-for-small-business-websites) explains.'
         ],
         links: [
           { label: 'Custom Website Development', to: '/services/custom-website' },
@@ -539,7 +539,7 @@ export const blogPosts = [
         paragraphs: [
           'Prominence grows when other credible local sources refer to your business. A link from a local news site, a trade association, a supplier, or a community organisation tells search engines that your business is an established part of the area.',
           'These links usually come from real activity rather than outreach templates. Sponsoring a local event, partnering with a nearby business, joining an industry body, or contributing expert comment to a local publication all create natural reasons for others to mention you.',
-          'Focus on relevance over volume. A small number of genuine local references is worth more than a long list of unrelated directory entries.'
+          'Focus on relevance over volume. A small number of genuine local references is worth more than a long list of unrelated directory entries. Publishing genuinely useful content, such as an [SEO-friendly blog post](/blog/seo-friendly-blog-for-today), also gives other sites something worth linking to.'
         ]
       },
       {
@@ -635,7 +635,7 @@ export const blogPosts = [
         paragraphs: [
           'Internal links connect a blog post to the rest of your website. They help readers continue their journey and help search engines understand which pages are related.',
           'Choose links that genuinely extend the topic. For example, a post about content strategy could point to website design, SEO services, or a related comparison article. The link should make sense inside the sentence, not feel forced into the page.',
-          'Strong internal linking also spreads authority to important service pages, which is useful when a blog post attracts the first visit and a service page needs to turn that visit into an enquiry.'
+          'Strong internal linking also spreads authority to important service pages, which is useful when a blog post attracts the first visit and a service page needs to turn that visit into an enquiry. For businesses that serve a specific area, pair your articles with [local SEO](/blog/local-seo-for-small-businesses) pages so nearby searchers find you too.'
         ],
         links: [
           { label: 'SEO Services', to: '/services/seo' },
@@ -656,7 +656,7 @@ export const blogPosts = [
         paragraphs: [
           'Images, charts, and screenshots can improve clarity when they explain something the text alone cannot. They also give the page more visual weight in search and social previews.',
           'Use descriptive alt text only when the image conveys useful information. Decorative images should stay quiet so accessibility tools can skip them.',
-          'Make sure images are compressed, sized correctly, and relevant to the article. A fast page with intentional visuals usually performs better than a heavy page packed with unrelated graphics.'
+          'Make sure images are compressed, sized correctly, and relevant to the article. A fast page with intentional visuals usually performs better than a heavy page packed with unrelated graphics. Heavy images slow a page down, so keep an eye on your [Core Web Vitals](/blog/core-web-vitals-for-small-business-websites).'
         ]
       },
       {
@@ -707,7 +707,7 @@ export const blogPosts = [
         paragraphs: [
           'Search engines build an understanding of a website over time. Individual URLs earn visibility through useful content, internal links, external references, and consistent technical signals. A redesign often changes several of those elements at once.',
           'Traffic losses do not usually happen because a site looks different. They happen when valuable pages disappear, URLs change without redirects, important copy is removed, navigation becomes harder to crawl, or metadata is replaced with generic text.',
-          'The safest approach treats the redesign as both a creative project and a controlled website migration. Design, development, content, analytics, and SEO decisions need to share one launch plan.'
+          'The safest approach treats the redesign as both a creative project and a controlled website migration. Design, development, content, analytics, and SEO decisions need to share one launch plan. If you are still choosing who will carry out the redesign, our guide to [hiring a web design agency](/blog/how-to-choose-a-web-design-agency) lists the questions to ask.'
         ],
         link: { label: 'Explore our custom website services', to: '/services/custom-website' }
       },
@@ -742,7 +742,7 @@ export const blogPosts = [
         paragraphs: [
           'A redesign is often used to simplify copy, but shorter does not automatically mean clearer or more effective. Review the search intent, headings, supporting sections, FAQs, images, and internal links on every high-value page before editing it.',
           'Preserve the substance that answers important visitor questions. Improve weak or outdated passages, but avoid replacing detailed, useful content with a few lines of promotional language. Search visibility and conversion quality both depend on giving people enough information to make a decision.',
-          'Each indexable page should retain a distinct purpose, one descriptive main heading, a relevant title and description, and natural internal links to related services or resources.'
+          'Each indexable page should retain a distinct purpose, one descriptive main heading, a relevant title and description, and natural internal links to related services or resources. For local businesses, pages that rank for nearby searches deserve special care; see our [local SEO guide](/blog/local-seo-for-small-businesses).'
         ],
         link: { label: 'See how website design and SEO work together', to: '/blog/website-design-vs-seo' }
       },
@@ -775,7 +775,7 @@ export const blogPosts = [
         title: 'Run a Structured Pre-Launch Review',
         paragraphs: [
           'Crawl the staging site and compare it with the original inventory. Every important old URL should either remain live or have an approved redirect. Check navigation, breadcrumbs, XML sitemap entries, canonical tags, metadata, structured data, images, forms, analytics, and conversion events.',
-          'Test the redesigned site on real mobile and desktop viewports. Review keyboard navigation, form labels, focus states, text contrast, layout shifts, and page speed. Accessibility and SEO are not identical, but both benefit from semantic, stable, understandable pages.',
+          'Test the redesigned site on real mobile and desktop viewports. Review keyboard navigation, form labels, focus states, text contrast, layout shifts, and [page speed](/blog/core-web-vitals-for-small-business-websites). Accessibility and SEO are not identical, but both benefit from semantic, stable, understandable pages.',
           'Launch only after the redirect map and high-value landing pages pass review. A short delay is less expensive than recovering months of lost visibility.'
         ]
       },
@@ -838,7 +838,7 @@ export const blogPosts = [
       {
         title: 'What is Website Design?',
         paragraphs: [
-          'Website design is the process of creating the visual appearance, layout, and user experience of a website. It focuses on how visitors interact with your website, ensuring that pages are easy to navigate, visually appealing, and responsive across all devices.',
+          'Website design is the process of creating the visual appearance, layout, and [user experience](/services/ui-ux) of a website. It focuses on how visitors interact with your website, ensuring that pages are easy to navigate, visually appealing, and responsive across all devices.',
           'A professionally designed website includes clear navigation, readable typography, fast-loading pages, engaging visuals, and strategically placed call-to-action buttons. These elements work together to create a positive first impression and encourage visitors to explore your services or products further.',
           'If visitors find your website difficult to use or outdated, they are more likely to leave and choose a competitor instead. That’s why investing in professional design is not just about aesthetics—it’s about building trust and improving user engagement.'
         ],
@@ -849,7 +849,7 @@ export const blogPosts = [
         paragraphs: [
           'SEO, or Search Engine Optimization, is the practice of improving your website so it can rank higher in search engine results. It involves optimizing website content, improving technical performance, targeting relevant keywords, and creating a better experience for users.',
           'Unlike paid advertising, SEO helps generate long-term organic traffic. When someone searches for services related to your business, effective SEO increases the chances of your website appearing on the first page of Google.',
-          'Modern SEO goes far beyond keywords. Search engines now evaluate page speed, mobile responsiveness, content quality, website structure, internal linking, and user experience before deciding where a website should rank.'
+          'Modern SEO goes far beyond keywords. Search engines now evaluate [page speed](/blog/core-web-vitals-for-small-business-websites), mobile responsiveness, content quality, website structure, internal linking, and user experience before deciding where a website should rank.'
         ],
         link: { label: 'Discover our SEO Services', to: '/services/seo' }
       },
@@ -873,7 +873,7 @@ export const blogPosts = [
           'Imagine investing in a beautiful website with stunning visuals, but it doesn’t appear on Google because it lacks SEO. On the other hand, imagine ranking on the first page of Google, only to lose visitors because your website is slow, confusing, or difficult to navigate.',
           'Neither scenario supports long-term business growth.',
           'Google increasingly rewards websites that provide an excellent user experience. Factors such as fast loading times, mobile responsiveness, intuitive navigation, and high-quality content all contribute to better rankings. This means that website design and SEO influence each other more than ever before.',
-          'A clean website structure helps search engines crawl pages efficiently, while optimized content helps users find the information they need. Together, these improvements reduce bounce rates, increase engagement, and improve conversion rates.'
+          'A clean website structure helps search engines crawl pages efficiently, while optimized content helps users find the information they need. Together, these improvements reduce bounce rates, increase engagement, and improve conversion rates. Planning a rebuild? Read how to [redesign a website without losing SEO](/blog/website-redesign-without-losing-seo).'
         ]
       },
       {
@@ -886,7 +886,7 @@ export const blogPosts = [
         title: 'Common Mistakes Businesses Make',
         paragraphs: [
           'Many businesses unknowingly limit their online growth by treating website design and SEO as separate projects. Some invest heavily in design without considering search visibility, while others focus only on rankings without improving the user experience.',
-          'Common mistakes include slow-loading pages, poor mobile optimization, missing meta descriptions, oversized images, broken internal links, and outdated website layouts. Addressing these issues can significantly improve both search performance and user satisfaction.'
+          'Common mistakes include slow-loading pages, poor mobile optimization, missing meta descriptions, oversized images, broken internal links, and outdated website layouts. Addressing these issues can significantly improve both search performance and user satisfaction. Choosing the wrong team is one of the costliest, so our guide to [choosing a web design agency](/blog/how-to-choose-a-web-design-agency) can help.'
         ]
       },
       {
@@ -934,7 +934,7 @@ export const blogPosts = [
         title: 'What Is a Custom Website?',
         paragraphs: [
           'A custom website is designed and developed specifically for your business from scratch. Instead of using a pre-built template, every element—from the layout and user interface to the functionality—is tailored to your brand and business requirements.',
-          'Custom websites are commonly built using platforms like WordPress, Laravel, React, or other modern web technologies. Because they are designed specifically for your business, they offer greater flexibility, improved performance, and stronger SEO potential.',
+          'Custom websites are commonly built using platforms like [WordPress](/blog/wordpress-vs-shopify), Laravel, React, or other modern web technologies. Because they are designed specifically for your business, they offer greater flexibility, improved performance, and stronger SEO potential.',
           'Businesses that want to stand out in a competitive market often choose custom websites because they provide complete creative freedom and can grow alongside the business.'
         ],
         link: { label: 'Explore our Website Design Services', to: '/services/custom-website' }
@@ -966,14 +966,14 @@ export const blogPosts = [
         paragraphs: [
           'Your website represents your brand, and first impressions matter. A custom website allows you to create a unique design that reflects your business identity without being restricted by templates.',
           'Website builders can look polished, but they often rely on layouts that thousands of other businesses also use. This can make it difficult to stand out and establish a memorable online presence.',
-          'If branding is a priority for your business, a custom website offers significantly greater creative freedom.'
+          'If branding is a priority for your business, a custom website offers significantly greater creative freedom. A clear [brand identity](/blog/what-is-a-brand-identity) helps either option look consistent.'
         ],
         link: { label: 'Build a distinctive brand identity', to: '/services/brand-identity' }
       },
       {
         title: 'SEO Performance',
         paragraphs: [
-          'One of the biggest differences between a custom website and a website builder is SEO. Search engines evaluate page speed, website structure, mobile responsiveness, internal linking, image optimization, and technical performance.',
+          'One of the biggest differences between a custom website and a website builder is SEO. Search engines evaluate [page speed](/blog/core-web-vitals-for-small-business-websites), website structure, mobile responsiveness, internal linking, image optimization, and technical performance.',
           'A custom-built website allows developers to optimize each of these areas, giving the site a stronger foundation for long-term search visibility. Website builders have improved their SEO capabilities, but they still offer less flexibility for code optimization, advanced technical settings, and website structure.',
           'If your goal is consistent organic traffic and sustainable online growth, a custom website is often the stronger long-term choice.'
         ],
@@ -991,14 +991,14 @@ export const blogPosts = [
         title: 'Scalability',
         paragraphs: [
           'As your business grows, your website should grow with it. A custom website allows you to add features, integrate third-party tools, expand content, and improve functionality without major platform limitations.',
-          'Website builders suit smaller websites but may become restrictive when a business needs advanced integrations, custom functionality, or unique workflows. For businesses planning long-term growth, scalability should be a key consideration.'
+          'Website builders suit smaller websites but may become restrictive when a business needs advanced integrations, custom functionality, or unique workflows. For businesses planning long-term growth, scalability should be a key consideration. If you outgrow your current site, plan the move carefully using our guide to a [redesign that protects your SEO](/blog/website-redesign-without-losing-seo).'
         ]
       },
       {
         title: 'Which Option Should You Choose?',
         paragraphs: [
           'A website builder is ideal when you need a simple website quickly and have limited technical requirements. If you are building a professional brand, want to rank on Google, or expect the business to grow, a custom website provides greater flexibility, stronger SEO, and better long-term value.',
-          'Instead of viewing a custom website as a short-term expense, consider it a long-term investment in your marketing, operations, and business growth.'
+          'Instead of viewing a custom website as a short-term expense, consider it a long-term investment in your marketing, operations, and business growth. Whichever route you take, ask the right questions first; see [how to choose a web design agency](/blog/how-to-choose-a-web-design-agency).'
         ]
       },
       {
@@ -1059,7 +1059,7 @@ export const blogPosts = [
       {
         title: 'What Is WordPress?',
         paragraphs: [
-          'WordPress is the world’s most popular content management system. It is an open-source platform that gives businesses complete control over website design, functionality, and content.',
+          'WordPress is the world’s most popular content management system. It is an open-source platform that gives businesses complete control over [website design](/blog/website-design-vs-seo), functionality, and content.',
           'With thousands of themes and plugins available, WordPress can power business websites, blogs, portfolios, booking platforms, educational portals, and ecommerce stores through WooCommerce.',
           'Its greatest advantage is flexibility. From a focused brochure website to a feature-rich platform, WordPress can be customized around exact business requirements.'
         ],
@@ -1100,7 +1100,7 @@ export const blogPosts = [
         title: 'Design and Customization',
         paragraphs: [
           'WordPress offers complete creative freedom. Developers can create original layouts, integrate advanced functionality, and modify virtually every aspect of the experience.',
-          'Shopify provides professional store themes, but customization beyond their settings often requires knowledge of Liquid or additional apps. If a completely distinctive brand experience is essential, WordPress offers more possibilities.'
+          'Shopify provides professional store themes, but customization beyond their settings often requires knowledge of Liquid or additional apps. If a completely distinctive brand experience is essential, WordPress offers more possibilities. Your visual system matters here too; see what a [brand identity](/blog/what-is-a-brand-identity) includes.'
         ],
         link: { label: 'Create a fully customized website', to: '/services/custom-website' }
       },
@@ -1140,13 +1140,13 @@ export const blogPosts = [
         paragraphs: [
           'Choose WordPress when you want complete control, powerful SEO, advanced customization, content-led marketing, or the flexibility to build beyond a conventional store.',
           'Choose Shopify when your primary goal is launching and managing an online store quickly with minimal technical maintenance.',
-          'The best decision depends on your operating model, internal capabilities, marketing strategy, and long-term plans—not simply which platform is more popular.'
+          'The best decision depends on your operating model, internal capabilities, marketing strategy, and long-term plans—not simply which platform is more popular. If neither feels right, compare them with a [custom website](/blog/custom-website-vs-website-builder) built around your needs.'
         ]
       },
       {
         title: 'Why Choose BrandPixo?',
         paragraphs: [
-          'BrandPixo helps businesses choose platforms around their real objectives rather than current trends. Whether the answer is a high-performance WordPress website or a professionally designed Shopify store, we focus on speed, usability, SEO, and long-term growth.',
+          'BrandPixo helps businesses choose platforms around their real objectives rather than current trends. Whether the answer is a high-performance WordPress website or a professionally designed Shopify store, we focus on [speed](/blog/core-web-vitals-for-small-business-websites), usability, SEO, and long-term growth.',
           'Our team brings strategy, design, development, and optimization together so the selected platform becomes a business asset rather than a technical limitation.'
         ],
         links: [

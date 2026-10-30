@@ -20,4 +20,6 @@ export const projects = [
 export const cardImage = (project) => project.image.replace(/\.[a-z]+$/, '-card.webp');
 export const getProject = (slug) => projects.find((project) => project.slug === slug);
 export const projectTypes = { websites: { label: 'Websites', description: 'Brand, service and editorial website experiences.' }, ecommerce: { label: 'Ecommerce', description: 'Storefronts designed to turn discovery into purchase.' }, apps: { label: 'App Design', description: 'Digital products and mobile app experiences.' } };
-export const getProjectsByType = (type) => projects.filter((project) => (project.type || 'websites') === type || (type === 'websites' && !project.type));
+// Project data uses type 'app'; the category (and its URL) is 'apps'.
+const categoryOf = (project) => (project.type === 'app' ? 'apps' : project.type || 'websites');
+export const getProjectsByType = (type) => projects.filter((project) => categoryOf(project) === type);
