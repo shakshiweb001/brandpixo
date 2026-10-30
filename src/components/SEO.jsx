@@ -81,8 +81,8 @@ const routeDetails = (pathname) => {
     const id = pathname.slice('/services/'.length);
     const service = servicesData[id];
     if (service) return {
-      title: titleWithBrand(`${service.title} Services`),
-      description: truncate(`${service.tagline} BrandPixo provides professional ${service.title.toLowerCase()} for ambitious businesses across India.`, 155),
+      title: service.metaTitle || titleWithBrand(`${service.title} Services`),
+      description: service.metaDescription || truncate(`${service.tagline} BrandPixo provides professional ${service.title.toLowerCase()} for ambitious businesses across India.`, 155),
       image: service.heroImage,
       type: 'website',
       service,
