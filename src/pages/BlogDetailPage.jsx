@@ -60,8 +60,13 @@ export default function BlogDetailPage() {
         </motion.div>
         <motion.figure className={styles.heroPhoto} initial={{ opacity: 0, y: 34, rotate: -1 }} animate={{ opacity: 1, y: 0, rotate: 0 }} transition={{ duration: .85, ease: [0.16, 1, 0.3, 1] }}>
           <span className={styles.tape} />
-          <img src={post.image} alt={post.imageAlt} width="1376" height="768" fetchPriority="high" />
-          <figcaption>BrandPixo Journal — {post.category}</figcaption>
+          <div className={styles.heroBannerVisual}>
+            <img src={post.image} alt={post.imageAlt} width="1376" height="768" fetchPriority="high" />
+            <span className={styles.heroBannerKicker}>BrandPixo Journal <i /> Field note {String(currentIndex + 1).padStart(2, '0')}</span>
+            <span className={styles.heroBannerTitle}>{post.category}<small>Ideas into impact.</small></span>
+            <span className={styles.heroBannerFooter}>STRATEGY · DESIGN · DIGITAL GROWTH</span>
+          </div>
+          <figcaption>{post.title} <span>· {post.readTime}</span></figcaption>
         </motion.figure>
       </header>
 

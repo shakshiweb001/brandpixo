@@ -23,7 +23,12 @@ export default function BlogPage() {
 
         {blogPosts[0] && (
           <Link to={`/blog/${blogPosts[0].slug}`} className={styles.featured} aria-label={`Read the latest article: ${blogPosts[0].title}`}>
-            <img src={blogPosts[0].image} alt={blogPosts[0].imageAlt} width="1376" height="768" fetchPriority="high" />
+            <div className={styles.featuredVisual}>
+              <img src={blogPosts[0].image} alt={blogPosts[0].imageAlt} width="1376" height="768" fetchPriority="high" />
+              <span className={styles.visualKicker}>BrandPixo Journal <i /> 01 / 09</span>
+              <span className={styles.visualStamp}>Ideas<br />that move<br /><em>business.</em></span>
+              <span className={styles.visualIndex}>FIELD NOTES · {blogPosts[0].category}</span>
+            </div>
             <div className={styles.featuredBody}>
               <span className={styles.featuredLabel}>Latest article</span>
               <h2>{blogPosts[0].title}</h2>
@@ -54,6 +59,9 @@ export default function BlogPage() {
             <article className={`${styles.blogCard} ${index === 1 ? styles.accentCard : ''}`} key={post.slug}>
               <div className={styles.cardImage}>
                 <img src={post.image} alt={post.imageAlt} width="1376" height="768" loading="lazy" decoding="async" />
+                <span className={styles.cardImageTop}>BP JOURNAL <i /> {String(index + 1).padStart(2, '0')}</span>
+                <span className={styles.cardImageBottom}>{post.category}</span>
+                <span className={styles.cardImageCorner} aria-hidden="true">↗</span>
               </div>
               <div className={styles.cardBody}>
                 <div className={styles.blogMeta}><span>0{index + 1} · {post.category}</span><span>{post.readTime}</span></div>

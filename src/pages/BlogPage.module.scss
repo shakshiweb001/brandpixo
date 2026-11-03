@@ -99,7 +99,7 @@
 .cardImage { position: relative; aspect-ratio: 16 / 9; border-bottom: 2px solid $dark; overflow: hidden; }
 .cardImage img { width: 100%; height: 100%; object-fit: cover; transition: transform .55s ease; }
 .blogCard:hover img { transform: scale(1.05); }
-.cardImage > span { position: absolute; left: 1rem; bottom: 1rem; padding: .45rem .7rem; border-radius: 999px; background: $white; color: $dark; font-size: .7rem; font-weight: 800; text-transform: uppercase; }
+
 .cardBody { min-height: 340px; padding: 1.4rem; display: flex; flex-direction: column; }
 .blogMeta { display: flex; justify-content: space-between; gap: .5rem; color: $muted; font-size: .7rem; font-weight: 800; text-transform: uppercase; }
 .accentCard .blogMeta { color: rgba(24,24,24,.68); }
@@ -163,3 +163,25 @@
 .featuredCta { margin-top: .5rem; display: inline-flex; align-items: center; gap: .5rem; padding: .85rem 1.3rem; border-radius: 999px; background: $dark; color: $white; font-size: .95rem; font-weight: 600; }
 @media (max-width: $desktop) { .featured { grid-template-columns: 1fr; background: $white; }.featuredBody { border-left: 0; border-top: 2px solid $dark; } }
 @media (max-width: $tablet) { .featured { margin-top: 2.2rem; border-radius: 18px; box-shadow: 5px 6px 0 rgba(24,24,24,.16); } }
+
+
+/* Premium editorial photo treatments — designed banners, not plain image tiles. */
+.featuredVisual { position: relative; min-height: 100%; overflow: hidden; isolation: isolate; background: #24231f; }
+.featuredVisual::after { content: ''; position: absolute; inset: 0; z-index: 1; background: linear-gradient(115deg, rgba(17,17,17,.48), transparent 58%), linear-gradient(0deg, rgba(17,17,17,.48), transparent 48%); pointer-events: none; }
+.featuredVisual img { width: 100%; height: 100%; min-height: 410px; display: block; object-fit: cover; transition: transform .8s cubic-bezier(.16,1,.3,1); }
+.featured:hover .featuredVisual img { transform: scale(1.035); }
+.visualKicker, .visualIndex, .visualStamp { position: absolute; z-index: 2; color: #fff; }
+.visualKicker { top: 1.4rem; left: 1.5rem; display: flex; align-items: center; gap: .65rem; font-size: .68rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+.visualKicker i { width: 28px; height: 1px; background: #EFAE6A; }
+.visualStamp { right: clamp(1.2rem, 4vw, 3.4rem); top: 50%; transform: translateY(-50%); font-family: $font-editorial; font-size: clamp(2.8rem, 5.6vw, 5.8rem); font-weight: 600; line-height: .86; letter-spacing: -.055em; text-align: right; text-shadow: 0 3px 25px rgba(0,0,0,.22); }
+.visualStamp em { color: #EFAE6A; font-style: italic; }
+.visualIndex { left: 1.5rem; bottom: 1.35rem; padding-top: .75rem; border-top: 1px solid rgba(255,255,255,.65); font-size: .65rem; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
+.cardImage { isolation: isolate; background: #25231f; }
+.cardImage::after { content: ''; position: absolute; inset: 0; z-index: 1; background: linear-gradient(180deg, rgba(17,17,17,.42), transparent 42%, rgba(17,17,17,.48)); pointer-events: none; }
+.cardImageTop, .cardImageBottom, .cardImageCorner { position: absolute; z-index: 2; color: #fff; }
+.cardImageTop { top: .9rem; left: 1rem; display: flex; align-items: center; gap: .45rem; font-size: .62rem; font-weight: 800; letter-spacing: .12em; text-shadow: 0 1px 8px rgba(0,0,0,.35); }
+.cardImageTop i { width: 20px; height: 1px; background: #EFAE6A; }
+.cardImageBottom { left: 1rem; bottom: .9rem; max-width: calc(100% - 4rem); padding: .42rem .65rem; border: 1px solid rgba(255,255,255,.55); border-radius: 999px; background: rgba(17,17,17,.25); backdrop-filter: blur(8px); font-size: .62rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.cardImageCorner { right: 1rem; bottom: .9rem; width: 30px; height: 30px; display: grid; place-items: center; border: 1px solid rgba(255,255,255,.65); border-radius: 50%; font-size: .9rem; }
+@media (max-width: $desktop) { .featuredVisual img { min-height: 340px; } .visualStamp { font-size: clamp(3rem, 8vw, 5.2rem); } }
+@media (max-width: $tablet) { .featuredVisual img { min-height: 260px; aspect-ratio: 4 / 3; } .visualKicker { top: 1rem; left: 1rem; font-size: .58rem; } .visualStamp { right: 1rem; font-size: clamp(2.5rem, 12vw, 4rem); } .visualIndex { left: 1rem; bottom: 1rem; font-size: .56rem; } }
