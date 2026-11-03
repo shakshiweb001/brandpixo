@@ -68,6 +68,14 @@ export default function ServicesPage() {
         ))}
       </motion.section>
 
+      <nav className={styles.crossLinks} aria-label="Explore BrandPixo">
+        <strong>Explore BrandPixo</strong>
+        <Link to="/work">Selected projects <span aria-hidden="true">↗</span></Link>
+        <Link to="/blog">Design and SEO insights <span aria-hidden="true">↗</span></Link>
+        <Link to="/about">Meet the studio <span aria-hidden="true">↗</span></Link>
+        <Link to="/contact">Discuss your project <span aria-hidden="true">↗</span></Link>
+      </nav>
+
       <Contact />
     </div>
   );

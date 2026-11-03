@@ -4,6 +4,7 @@ import { Link, useParams } from 'react-router-dom';
 import { m as motion, useScroll, useSpring } from 'framer-motion';
 import { FiArrowLeft, FiArrowRight, FiArrowUpRight, FiClock, FiMonitor, FiSearch, FiTrendingUp } from 'react-icons/fi';
 import { blogPosts, getBlogPost } from '../data/blogPosts';
+import { servicesData } from '../data/servicesData';
 import BlogComments from '../components/BlogComments';
 import styles from './BlogDetailPage.module.scss';
 
@@ -41,7 +42,25 @@ export default function BlogDetailPage() {
     .filter(Boolean);
   const imageOne = relatedPosts[0]?.image || post.image;
   const imageTwo = relatedPosts[1]?.image || post.image;
-  const relatedRail = blogPosts.filter((item) => item.slug !== post.slug).slice(0, 4);
+  const relatedRail = relatedPosts.length
+    ? relatedPosts.slice(0, 4)
+    : blogPosts.filter((item) => item.slug !== post.slug).slice(0, 4);
+
+  // Match each guide to the most relevant commercial service pages.
+  const articleServiceMap = {
+    'what-is-a-brand-identity': ['brand-identity', 'graphic-design', 'ui-ux'],
+    'how-to-choose-a-web-design-agency': ['custom-website', 'wordpress', 'ui-ux'],
+    'core-web-vitals-for-small-business-websites': ['custom-website', 'wordpress', 'seo'],
+    'local-seo-for-small-businesses': ['seo', 'performance-marketing', 'custom-website'],
+    'seo-friendly-blog-for-today': ['seo', 'custom-website', 'social-media'],
+    'website-redesign-without-losing-seo': ['custom-website', 'wordpress', 'seo'],
+    'website-design-vs-seo': ['custom-website', 'ui-ux', 'seo'],
+    'custom-website-vs-website-builder': ['custom-website', 'wordpress', 'ui-ux'],
+    'wordpress-vs-shopify': ['wordpress', 'shopify', 'custom-website']
+  };
+  const relevantServices = (articleServiceMap[post.slug] || ['custom-website', 'wordpress', 'seo'])
+    .map((id) => ({ id, ...servicesData[id] }))
+    .filter((service) => service.title);
 
   return (
     <main className={styles.page}>
@@ -135,6 +154,22 @@ export default function BlogDetailPage() {
             </div>
           </section>
         )}
+
+        <section className={styles.articleSection} aria-labelledby="related-services">
+          <span>Explore what we do</span>
+          <h2 id="related-services">Put these ideas into practice.</h2>
+          <p>If you are planning a project, explore the BrandPixo services connected to this guide.</p>
+          <div className={styles.serviceLinks}>
+            {relevantServices.map((service) => (
+              <Link key={service.id} to={`/services/${service.id}`}>
+                {service.title} <FiArrowUpRight />
+              </Link>
+            ))}
+            <Link to="/services">All services <FiArrowUpRight /></Link>
+            <Link to="/work">Selected work <FiArrowUpRight /></Link>
+            <Link to="/contact">Discuss a project <FiArrowUpRight /></Link>
+          </div>
+        </section>
 
         <section className={styles.authorCard}>
           <div className={styles.authorMark}>BP</div>
