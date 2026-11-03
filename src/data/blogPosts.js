@@ -10,8 +10,8 @@ export const blogPosts = [
     date: 'October 30, 2026',
     datePublished: '2026-10-30',
     dateModified: '2026-10-30',
-    image: '/blog/what-is-a-brand-identity.jpg',
-    imageAlt: 'Graphic showing the six building blocks of a brand identity: logo, colour, typography, imagery, voice and guidelines',
+    image: 'https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=1600&q=85',
+    imageAlt: 'Realistic brand identity workspace with printed colour palettes, typography samples and design stationery',
     excerpt: 'A brand identity is the visible and verbal system that makes a business recognisable. This guide explains the six building blocks, how they fit together and where a small business should start.',
     intro: 'Many businesses say they need a logo when what they really need is a brand identity. A logo is one piece. The identity is the whole system of visuals and words that makes your business recognisable and consistent, whether someone meets it on your website, a social post, an invoice or a delivery box. This guide explains what a brand identity includes, how the parts work together and how to begin building one.',
     sections: [
@@ -143,6 +143,10 @@ export const blogPosts = [
       }
     ],
     pullQuote: 'A logo makes you recognisable. A brand identity makes you consistent, and consistency is what builds trust.',
+    externalLinks: [
+      { label: 'W3C Web Accessibility Initiative', url: 'https://www.w3.org/WAI/standards-guidelines/' },
+      { label: 'Adobe guide to brand identity', url: 'https://www.adobe.com/creativecloud/business/teams/resources/how-to-build-brand-identity.html' }
+    ],
     related: ['how-to-choose-a-web-design-agency', 'custom-website-vs-website-builder']
   },
   {
@@ -156,8 +160,8 @@ export const blogPosts = [
     date: 'October 28, 2026',
     datePublished: '2026-10-28',
     dateModified: '2026-10-28',
-    image: '/blog/how-to-choose-a-web-design-agency.jpg',
-    imageAlt: 'Checklist graphic with five questions to ask before hiring a web design agency, including process, ownership, SEO, launch support and revisions',
+    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1600&q=85',
+    imageAlt: 'Photograph of a web designer working at a laptop in a bright studio',
     excerpt: 'Choosing a web design agency is easier when you know what to ask. This guide covers what to look for in a portfolio, ten questions worth asking, the red flags to watch for, and how to compare quotes on equal terms.',
     intro: 'A website is one of the most visible things your business owns, and hiring the wrong team for it is expensive to undo. Most agencies show polished portfolios and confident proposals, so the difference usually appears in the details: how they work, what is included, and who owns what when the project ends. This guide gives you a practical way to compare agencies, with the questions to ask and the warning signs to look out for.',
     sections: [
@@ -293,6 +297,10 @@ export const blogPosts = [
       }
     ],
     pullQuote: 'The best agency answers the awkward questions before you have to ask them.',
+    externalLinks: [
+      { label: 'Google Search Essentials', url: 'https://developers.google.com/search/docs/essentials' },
+      { label: 'W3C Web Accessibility Initiative', url: 'https://www.w3.org/WAI/standards-guidelines/' }
+    ],
     related: ['custom-website-vs-website-builder', 'website-design-vs-seo']
   },
   {
@@ -306,8 +314,8 @@ export const blogPosts = [
     date: 'October 15, 2026',
     datePublished: '2026-10-15',
     dateModified: '2026-10-15',
-    image: '/blog/core-web-vitals-for-small-business-websites.jpg',
-    imageAlt: 'Illustration of the three Core Web Vitals metrics, LCP, INP and CLS, with their good thresholds of 2.5 seconds, 200 milliseconds and 0.1',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=85',
+    imageAlt: 'Realistic analytics dashboard on a laptop showing website performance charts',
     excerpt: 'Core Web Vitals measure how fast a page loads, how quickly it responds and how stable it feels. This guide explains each metric and the fixes that make the biggest difference on a small business website.',
     intro: 'Most visitors never think about page speed until a site feels slow, jumps around as it loads, or ignores their first tap. Google measures those three experiences with a set of metrics called Core Web Vitals. This guide explains what they mean in plain English, how to check your own website, and which fixes are worth doing first when you have a small team and a limited budget.',
     sections: [
@@ -445,6 +453,11 @@ export const blogPosts = [
       }
     ],
     pullQuote: 'Speed is not a feature added at the end. It is the result of many small decisions about images, scripts and layout.',
+    externalLinks: [
+      { label: 'Google PageSpeed Insights', url: 'https://pagespeed.web.dev/' },
+      { label: 'web.dev: Web Vitals', url: 'https://web.dev/articles/vitals' },
+      { label: 'Google Search Console', url: 'https://search.google.com/search-console/about' }
+    ],
     related: ['website-design-vs-seo', 'custom-website-vs-website-builder']
   },
   {
@@ -458,8 +471,8 @@ export const blogPosts = [
     date: 'October 12, 2026',
     datePublished: '2026-10-12',
     dateModified: '2026-10-12',
-    image: '/blog/local-seo-for-small-businesses-cover.jpg',
-    imageAlt: 'Local SEO checklist graphic: complete Google profile, consistent name and phone, genuine reviews, pages for areas you serve, and local links',
+    image: 'https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=1600&q=85',
+    imageAlt: 'Photograph of a person planning locations on a printed map at a desk',
     excerpt: 'Local SEO puts your business in front of people who are already nearby and ready to act. It rewards accurate information, genuine reviews, and pages built around the places you actually serve.',
     intro: 'When someone searches for a service “near me” or adds a city name to a query, they are usually close to making a decision. Local SEO is the work that helps your business appear in those moments, across the map results and the regular listings beneath them. This guide explains how local SEO for small businesses works and the practical steps that improve visibility in nearby searches.',
     sections: [
@@ -571,6 +584,10 @@ export const blogPosts = [
       { q: 'How many reviews does my business need?', a: 'There is no fixed number. Aim for a steady flow of genuine, recent reviews rather than a one-time push, and look at what nearby competitors have to understand what customers will compare you against.' }
     ],
     pullQuote: 'Local search rewards the business that is easiest to trust, not the one that shouts the loudest.',
+    externalLinks: [
+      { label: 'Google Business Profile Help', url: 'https://support.google.com/business/' },
+      { label: 'Google local ranking guidance', url: 'https://support.google.com/business/answer/7091' }
+    ],
     related: ['seo-friendly-blog-for-today', 'website-design-vs-seo']
   },
   {
@@ -584,8 +601,8 @@ export const blogPosts = [
     date: 'August 18, 2026',
     datePublished: '2026-08-18',
     dateModified: '2026-08-18',
-    image: '/blog/seo-friendly-blog-for-today-cover.jpg',
-    imageAlt: 'Checklist graphic for writing an SEO-friendly blog: match search intent, scannable structure, internal links, clear title and description, supportive media',
+    image: 'https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1600&q=85',
+    imageAlt: 'Photograph of a writer drafting an article in a notebook beside a laptop',
     excerpt: 'A strong blog post is not just well written. It answers a clear search intent, uses structure that scanners can follow, and guides readers toward the next useful step.',
     intro: 'Publishing a blog post today means competing for attention in search results, social feeds, and inboxes all at once. The winners are not necessarily the longest articles or the ones with the most keywords. They are the posts that solve a real search problem, stay easy to read, and move the reader toward action. This guide shows how to write an SEO-friendly blog post that is useful now and still relevant later.',
     sections: [
@@ -684,6 +701,10 @@ export const blogPosts = [
       { q: 'Can a blog post rank without backlinks?', a: 'It can, especially if the topic is specific and the site has a solid foundation. Backlinks help, but relevance, structure, and quality still matter a lot.' }
     ],
     pullQuote: 'The best blog posts are written for real readers, then refined for search.',
+    externalLinks: [
+      { label: 'Google Search Central: SEO Starter Guide', url: 'https://developers.google.com/search/docs/fundamentals/seo-starter-guide' },
+      { label: 'Google Search Central: Helpful content', url: 'https://developers.google.com/search/docs/fundamentals/creating-helpful-content' }
+    ],
     related: ['website-design-vs-seo', 'website-redesign-without-losing-seo']
   },
   {
@@ -697,8 +718,8 @@ export const blogPosts = [
     date: 'August 6, 2026',
     datePublished: '2026-08-06',
     dateModified: '2026-08-06',
-    image: '/blog/website-redesign-without-losing-seo-cover.jpg',
-    imageAlt: 'Website redesign checklist graphic: benchmark first, map every URL, protect ranking pages, keep staging out of search, monitor after launch',
+    image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=1600&q=85',
+    imageAlt: 'Photograph of a modern website layout displayed on a desktop screen during a redesign',
     excerpt: 'A website redesign should improve the experience without erasing the search visibility your business has already earned. The difference is disciplined migration planning.',
     intro: 'A website redesign can sharpen your brand, improve conversions, and make the site easier to manage. It can also damage organic traffic when URLs, content, internal links, and technical signals change without a plan. This guide explains how to protect SEO before, during, and after a redesign.',
     sections: [
@@ -817,6 +838,10 @@ export const blogPosts = [
       { q: 'How soon should SEO be considered in a redesign?', a: 'SEO should be included during discovery and planning, before navigation, content, URL structure, and templates are approved.' }
     ],
     pullQuote: 'A redesign should move the experience forward without erasing the search equity already earned.',
+    externalLinks: [
+      { label: 'Google Search Central: Site moves', url: 'https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes' },
+      { label: 'Google Search Console', url: 'https://search.google.com/search-console/about' }
+    ],
     related: ['website-design-vs-seo', 'custom-website-vs-website-builder']
   },
   {
@@ -830,8 +855,8 @@ export const blogPosts = [
     date: 'August 4, 2026',
     datePublished: '2026-08-04',
     dateModified: '2026-08-04',
-    image: '/blog/website-design-vs-seo-cover.jpg',
-    imageAlt: 'Comparison graphic of website design and SEO, showing that the two work better together',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1600&q=85',
+    imageAlt: 'Photograph of a digital analytics dashboard with charts on a computer screen',
     excerpt: 'Website design and SEO are not competitors—they are partners. One attracts visitors, while the other turns their attention into action.',
     intro: 'In today’s digital-first world, having an online presence is no longer enough. Businesses need a website that looks professional and performs well in search engines.',
     sections: [
@@ -912,6 +937,10 @@ export const blogPosts = [
       }
     ],
     pullQuote: 'A great website earns attention. SEO makes sure the right people can find it.',
+    externalLinks: [
+      { label: 'Google Search Central: SEO Starter Guide', url: 'https://developers.google.com/search/docs/fundamentals/seo-starter-guide' },
+      { label: 'web.dev: Web Vitals', url: 'https://web.dev/articles/vitals' }
+    ],
     related: ['custom-website-vs-website-builder']
   },
   {
@@ -925,8 +954,8 @@ export const blogPosts = [
     date: 'August 4, 2026',
     datePublished: '2026-08-04',
     dateModified: '2026-08-04',
-    image: '/blog/custom-website-vs-website-builder-cover.jpg',
-    imageAlt: 'Comparison graphic of a custom website and a website builder across design, SEO control, scalability and upfront cost',
+    image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1600&q=85',
+    imageAlt: 'Photograph of a small digital team collaborating around laptops at a workspace',
     excerpt: 'Website builders offer speed and convenience. Custom websites offer control, performance, and room to grow. The right choice depends on what your business needs next.',
     intro: 'Creating a website is one of the most important investments a business can make. This guide compares custom websites and website builders across design, SEO, performance, cost, and long-term value.',
     sections: [
@@ -1038,6 +1067,10 @@ export const blogPosts = [
       { q: 'Can I migrate from a website builder to a custom website later?', a: 'Yes, but migration can require additional time and resources. Planning for future growth from the beginning can help avoid unnecessary complexity.' }
     ],
     pullQuote: 'The cheapest way to launch is not always the most valuable way to grow.',
+    externalLinks: [
+      { label: 'WordPress.org: About WordPress', url: 'https://wordpress.org/about/' },
+      { label: 'W3C Web Accessibility Initiative', url: 'https://www.w3.org/WAI/standards-guidelines/' }
+    ],
     related: ['website-design-vs-seo', 'wordpress-vs-shopify']
   },
   {
@@ -1051,8 +1084,8 @@ export const blogPosts = [
     date: 'August 4, 2026',
     datePublished: '2026-08-04',
     dateModified: '2026-08-04',
-    image: '/blog/wordpress-vs-shopify-cover.jpg',
-    imageAlt: 'Comparison graphic of WordPress and Shopify covering best use, flexibility, hosting and ecosystem',
+    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1600&q=85',
+    imageAlt: 'Photograph of an online retail checkout and payment experience on a laptop',
     excerpt: 'WordPress offers unmatched flexibility and SEO control. Shopify makes ecommerce remarkably simple. The better platform depends on how your business needs to operate and grow.',
     intro: 'Choosing the right platform is one of the most important decisions you will make when building a website or online store. This guide compares WordPress and Shopify across the factors that matter most.',
     sections: [
@@ -1180,6 +1213,11 @@ export const blogPosts = [
       { q: 'Is Shopify only for online stores?', a: 'Shopify can support informational pages and blogs, but it is primarily designed for ecommerce businesses.' }
     ],
     pullQuote: 'The best platform is the one that fits how your business sells, communicates, and plans to grow.',
+    externalLinks: [
+      { label: 'WordPress.org', url: 'https://wordpress.org/' },
+      { label: 'Shopify Help Center', url: 'https://help.shopify.com/' },
+      { label: 'WooCommerce documentation', url: 'https://woocommerce.com/documentation/' }
+    ],
     related: ['custom-website-vs-website-builder', 'website-design-vs-seo']
   }
 ];
