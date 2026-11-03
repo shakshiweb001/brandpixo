@@ -171,3 +171,9 @@
     color: $primary;
   }
 }
+
+
+.crossLinks { width: min(1180px, calc(100% - 3rem)); margin: 0 auto; padding: 1.5rem 0 4rem; display: flex; flex-wrap: wrap; gap: .8rem 1.5rem; align-items: center; border-top: 1px solid rgba(24,24,24,.12); }
+.crossLinks strong { margin-right: .5rem; color: #171717; font-size: .8rem; }
+.crossLinks a { color: inherit; font-size: .8rem; font-weight: 650; text-decoration: underline; text-decoration-color: #EFAE6A; text-decoration-thickness: 2px; text-underline-offset: 4px; }
+.crossLinks a:hover { color: #8A5726; }
