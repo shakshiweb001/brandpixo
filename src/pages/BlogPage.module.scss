@@ -99,7 +99,7 @@
 .cardImage { position: relative; aspect-ratio: 16 / 9; border-bottom: 2px solid $dark; overflow: hidden; }
 .cardImage img { width: 100%; height: 100%; object-fit: cover; transition: transform .55s ease; }
 .blogCard:hover img { transform: scale(1.05); }
-.cardImage > span { position: absolute; left: 1rem; bottom: 1rem; padding: .45rem .7rem; border-radius: 999px; background: $white; color: $dark; font-size: .7rem; font-weight: 800; text-transform: uppercase; }
+
 .cardBody { min-height: 340px; padding: 1.4rem; display: flex; flex-direction: column; }
 .blogMeta { display: flex; justify-content: space-between; gap: .5rem; color: $muted; font-size: .7rem; font-weight: 800; text-transform: uppercase; }
 .accentCard .blogMeta { color: rgba(24,24,24,.68); }
