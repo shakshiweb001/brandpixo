@@ -23,17 +23,17 @@ export default function HomeHero() {
     <section className={styles.hero} id="home">
       <div className={styles.inner}>
         <div className={styles.copy}>
-          <motion.span className={styles.eyebrow} {...reveal(0.05)}>Branding · Web design · Development</motion.span>
+          <motion.span className={styles.eyebrow} {...reveal(0.05)}>Website design · WordPress · Branding · SEO</motion.span>
           <motion.h1 {...reveal(0.12)}>
-            Branding &amp; web design agency for brands people remember{' '}
-            <span className={styles.highlight}>and websites that <em>work.</em></span>
+            Website design and development for{' '}
+            <span className={styles.highlight}>businesses ready to grow.</span>
           </motion.h1>
           <motion.p className={styles.lead} {...reveal(0.22)}>
-            BrandPixo brings strategy, design and development together, so your brand looks distinctive, your website is fast and clear, and visitors know exactly what to do next.
+            BrandPixo combines thoughtful strategy, distinctive design and reliable development to create websites that explain what you do, build trust and turn the right visitors into enquiries. From WordPress websites to custom digital experiences, we shape each project around your business goals.
           </motion.p>
           <motion.div className={styles.actions} {...reveal(0.32)}>
-            <Link to="/contact" className={styles.primary}>Start a project <FiArrowUpRight /></Link>
-            <Link to="/work" className={styles.secondary}>See our work</Link>
+            <Link to="/contact" className={styles.primary}>Discuss your website <FiArrowUpRight /></Link>
+            <Link to="/work" className={styles.secondary}>Explore our work</Link>
           </motion.div>
         </div>
 
