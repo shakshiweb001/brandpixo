@@ -1,0 +1,1 @@
+async function e(e,t=`Website enquiry`){throw Error(`Email delivery is not configured.`)}export{e as t};
