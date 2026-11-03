@@ -125,3 +125,24 @@
 
 .textLink { color: inherit; font-weight: 600; text-decoration: underline; text-decoration-color: $primary; text-decoration-thickness: 2px; text-underline-offset: 3px; transition: background-color .25s ease; }
 .textLink:hover { background: rgba(239, 174, 106, .35); }
+
+
+/* Article cover: cinematic editorial treatment over the real photographic cover. */
+.heroBannerVisual { position: relative; overflow: hidden; isolation: isolate; background: #24231f; }
+.heroBannerVisual::after { content: ''; position: absolute; inset: 0; z-index: 1; background: linear-gradient(110deg, rgba(17,17,17,.58), rgba(17,17,17,.08) 72%), linear-gradient(0deg, rgba(17,17,17,.42), transparent 46%); pointer-events: none; }
+.heroBannerVisual img { width: 100%; height: auto; aspect-ratio: 16 / 8.2; display: block; object-fit: cover; filter: saturate(.88); }
+.heroBannerKicker, .heroBannerTitle, .heroBannerFooter { position: absolute; z-index: 2; color: #fff; }
+.heroBannerKicker { top: clamp(1rem, 3vw, 2rem); left: clamp(1rem, 3vw, 2rem); display: flex; align-items: center; gap: .7rem; font-size: .68rem; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
+.heroBannerKicker i { width: 30px; height: 1px; background: #EFAE6A; }
+.heroBannerTitle { left: clamp(1rem, 4vw, 3.5rem); bottom: clamp(2.8rem, 7vw, 5.4rem); max-width: 70%; font-family: $font-editorial; font-size: clamp(2.8rem, 6vw, 6.3rem); font-weight: 600; line-height: .88; letter-spacing: -.045em; text-shadow: 0 4px 24px rgba(0,0,0,.24); }
+.heroBannerTitle small { display: block; margin-top: .8rem; color: #EFAE6A; font-family: $font-heading; font-size: clamp(.7rem, 1.2vw, 1rem); font-weight: 800; letter-spacing: .18em; text-transform: uppercase; }
+.heroBannerFooter { right: clamp(1rem, 3vw, 2rem); bottom: 1.7rem; font-size: .58rem; font-weight: 800; letter-spacing: .14em; text-align: right; }
+.heroPhoto figcaption { display: flex; justify-content: space-between; gap: 1rem; align-items: center; }
+.heroPhoto figcaption span { color: $primary; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; }
+@media (max-width: $tablet) {
+  .heroBannerVisual img { aspect-ratio: 4 / 3; }
+  .heroBannerTitle { max-width: 88%; bottom: 3rem; font-size: clamp(2.5rem, 11vw, 4.2rem); }
+  .heroBannerKicker { font-size: .56rem; }
+  .heroBannerFooter { right: 1rem; bottom: .9rem; font-size: .48rem; }
+  .heroPhoto figcaption { align-items: flex-start; flex-direction: column; gap: .2rem; }
+}
