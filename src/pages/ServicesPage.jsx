@@ -68,13 +68,13 @@ export default function ServicesPage() {
         ))}
       </motion.section>
 
-      <section aria-label="Explore BrandPixo" style={{ maxWidth: 1180, margin: '0 auto', padding: '2rem 1.5rem 5rem', display: 'flex', flexWrap: 'wrap', gap: '1rem 1.5rem', alignItems: 'center' }}>
+      <nav className={styles.crossLinks} aria-label="Explore BrandPixo">
         <strong style={{ marginRight: '.5rem' }}>Explore BrandPixo</strong>
         <Link to="/work">Selected projects <span aria-hidden="true">↗</span></Link>
         <Link to="/blog">Design and SEO insights <span aria-hidden="true">↗</span></Link>
         <Link to="/about">Meet the studio <span aria-hidden="true">↗</span></Link>
         <Link to="/contact">Discuss your project <span aria-hidden="true">↗</span></Link>
-      </section>
+      </nav>
 
       <Contact />
     </div>
