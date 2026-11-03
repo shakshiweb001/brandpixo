@@ -16,9 +16,9 @@ const fadeUp = {
 };
 
 const services = [
-  { number: '01', title: 'Brand & identity', copy: 'Positioning, visual systems, and a distinctive point of view built to last.', icon: <FiCompass />, link: '/services/brand-identity' },
-  { number: '02', title: 'Digital experiences', copy: 'Clear, compelling interfaces that make every interaction feel considered.', icon: <FiPenTool />, link: '/services/ui-ux' },
-  { number: '03', title: 'Web development', copy: 'Fast, responsive builds engineered to perform quietly and scale confidently.', icon: <FiCode />, link: '/services/custom-website' }
+  { number: '01', title: 'Brand & identity', copy: 'Brand strategy, logo design and visual identity that give your business a consistent, recognisable presence.', icon: <FiCompass />, link: '/services/brand-identity' },
+  { number: '02', title: 'Digital experiences', copy: 'User-focused UI/UX design that makes your website easier to navigate, understand and use.', icon: <FiPenTool />, link: '/services/ui-ux' },
+  { number: '03', title: 'Web development', copy: 'Responsive WordPress and custom websites built around your content, customers and business goals.', icon: <FiCode />, link: '/services/custom-website' }
 ];
 
 const steps = [
@@ -50,7 +50,7 @@ export default function HomePage() {
         <motion.div className={styles.studioCopy} initial="hidden" whileInView="visible" viewport={{ once: true, margin: '-80px' }} variants={fadeUp}>
           <span>What we do</span>
           <h2>One studio.<br />Every part connected.</h2>
-          <p>We combine sharp thinking, expressive design, and careful technology. The result is work that looks distinctive, communicates clearly, and performs where it matters.</p>
+          <p>We bring brand strategy, website design and development together in one process. That means a clearer message, a consistent visual identity and a website built to support real business goals.</p>
           <Link to="/about">Meet BrandPixo <FiArrowUpRight /></Link>
         </motion.div>
         <div className={styles.collage}>
@@ -61,12 +61,12 @@ export default function HomePage() {
 
       <section className={styles.statement}>
         <span>Our point of view</span>
-        <h2>Good design gets attention.<br /><em>Great design creates movement.</em></h2>
-        <p>We build every brand experience to do more than look distinctive—clarifying the message, earning trust, and moving the right people toward action.</p>
+        <h2>A better website does more than look good.<br /><em>It makes the next step clear.</em></h2>
+        <p>From the first impression to the enquiry form, we focus on clear messaging, useful page structure and thoughtful design that helps visitors understand your offer and take action.</p>
       </section>
 
       <section className={styles.services}>
-        <div className={styles.sectionHead}><span>Capabilities</span><h2>Built to move brands forward.</h2><Link to="/services">View all services <FiArrowUpRight /></Link></div>
+        <div className={styles.sectionHead}><span>Capabilities</span><h2>Website design, branding and digital growth.</h2><Link to="/services">View all services <FiArrowUpRight /></Link></div>
         <div className={styles.serviceGrid}>
           {services.map((service) => (
             <motion.article key={service.title} initial="hidden" whileInView="visible" whileHover={{ y: -8 }} viewport={{ once: true, margin: '-60px' }} variants={fadeUp}>
@@ -85,13 +85,13 @@ export default function HomePage() {
       <section className={styles.projects} id="projects">
         <div className={styles.projectsHead}>
           <div><span>Selected projects</span><h2>Work made to be<br />experienced.</h2></div>
-          <div className={styles.projectsIntro}><p>A selection of digital experiences created for service, healthcare, and community-focused brands.</p><Link to="/work">View all work <FiArrowUpRight /></Link></div>
+          <div className={styles.projectsIntro}><p>Explore selected website design and development projects across service businesses, healthcare, education and community-focused organisations.</p><Link to="/work">View all work <FiArrowUpRight /></Link></div>
         </div>
         <ProjectGallery limit={3} />
       </section>
 
       <section className={styles.process}>
-        <div className={styles.processLead}><span>Our process</span><h2>Clarity from first thought to final detail.</h2><p>No mystery, no unnecessary layers. Just a thoughtful, collaborative process that keeps the work and the outcome in focus.</p></div>
+        <div className={styles.processLead}><span>Our process</span><h2>Clarity from first thought to final detail.</h2><p>You stay involved at every stage. We agree on the goals, share progress, gather feedback and test the finished experience before launch.</p></div>
         <div className={styles.steps}>{steps.map(([title, copy], index) => <div key={title}><span>0{index + 1}</span><h3>{title}</h3><p>{copy}</p></div>)}</div>
       </section>
 
