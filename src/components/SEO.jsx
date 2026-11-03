@@ -16,8 +16,8 @@ const PHONE = '+91-76508-37963';
 
 const staticMeta = {
   '/': {
-    title: 'BrandPixo | Branding, Web Design & Digital Marketing Agency',
-    description: 'BrandPixo is a branding, web design and digital marketing agency. We build memorable brands and fast, conversion-focused websites, backed by SEO and social.'
+    title: 'Website Design & WordPress Development Agency | BrandPixo',
+    description: 'BrandPixo creates strategic websites, WordPress builds and brand identities for growing businesses in India and worldwide. Discuss your project.'
   },
   '/about': {
     title: 'About BrandPixo | Digital Marketing Agency',
