@@ -116,6 +116,21 @@ export default function BlogDetailPage() {
           </React.Fragment>
         ))}
 
+        {post.externalLinks?.length > 0 && (
+          <section className={styles.articleSection} aria-labelledby="further-reading">
+            <span>Further reading</span>
+            <h2 id="further-reading">Trusted resources</h2>
+            <p>Explore these official guides and tools to check the recommendations and take the next step.</p>
+            <div className={styles.serviceLinks}>
+              {post.externalLinks.map((resource) => (
+                <a key={resource.url} href={resource.url} target="_blank" rel="noopener noreferrer">
+                  {resource.label} <FiArrowUpRight />
+                </a>
+              ))}
+            </div>
+          </section>
+        )}
+
         <section className={styles.authorCard}>
           <div className={styles.authorMark}>BP</div>
           <div><span>Written by</span><h3>BrandPixo Editorial Team</h3><p>Practical guidance shaped by brand strategy, digital design, and conversion experience.</p><div className={styles.authorTags}><span>Brand strategy</span><span>Digital craft</span></div></div>
