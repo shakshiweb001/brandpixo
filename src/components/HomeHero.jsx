@@ -25,7 +25,7 @@ export default function HomeHero() {
         <div className={styles.copy}>
           <motion.span className={styles.eyebrow} {...reveal(0.05)}>Website design · WordPress · Branding · SEO</motion.span>
           <motion.h1 {...reveal(0.12)}>
-            Website design and development for{' '}
+            Website design and development agency for{' '}
             <span className={styles.highlight}>businesses ready to grow.</span>
           </motion.h1>
           <motion.p className={styles.lead} {...reveal(0.22)}>

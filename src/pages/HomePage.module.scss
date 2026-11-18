@@ -76,3 +76,46 @@
 .allServices a:hover { background: $primary; border-color: $primary; transform: translateY(-2px); }
 
 @media (max-width: $tablet) { .serviceGrid article { min-height: 0; }.serviceGrid article > div { margin-bottom: 2.5rem; } }
+
+/* Why choose, industries, reviews, pricing */
+.why, .industries, .reviews, .pricing { padding: 7rem max(2.5rem, calc((100% - 1400px) / 2)); }
+.why > .sectionHead > span, .industries > .sectionHead > span, .reviews > .sectionHead > span, .pricing > .sectionHead > span { color: $primary; font-size: .7rem; font-weight: 800; letter-spacing: .14rem; text-transform: uppercase; }
+.why .sectionHead h2, .industries .sectionHead h2, .reviews .sectionHead h2, .pricing .sectionHead h2 { font-size: clamp(2.4rem, 4.2vw, 4.2rem); line-height: .98; letter-spacing: -2px; }
+.why { background: #fff9e9; }
+.whyGrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+.whyGrid article { padding: 1.8rem; border: 2px solid $dark; border-radius: 22px; background: $white; box-shadow: 0 7px 0 rgba(24,24,24,.15); }
+.whyGrid article > span { color: $primary; font-size: 2.4rem; font-weight: 800; line-height: 1; }
+.whyGrid h3 { margin: 1.6rem 0 .6rem; font-size: 1.35rem; line-height: 1.2; }
+.whyGrid p { color: $muted; line-height: 1.65; }
+.industries { background: #fbfaf7; }
+.industryGrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+.industryGrid a { min-height: 250px; padding: 1.8rem; display: flex; flex-direction: column; border: 2px solid $dark; border-radius: 22px; background: $white; box-shadow: 0 7px 0 rgba(24,24,24,.15); transition: transform .3s ease, background-color .3s ease; }
+.industryGrid a:hover { background: $primary; transform: translateY(-8px); }
+.industryGrid h3 { font-size: 1.6rem; }
+.industryGrid p { margin-top: .7rem; color: $muted; line-height: 1.6; transition: color .3s ease; }
+.industryGrid a:hover p { color: $text; }
+.industryGrid small { margin-top: auto; padding-top: 1.5rem; display: inline-flex; align-items: center; gap: .4rem; font-size: .9rem; font-weight: 800; }
+.reviews { background: #f0eee8; }
+.reviewGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.reviewGrid figure { padding: 2rem; display: flex; flex-direction: column; border: 2px solid $dark; border-radius: 22px; background: $white; box-shadow: 0 7px 0 rgba(24,24,24,.15); }
+.reviewGrid blockquote { margin-bottom: 1.6rem; font-size: 1.1rem; line-height: 1.7; }
+.reviewGrid figcaption { margin-top: auto; }
+.reviewGrid strong { display: block; }
+.reviewGrid small { color: $muted; }
+.pricing { background: #fff9e9; }
+.pricingGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; align-items: stretch; }
+.pricingGrid article { padding: 2rem; display: flex; flex-direction: column; border: 2px solid $dark; border-radius: 24px; background: $white; box-shadow: 0 7px 0 rgba(24,24,24,.15); }
+.pricingGrid h3 { font-size: 1.5rem; }
+.pricingGrid article > p { margin-top: .5rem; color: $muted; line-height: 1.6; }
+.pricingGrid article > strong { margin-top: 1.4rem; font-size: 2.6rem; line-height: 1; letter-spacing: -2px; }
+.pricingGrid article > small { margin-top: .4rem; color: $muted; font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06rem; }
+.pricingGrid ul { margin: 1.5rem 0 2rem; display: grid; gap: .7rem; list-style: none; }
+.pricingGrid li { display: flex; gap: .6rem; align-items: flex-start; line-height: 1.5; }
+.pricingGrid li svg { flex: 0 0 auto; margin-top: .2rem; padding: 2px; border-radius: 50%; background: $secondary; }
+.pricingGrid article > a { margin-top: auto; padding: .9rem 1.2rem; display: inline-flex; justify-content: center; align-items: center; gap: .5rem; border: 2px solid $dark; border-radius: 999px; font-weight: 800; transition: $transition-fast; }
+.pricingGrid article > a:hover { background: $dark; color: $white; }
+.pricingGrid .pricingFeatured { background: $dark; color: $white; }
+.pricingGrid .pricingFeatured > p, .pricingGrid .pricingFeatured > small { color: rgba(255,255,255,.68); }
+.pricingGrid .pricingFeatured > a { border-color: $primary; background: $primary; color: $dark; }
+@media (max-width: $desktop) { .whyGrid, .industryGrid { grid-template-columns: 1fr 1fr; } .reviewGrid, .pricingGrid { grid-template-columns: 1fr; } }
+@media (max-width: $tablet) { .why, .industries, .reviews, .pricing { padding: 5rem .75rem; } .whyGrid, .industryGrid { grid-template-columns: 1fr; } .industryGrid a { min-height: 0; } }

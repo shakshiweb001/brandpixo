@@ -36,7 +36,7 @@
 }
 
 // .dark-section forces white headings globally, so these need the extra specificity.
-.footer .ctaText h2 { color: $dark !important; }
+.footer .ctaText .ctaHeading { color: $dark !important; }
 .footer .linksCol h4 { color: $primary !important; }
 
 .ctaText {
@@ -46,7 +46,8 @@
     letter-spacing: .14rem;
     text-transform: uppercase;
   }
-  h2 {
+  .ctaHeading {
+    display: block;
     margin-top: .7rem;
     color: $dark !important;
     font-size: clamp(2.2rem, 5vw, 4.2rem);

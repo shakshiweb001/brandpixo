@@ -1,0 +1,71 @@
+@import '../styles/variables.scss';
+
+.page { min-height: 100vh; padding-top: 7rem; background: #fbfaf7; color: $text; }
+.eyebrow { color: $primary; font-size: .7rem; font-weight: 800; letter-spacing: .14rem; text-transform: uppercase; }
+.hero { width: min(1400px, calc(100% - 5rem)); margin: 0 auto; padding: 4rem 0 3.5rem; }
+.breadcrumbs { display: flex; gap: .6rem; margin-bottom: 3rem; color: $muted; font-size: .72rem; font-weight: 700; text-transform: uppercase; }
+.breadcrumbs a { color: $primary; }
+.hero h1 { margin: .8rem 0 1.6rem; font-size: clamp(3.6rem, 7vw, 7rem); line-height: .9; letter-spacing: -4px; }
+.hero mark { display: inline-block; margin-top: .5rem; padding: .02em .12em .08em; border: 2px solid $dark; border-radius: 5px; background: $primary; color: $dark; box-shadow: 6px 8px 0 rgba(24,24,24,.13); }
+.hero p { max-width: 620px; color: $muted; font-size: clamp(1rem, 2vw, 1.2rem); line-height: 1.65; }
+
+.plans { width: min(1400px, calc(100% - 5rem)); margin: 0 auto; padding-bottom: 6rem; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; align-items: stretch; }
+.card { position: relative; padding: 2rem; display: flex; flex-direction: column; border: 2px solid $dark; border-radius: 24px; background: $white; box-shadow: 0 7px 0 rgba(24,24,24,.15); transition: transform .4s $ease-out; }
+.card:hover { transform: translateY(-6px); }
+.card h2 { font-size: 1.6rem; letter-spacing: -.5px; }
+.tagline { margin-top: .6rem; min-height: 3.2rem; color: $muted; line-height: 1.6; }
+.price { margin: 1.5rem 0; padding: 1.4rem 0; display: grid; gap: .3rem; border-block: 1px solid $border; }
+.price strong { font-size: clamp(2.4rem, 4vw, 3.2rem); line-height: 1; letter-spacing: -2px; }
+.price small { color: $muted; font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06rem; }
+.card ul { margin-bottom: 2rem; display: grid; gap: .85rem; list-style: none; }
+.card li { display: flex; gap: .7rem; align-items: flex-start; line-height: 1.5; }
+.card li svg { flex: 0 0 auto; margin-top: .2rem; padding: 2px; border-radius: 50%; background: $secondary; color: $dark; font-size: 1.1rem; }
+.planCta { margin-top: auto; padding: .95rem 1.2rem; display: inline-flex; justify-content: center; align-items: center; gap: .55rem; border: 2px solid $dark; border-radius: 999px; background: transparent; color: $dark; font-weight: 800; transition: $transition-fast; }
+.planCta:hover { background: $dark; color: $white; }
+.featured { background: $dark; color: $white; transform: translateY(-14px); border-color: $dark; box-shadow: 0 14px 0 rgba(239,174,106,.55); }
+.featured:hover { transform: translateY(-20px); }
+.featured .tagline, .featured .price small { color: rgba(255,255,255,.66); }
+.featured .price { border-color: rgba(255,255,255,.16); }
+.featured .planCta { border-color: $primary; background: $primary; color: $dark; }
+.featured .planCta:hover { background: $secondary; border-color: $secondary; color: $dark; }
+.badge { position: absolute; top: -.9rem; right: 1.6rem; padding: .35rem .9rem; border: 2px solid $dark; border-radius: 999px; background: $primary; color: $dark; font-size: .68rem; font-style: normal; font-weight: 800; letter-spacing: .08rem; text-transform: uppercase; }
+
+.steps { padding: 6rem max(2.5rem, calc((100% - 1400px) / 2)); background: #f0eee8; }
+.heading { margin-bottom: 3rem; display: grid; gap: .8rem; }
+.heading h2 { font-size: clamp(2.8rem, 5vw, 4.8rem); line-height: .95; letter-spacing: -3px; }
+.steps ol { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; list-style: none; }
+.steps li { padding: 1.6rem; border-top: 3px solid $dark; background: $white; border-radius: 0 0 18px 18px; }
+.steps li span { color: $primary; font-size: .85rem; font-weight: 800; }
+.steps h3 { margin: .8rem 0 .5rem; font-size: 1.3rem; }
+.steps p { color: $muted; line-height: 1.65; }
+
+.faq { padding: 6rem max(2.5rem, calc((100% - 1400px) / 2)); display: grid; grid-template-columns: .8fr 1.2fr; gap: 4rem; align-items: start; }
+.faq .heading { margin: 0; }
+.faqList { display: grid; gap: .8rem; }
+.faqList details { padding: 1.2rem 1.4rem; border: 2px solid $dark; border-radius: 16px; background: $white; }
+.faqList summary { display: flex; justify-content: space-between; align-items: center; gap: 1rem; font-weight: 800; cursor: pointer; list-style: none; }
+.faqList summary::-webkit-details-marker { display: none; }
+.faqList summary svg { flex: 0 0 auto; transition: transform .3s $ease-out; }
+.faqList details[open] summary svg { transform: rotate(45deg); }
+.faqList details p { margin-top: .9rem; color: $muted; line-height: 1.7; }
+
+.cta { padding: 7rem 2rem 8rem; text-align: center; background: $dark; }
+.cta h2 { margin: 1rem auto 2rem; color: $white; font-size: clamp(2.8rem, 6vw, 5.5rem); line-height: .95; letter-spacing: -3px; }
+.cta em { color: $primary; font-style: normal; }
+.cta a { padding: .95rem 1.4rem; display: inline-flex; align-items: center; gap: .55rem; border-radius: 999px; background: $primary; color: $dark; font-weight: 800; }
+
+@media (max-width: $desktop) {
+  .plans { grid-template-columns: 1fr; max-width: 560px; }
+  .featured, .featured:hover { transform: none; }
+  .tagline { min-height: 0; }
+  .steps ol { grid-template-columns: 1fr 1fr; }
+  .faq { grid-template-columns: 1fr; gap: 2rem; }
+}
+@media (max-width: $tablet) {
+  .page { padding-top: 6rem; }
+  .hero, .plans { width: calc(100% - 1.5rem); }
+  .hero h1 { font-size: clamp(3.2rem, 15vw, 5rem); letter-spacing: -3px; }
+  .steps, .faq { padding: 4.5rem .75rem; }
+  .steps ol { grid-template-columns: 1fr; }
+  .cta { padding: 5rem 1rem; }
+}

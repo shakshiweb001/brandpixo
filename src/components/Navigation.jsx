@@ -168,6 +168,8 @@ export default function Navigation() {
 
         <Link to="/blog" className={styles.link}>Blog</Link>
         <Link to="/work" className={styles.link}>Work</Link>
+        <Link to="/pricing" className={styles.link}>Pricing</Link>
+        <Link to="/testimonials" className={styles.link}>Testimonials</Link>
         <Link to="/contact" className={styles.link}>Contact</Link>
         <button onClick={handleCtaClick} className={`${styles.cta} magnetic-button`}>
           Start Project
@@ -191,6 +193,8 @@ export default function Navigation() {
         <Link to="/services" className={styles.mobileLink} onClick={() => setMobileOpen(false)}>Services</Link>
         <Link to="/blog" className={styles.mobileLink} onClick={() => setMobileOpen(false)}>Blog</Link>
         <Link to="/work" className={styles.mobileLink} onClick={() => setMobileOpen(false)}>Work</Link>
+        <Link to="/pricing" className={styles.mobileLink} onClick={() => setMobileOpen(false)}>Pricing</Link>
+        <Link to="/testimonials" className={styles.mobileLink} onClick={() => setMobileOpen(false)}>Testimonials</Link>
         <Link to="/contact" className={styles.mobileLink} onClick={() => setMobileOpen(false)}>Contact</Link>
         <button className={styles.mobileProject} onClick={handleCtaClick}>Start Project</button>
       </div>

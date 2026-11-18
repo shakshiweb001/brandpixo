@@ -2,6 +2,7 @@ import { readFile, writeFile } from 'node:fs/promises';
 import { blogPosts } from '../src/data/blogPosts.js';
 import { servicesData } from '../src/data/servicesData.js';
 import { projects } from '../src/data/projectsData.js';
+import { industries } from '../src/data/industriesData.js';
 
 const siteUrl = (process.env.VITE_SITE_URL || 'https://brandpixo.com').replace(/\/$/, '');
 const today = new Date().toISOString().slice(0, 10);
@@ -16,6 +17,7 @@ const escapeXml = (value) => value.replace(/[<>&'"]/g, (character) => ({ '<': '&
 const entries = [
   ...staticPaths.map((path) => ({ path, lastmod: today, changefreq: routeSettings[path]?.[0] || 'monthly', priority: routeSettings[path]?.[1] || '0.8' })),
   ...Object.keys(servicesData).map((slug) => ({ path: `/services/${slug}`, lastmod: today, changefreq: 'monthly', priority: '0.8' })),
+  ...Object.keys(industries).map((slug) => ({ path: `/industries/${slug}`, lastmod: today, changefreq: 'monthly', priority: '0.8' })),
   ...projects.map((project) => ({ path: `/work/${project.slug}`, lastmod: today, changefreq: 'monthly', priority: '0.7' })),
   ...blogPosts.map((post) => ({ path: `/blog/${post.slug}`, lastmod: post.dateModified || post.datePublished || today, changefreq: 'monthly', priority: '0.7' }))
 ];

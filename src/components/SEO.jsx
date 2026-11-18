@@ -6,6 +6,7 @@ import { blogPosts, getBlogPost } from '../data/blogPosts';
 import { homeFaqs } from '../data/homeFaqs';
 import { getProject, projects } from '../data/projectsData';
 import { siteInfo } from '../data/siteInfo';
+import { industries } from '../data/industriesData';
 
 const SITE_NAME = 'BrandPixo';
 const SITE_URL = (import.meta.env.VITE_SITE_URL || 'https://brandpixo.com').replace(/\/$/, '');
@@ -13,6 +14,9 @@ const SHARE_IMAGE = `${SITE_URL}/brandpixo-share.png`;
 const LOGO = `${SITE_URL}/logo.png`;
 const EMAIL = 'hello@brandpixo.com';
 const PHONE = '+91-76508-37963';
+// Markets BrandPixo serves; used in Organization and Service schema.
+const SERVICE_COUNTRIES = [['India', 'IN'], ['United Kingdom', 'GB'], ['United States', 'US'], ['Canada', 'CA'], ['Australia', 'AU'], ['United Arab Emirates', 'AE']];
+const AREA_SERVED = SERVICE_COUNTRIES.map(([name]) => ({ '@type': 'Country', name }));
 
 const staticMeta = {
   '/': {
@@ -26,6 +30,14 @@ const staticMeta = {
   '/services': {
     title: 'Digital Marketing Services | BrandPixo',
     description: 'Explore BrandPixo services: SEO, social media marketing, performance campaigns, branding, UI/UX and custom website development.'
+  },
+  '/pricing': {
+    title: 'Pricing | BrandPixo',
+    description: 'Transparent website design and development packages from BrandPixo. Compare Launch, Growth and Signature plans and get a fixed quote.'
+  },
+  '/testimonials': {
+    title: 'Client Testimonials | BrandPixo',
+    description: 'Read what clients say about working with BrandPixo on websites, branding and digital marketing projects.'
   },
   '/blog': {
     title: 'Digital Marketing Insights | BrandPixo',
@@ -90,6 +102,17 @@ const routeDetails = (pathname) => {
     };
   }
 
+  if (pathname.startsWith('/industries/')) {
+    const industry = industries[pathname.slice('/industries/'.length)];
+    if (industry) return {
+      title: industry.metaTitle,
+      description: industry.metaDescription,
+      image: SHARE_IMAGE,
+      type: 'website',
+      breadcrumbs: [['Home', '/'], ['Industries', '/'], [industry.name, pathname]]
+    };
+  }
+
   if (pathname.startsWith('/work/')) {
     const project = getProject(pathname.slice('/work/'.length));
     if (project) return {
@@ -114,7 +137,7 @@ const routeDetails = (pathname) => {
   }
 
   if (staticMeta[pathname]) {
-    const labels = { '/about': 'About', '/services': 'Services', '/blog': 'Blog', '/work': 'Work', '/work/websites': 'Websites', '/work/ecommerce': 'E-commerce', '/work/apps': 'Apps', '/contact': 'Contact', '/privacy-policy': 'Privacy Policy', '/terms-and-conditions': 'Terms and Conditions' };
+    const labels = { '/about': 'About', '/services': 'Services', '/blog': 'Blog', '/pricing': 'Pricing', '/testimonials': 'Testimonials', '/work': 'Work', '/work/websites': 'Websites', '/work/ecommerce': 'E-commerce', '/work/apps': 'Apps', '/contact': 'Contact', '/privacy-policy': 'Privacy Policy', '/terms-and-conditions': 'Terms and Conditions' };
     return {
       ...staticMeta[pathname],
       image: SHARE_IMAGE,
@@ -140,7 +163,7 @@ const breadcrumbSchema = (items) => ({
     '@type': 'ListItem',
     position: index + 1,
     name,
-    item: `${SITE_URL}${path === '/' ? '' : path}`
+    item: `${SITE_URL}${path}`
   }))
 });
 
@@ -154,7 +177,8 @@ export default function SEO() {
   const location = useLocation();
   const pathname = cleanPath(location.pathname.toLowerCase());
   const meta = routeDetails(pathname);
-  const canonical = `${SITE_URL}${pathname === '/' ? '' : pathname}`;
+  // Home canonical keeps its trailing slash so it matches the sitemap exactly.
+  const canonical = `${SITE_URL}${pathname}`;
   const socialImage = meta.image?.startsWith('/') ? `${SITE_URL}${meta.image}` : (meta.image || SHARE_IMAGE);
 
   const organization = {
@@ -174,7 +198,7 @@ export default function SEO() {
       contactType: 'customer service',
       email: EMAIL,
       telephone: PHONE,
-      areaServed: 'IN',
+      areaServed: SERVICE_COUNTRIES.map(([, code]) => code),
       availableLanguage: 'English'
     }],
     address: {
@@ -221,7 +245,7 @@ export default function SEO() {
     name: meta.service.title,
     description: meta.description,
     serviceType: meta.service.category,
-    areaServed: { '@type': 'Country', name: 'India' },
+    areaServed: AREA_SERVED,
     provider: { '@id': `${SITE_URL}/#organization` },
     url: canonical
   } : meta.project ? {
@@ -260,7 +284,7 @@ export default function SEO() {
       name: service.title,
       description: service.aboutText,
       serviceType: service.category,
-      areaServed: { '@type': 'Country', name: 'India' },
+      areaServed: AREA_SERVED,
       provider: { '@id': `${SITE_URL}/#organization` },
       url: `${SITE_URL}/services/${id}`
     }))

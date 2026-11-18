@@ -16,7 +16,7 @@ export default function Footer() {
       <div className={styles.top}>
         <div className={styles.ctaText}>
           <span>Let’s work together</span>
-          <h2>Ready to elevate your brand?</h2>
+          <p className={styles.ctaHeading}>Ready to elevate your brand?</p>
           <p>Let's design premium solutions built around your goals.</p>
         </div>
         <Link to="/contact" className={`${styles.btnPrimary} hover-target`}>
@@ -36,6 +36,8 @@ export default function Footer() {
             <li><Link to="/about" className="hover-target">About Us</Link></li>
             <li><Link to="/services" className="hover-target">Our Services</Link></li>
             <li><Link to="/work" className="hover-target">Selected Work</Link></li>
+            <li><Link to="/pricing" className="hover-target">Pricing</Link></li>
+            <li><Link to="/testimonials" className="hover-target">Testimonials</Link></li>
             <li><Link to="/blog" className="hover-target">Journal</Link></li>
           </ul>
         </div>

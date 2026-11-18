@@ -20,6 +20,9 @@ const ProjectDetailPage = lazy(() => import('./pages/ProjectDetailPage'));
 const WorkCategoryPage = lazy(() => import('./pages/WorkCategoryPage'));  
 const PrivacyPolicyPage = lazy(() => import('./pages/PrivacyPolicyPage'));
 const TermsPage = lazy(() => import('./pages/TermsPage'));
+const PricingPage = lazy(() => import('./pages/PricingPage'));
+const TestimonialsPage = lazy(() => import('./pages/TestimonialsPage'));
+const IndustryPage = lazy(() => import('./pages/IndustryPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 
 function Home() {
@@ -63,6 +66,9 @@ function App() {
           <Route path="/work/:slug" element={<ProjectDetailPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
           <Route path="/terms-and-conditions" element={<TermsPage />} />
+          <Route path="/industries/:slug" element={<IndustryPage />} />
+          <Route path="/pricing" element={<PricingPage />} />
+          <Route path="/testimonials" element={<TestimonialsPage />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/services/:serviceId" element={<ServiceDetailPage />} />
           <Route path="*" element={<NotFoundPage />} />

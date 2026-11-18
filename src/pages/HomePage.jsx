@@ -1,7 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { m as motion } from 'framer-motion';
-import { FiArrowUpRight, FiCode, FiCompass, FiPenTool } from 'react-icons/fi';
+import { FiArrowUpRight, FiCheck, FiCode, FiCompass, FiPenTool } from 'react-icons/fi';
+import { pricingPlans } from '../data/pricingData';
+import { industryList } from '../data/industriesData';
+import { realTestimonials } from '../data/testimonialsData';
 import styles from './HomePage.module.scss';
 import FAQ from '../components/FAQ';
 import Contact from '../components/Contact';
@@ -28,6 +31,13 @@ const steps = [
   ['Deliver', 'We build, refine, launch, and keep momentum moving.']
 ];
 
+const reasons = [
+  ['Fixed price, agreed upfront', 'You receive a clear scope, timeline and price before work starts. There are no hourly surprises or hidden add-ons.'],
+  ['A website that is yours', 'Your website, domain and hosting accounts are registered in your name, so you keep full ownership and control from day one.'],
+  ['Speed and SEO built in', 'Fast loading, clean code, sensible page structure and technical SEO are part of every build, not an expensive extra at the end.'],
+  ['Working across time zones', 'We work with clients in India, the UK, the USA, Canada, Australia and the UAE, with clear updates and scheduled calls that suit your day.']
+];
+
 const marqueeItems = Object.values(servicesData).map((service) => service.title);
 const latestPosts = blogPosts.slice(0, 3);
 
@@ -49,7 +59,7 @@ export default function HomePage() {
       <section className={styles.studio} id="studio">
         <motion.div className={styles.studioCopy} initial="hidden" whileInView="visible" viewport={{ once: true, margin: '-80px' }} variants={fadeUp}>
           <span>What we do</span>
-          <h2>One studio.<br />Every part connected.</h2>
+          <h2>One studio for branding,<br />web design and SEO</h2>
           <p>We bring brand strategy, website design and development together in one process. That means a clearer message, a consistent visual identity and a website built to support real business goals.</p>
           <Link to="/about">Meet BrandPixo <FiArrowUpRight /></Link>
         </motion.div>
@@ -82,21 +92,68 @@ export default function HomePage() {
         </nav>
       </section>
 
+      <section className={styles.why}>
+        <div className={styles.sectionHead}><span>Why choose us</span><h2>Why choose BrandPixo for your website</h2><Link to="/about">About our studio <FiArrowUpRight /></Link></div>
+        <div className={styles.whyGrid}>
+          {reasons.map(([title, copy], index) => (
+            <motion.article key={title} initial="hidden" whileInView="visible" viewport={{ once: true, margin: '-60px' }} variants={fadeUp}>
+              <span>0{index + 1}</span><h3>{title}</h3><p>{copy}</p>
+            </motion.article>
+          ))}
+        </div>
+      </section>
+
       <section className={styles.projects} id="projects">
         <div className={styles.projectsHead}>
-          <div><span>Selected projects</span><h2>Work made to be<br />experienced.</h2></div>
+          <div><span>Selected projects</span><h2>Website design projects<br />for clients worldwide</h2></div>
           <div className={styles.projectsIntro}><p>Explore selected website design and development projects across service businesses, healthcare, education and community-focused organisations.</p><Link to="/work">View all work <FiArrowUpRight /></Link></div>
         </div>
         <ProjectGallery limit={3} />
       </section>
 
+      <section className={styles.industries}>
+        <div className={styles.sectionHead}><span>Industries</span><h2>Industries we design websites for</h2><Link to="/work">See our work <FiArrowUpRight /></Link></div>
+        <div className={styles.industryGrid}>
+          {industryList.map((industry) => (
+            <Link key={industry.slug} to={`/industries/${industry.slug}`}>
+              <h3>{industry.name}</h3><p>{industry.short}</p><small>Explore {industry.name.toLowerCase()} <FiArrowUpRight /></small>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {realTestimonials.length > 0 && (
+        <section className={styles.reviews}>
+          <div className={styles.sectionHead}><span>Client reviews</span><h2>What clients say about working with BrandPixo</h2><Link to="/testimonials">Read all reviews <FiArrowUpRight /></Link></div>
+          <div className={styles.reviewGrid}>
+            {realTestimonials.slice(0, 3).map((item) => (
+              <figure key={item.id}><blockquote>{item.quote}</blockquote><figcaption><strong>{item.name}</strong><small>{item.role}, {item.company}</small></figcaption></figure>
+            ))}
+          </div>
+        </section>
+      )}
+
       <section className={styles.process}>
-        <div className={styles.processLead}><span>Our process</span><h2>Clarity from first thought to final detail.</h2><p>You stay involved at every stage. We agree on the goals, share progress, gather feedback and test the finished experience before launch.</p></div>
+        <div className={styles.processLead}><span>Our process</span><h2>Our website design process</h2><p>You stay involved at every stage. We agree on the goals, share progress, gather feedback and test the finished experience before launch.</p></div>
         <div className={styles.steps}>{steps.map(([title, copy], index) => <div key={title}><span>0{index + 1}</span><h3>{title}</h3><p>{copy}</p></div>)}</div>
       </section>
 
+      <section className={styles.pricing}>
+        <div className={styles.sectionHead}><span>Pricing</span><h2>Website design packages and pricing</h2><Link to="/pricing">Compare all plans <FiArrowUpRight /></Link></div>
+        <div className={styles.pricingGrid}>
+          {pricingPlans.map((plan) => (
+            <article key={plan.id} className={plan.featured ? styles.pricingFeatured : ''}>
+              <h3>{plan.name}</h3><p>{plan.tagline}</p>
+              <strong>{plan.price}</strong><small>{plan.note}</small>
+              <ul>{plan.features.slice(0, 4).map((feature) => <li key={feature}><FiCheck aria-hidden="true" />{feature}</li>)}</ul>
+              <Link to="/pricing">{plan.cta} <FiArrowUpRight /></Link>
+            </article>
+          ))}
+        </div>
+      </section>
+
       <section className={styles.journal}>
-        <div className={styles.sectionHead}><span>From the journal</span><h2>Fresh thinking, plainly put.</h2><Link to="/blog">Read all articles <FiArrowUpRight /></Link></div>
+        <div className={styles.sectionHead}><span>From the journal</span><h2>Website design and SEO tips from our blog</h2><Link to="/blog">Read all articles <FiArrowUpRight /></Link></div>
         <div className={styles.journalGrid}>
           {latestPosts.map((post) => (
             <Link key={post.slug} to={`/blog/${post.slug}`} className={styles.journalCard}>
