@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { m as motion } from 'framer-motion';
-import { FiArrowUpRight, FiCheck, FiCode, FiCompass, FiPenTool } from 'react-icons/fi';
+import { FiArrowUpRight, FiCode, FiCompass, FiPenTool } from 'react-icons/fi';
 import { pricingPlans } from '../data/pricingData';
 import { industryList } from '../data/industriesData';
 import { realTestimonials } from '../data/testimonialsData';
@@ -12,6 +12,7 @@ import ProjectGallery from '../components/ProjectGallery';
 import HomeHero from '../components/HomeHero';
 import { servicesData } from '../data/servicesData';
 import { blogPosts } from '../data/blogPosts';
+import StackedCheck from '../components/StackedCheck';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 28 },
@@ -145,7 +146,7 @@ export default function HomePage() {
             <article key={plan.id} className={plan.featured ? styles.pricingFeatured : ''}>
               <h3>{plan.name}</h3><p>{plan.tagline}</p>
               <strong>{plan.price}</strong><small>{plan.note}</small>
-              <ul>{plan.features.slice(0, 4).map((feature) => <li key={feature}><FiCheck aria-hidden="true" />{feature}</li>)}</ul>
+              <ul>{plan.features.slice(0, 4).map((feature) => <li key={feature}><StackedCheck />{feature}</li>)}</ul>
               <Link to="/pricing">{plan.cta} <FiArrowUpRight /></Link>
             </article>
           ))}

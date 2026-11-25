@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { FiArrowRight, FiArrowUpRight, FiCheck } from 'react-icons/fi';
+import { FiArrowRight, FiArrowUpRight } from 'react-icons/fi';
 import { getProject, projects, cardImage } from '../data/projectsData';
 import { servicesData } from '../data/servicesData';
 import { projectServices, projectCategory, categoryLabels } from '../data/internalLinks';
 import styles from './ProjectDetailPage.module.scss';
+import StackedCheck from '../components/StackedCheck';
 
 export default function ProjectDetailPage() {
   const { slug } = useParams();
@@ -20,7 +21,7 @@ export default function ProjectDetailPage() {
     <section className={styles.hero}><div className={styles.breadcrumbs}><Link to="/">Home</Link><span>/</span><Link to="/work">Work</Link><span>/</span><strong>{project.title}</strong></div><div className={styles.heroTitle}><div><span>{project.category}</span><h1>{project.title}</h1></div><p>{project.intro}</p></div><div className={styles.heroMeta}><span>Case study</span><span>{project.year}</span><span>BrandPixo</span></div></section>
     <section className={styles.showcase}><img src={project.image} alt={project.alt} fetchPriority="high" /></section>
     <section className={styles.story}><div className={styles.sideLabel}>Project overview</div><div className={styles.copy}><div><span>The challenge</span><h2>{project.challenge}</h2></div><div><span>Our approach</span><p>{project.solution}</p></div></div></section>
-    <section className={styles.details}><div><span>What we shaped</span><ul>{project.services.map((service) => <li key={service}><FiCheck />{service}</li>)}</ul></div><div><span>Built to deliver</span><ul>{project.outcomes.map((outcome) => <li key={outcome}><FiCheck />{outcome}</li>)}</ul></div></section>
+    <section className={styles.details}><div><span>What we shaped</span><ul>{project.services.map((service) => <li key={service}><StackedCheck />{service}</li>)}</ul></div><div><span>Built to deliver</span><ul>{project.outcomes.map((outcome) => <li key={outcome}><StackedCheck />{outcome}</li>)}</ul></div></section>
     <section className={styles.related}>
       <div>
         <span>Related services</span>

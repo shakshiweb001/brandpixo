@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { m as motion } from 'framer-motion';
-import { FiArrowUpRight, FiCheck, FiPlus } from 'react-icons/fi';
+import { FiArrowUpRight, FiPlus } from 'react-icons/fi';
 import { pricingPlans, pricingSteps, pricingFaqs } from '../data/pricingData';
 import styles from './PricingPage.module.scss';
+import StackedCheck from '../components/StackedCheck';
 
 const fadeUp = { hidden: { opacity: 0, y: 28 }, visible: { opacity: 1, y: 0, transition: { duration: .7, ease: [0.16, 1, 0.3, 1] } } };
 
@@ -26,7 +27,7 @@ export default function PricingPage() {
             <h2>{plan.name}</h2>
             <p className={styles.tagline}>{plan.tagline}</p>
             <div className={styles.price}><strong>{plan.price}</strong><small>{plan.note}</small></div>
-            <ul>{plan.features.map((feature) => <li key={feature}><FiCheck aria-hidden="true" /><span>{feature}</span></li>)}</ul>
+            <ul>{plan.features.map((feature) => <li key={feature}><StackedCheck /><span>{feature}</span></li>)}</ul>
             <Link to="/contact" className={styles.planCta}>{plan.cta} <FiArrowUpRight /></Link>
           </motion.article>
         ))}
