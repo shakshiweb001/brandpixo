@@ -48,6 +48,7 @@ export default function BlogDetailPage() {
 
   // Match each guide to the most relevant commercial service pages.
   const articleServiceMap = {
+    'is-your-business-invisible-on-chatgpt': ['seo', 'custom-website', 'social-media'],
     'what-is-a-brand-identity': ['brand-identity', 'graphic-design', 'ui-ux'],
     'how-to-choose-a-web-design-agency': ['custom-website', 'wordpress', 'ui-ux'],
     'core-web-vitals-for-small-business-websites': ['custom-website', 'wordpress', 'seo'],

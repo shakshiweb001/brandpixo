@@ -1,5 +1,122 @@
 export const blogPosts = [
   {
+    slug: 'is-your-business-invisible-on-chatgpt',
+    title: 'Is Your Business Invisible on ChatGPT? A 5-Minute Test',
+    metaTitle: 'Is Your Business Invisible on ChatGPT? 5-Minute Test | BrandPixo',
+    metaDescription: 'Customers now ask ChatGPT and Google AI which business to choose. Use this free 5-minute test to check if AI recommends you, and what to fix if it does not.',
+    focusKeyword: 'is my business on ChatGPT',
+    category: 'AI Search',
+    readTime: '7 min read',
+    date: 'November 25, 2026',
+    datePublished: '2026-11-25',
+    dateModified: '2026-11-25',
+    image: '/blog/is-your-business-invisible-on-chatgpt-cover.jpg',
+    imageAlt: 'Illustration of an AI chat on a smartphone answering "best web designer near me" while a small shop fades into the background',
+    excerpt: 'More customers now ask ChatGPT, Gemini and Google AI to recommend a business instead of scrolling through search results. This free five-question test shows whether AI tools can see your business, and what to fix if they cannot.',
+    intro: 'Ask yourself this: when a customer types "best bakery near me" or "good web designer for a small business" into ChatGPT, does your name come up? For most small businesses in India, the honest answer is "I don\'t know." That is a problem, because more and more people now skip the list of links and simply ask an AI tool to recommend someone. The good news is that you can find out where you stand in five minutes, for free, with nothing but your phone.',
+    sections: [
+      {
+        title: 'Why AI Visibility Matters Now',
+        paragraphs: [
+          'Search has changed. Google now shows an AI-written answer at the top of many results, and when it does, people click less. An Ahrefs study of 300,000 keywords found that [AI Overviews reduce clicks to the top-ranking page by 58%](https://ahrefs.com/blog/ai-overviews-reduce-clicks-update).',
+          'So even if you rank on page one, the AI answer above you may decide who the customer calls. Getting your business mentioned inside those answers is called generative engine optimization (GEO). Think of it as SEO for AI tools like ChatGPT, Gemini, Perplexity and Google\'s AI Mode.',
+          'And these visitors are worth having. People who find a business through AI search tend to convert better, because they arrive already knowing what they want.'
+        ]
+      },
+      {
+        title: 'Before You Start',
+        paragraphs: [
+          'Open ChatGPT in a private or logged-out window, so your past chats do not change the answers. If you have time, run the same questions on Google Gemini and Perplexity too, since each tool picks sources differently.',
+          'Keep a notebook or your phone\'s notes app open. For each question, write down two things: did your business appear, and was the information correct?'
+        ]
+      },
+      {
+        title: 'The 5-Minute Test: 5 Questions to Ask',
+        paragraphs: [
+          'Replace the words in brackets with your own business details.',
+          'Question 1, the "best of" search: "What are the best [your service] in [your city or area]?" This is the question your future customers are asking. If you are not in the list, the AI is sending those customers to your competitors.',
+          'Question 2, the brand check: "What is [your business name]? What do they offer?" Here you are checking whether the AI knows you at all, and whether what it says is true. Watch for wrong phone numbers, old addresses, services you stopped offering, or the AI mixing you up with another business with a similar name.',
+          'Question 3, the comparison: "[Your business name] vs [your biggest competitor]: which is better?" This shows how the AI sees you next to the competition. If it says much more about them than about you, they have more information about themselves online.',
+          'Question 4, the problem question: "Where can I get [the problem you solve] for a small budget in [your area]?" Customers often describe their problem, not your service name. A good test is something like "Who can fix my [slow website](/blog/core-web-vitals-for-small-business-websites)?" instead of "website developer."',
+          'Question 5, the trust check: "Is [your business name] reliable? What do customers say about them?" AI tools pull reviews and mentions from across the web. This question shows what reputation the AI has built for you, good or bad.'
+        ]
+      },
+      {
+        title: 'Your Score: What It Means',
+        paragraphs: [
+          'Give yourself 1 point for each question where your business appeared with correct information.'
+        ],
+        table: {
+          headers: ['Score', 'What it means'],
+          rows: [
+            ['0 to 1', 'Invisible. AI tools do not know you yet, and customers asking for your service are being sent elsewhere.'],
+            ['2 to 3', 'Partly visible. The AI knows you exist, but you are not its first choice. Small fixes can move you up.'],
+            ['4 to 5', 'Visible. Great start. Now protect it by keeping your information fresh and consistent.']
+          ]
+        },
+        closing: 'Most local businesses we test score 0 or 1, so do not panic if you do too. It usually means a few fixable gaps, not a bad business.'
+      },
+      {
+        title: 'Why AI Cannot See Your Business',
+        paragraphs: [
+          'After running this test for many small businesses, we see the same reasons again and again.'
+        ],
+        list: [
+          'Your details do not match across the web. Your name, phone number and address are different on your website, Google, Justdial and Facebook, so AI tools get confused and skip you.',
+          'Few people talk about you. AI recommendations lean heavily on what other websites say. If no blog, directory or "top 10" list mentions you, the AI has no proof you are good.',
+          'Your website does not answer questions. Pages that say "We provide quality services" give the AI nothing to quote. Pages that clearly say what you do, where, for whom and at what price do.',
+          'The AI cannot read your website. Some websites load their text with JavaScript, and AI crawlers may see a blank page. If your site was built with a modern framework, check that its content is visible without scripts.',
+          'Your social media is quiet. AI tools tend to favour brands with an active social media presence, and an Instagram page with no posts since last year sends the wrong signal.'
+        ]
+      },
+      {
+        title: '6 Ways to Get Noticed by ChatGPT',
+        list: [
+          'Claim your ChatGPT business profile. OpenAI launched ChatGPT Business Hub in November 2026. It lets eligible businesses claim a profile and tell ChatGPT about themselves, so check if your business is eligible and claim it before your competitors do.',
+          'Fix your Google Business Profile. Fill in every field, add real photos and keep your hours updated. Google\'s AI answers draw on this information directly.',
+          'Make your details identical everywhere. Use the exact same business name, phone number and address on every listing, from your website to Justdial to Instagram.',
+          'Get into "best of" lists. Find the blogs and directories that rank "best [your service] in [your city]" and ask to be featured. These lists are a favourite source for AI answers.',
+          'Add an FAQ section to your website. Answer the real questions customers ask you on calls and WhatsApp, using simple question-style headings so AI tools can lift your answers directly.',
+          'Collect reviews regularly. Ask happy customers to leave a Google review that mentions the service they used. Reviews feed the AI\'s "is this business reliable?" answer.'
+        ],
+        closing: 'You do not need to do all six this week. Start with numbers 1 to 3, because they are free and take an afternoon.'
+      },
+      {
+        title: 'Run the Test Again in 30 Days',
+        paragraphs: [
+          'AI tools update what they know over time, so changes do not show overnight. Make your fixes, then repeat the same five questions in a month and compare your score. Keep your notes, so you can see what moved.'
+        ]
+      },
+      {
+        title: 'Want Us to Run the Test for You?',
+        paragraphs: [
+          'At BrandPixo, we help small businesses get found on Google and on AI tools like ChatGPT. We will run a full AI visibility check on your business across ChatGPT, Gemini, Perplexity and Google, and send you a simple report with your score and the exact fixes you need.',
+          '[Get your free marketing audit](/contact), or message us on WhatsApp at +91 76508 37963 or email hello@brandpixo.com.',
+          'You can also explore our [SEO services](/services/seo) and [custom website development](/services/custom-website) to see how we help businesses grow.'
+        ]
+      },
+      {
+        title: 'Frequently Asked Questions',
+        faqs: [
+          { q: 'How do I know if ChatGPT recommends my business?', a: 'Ask ChatGPT the same questions your customers would ask, such as "best [your service] in [your city]", in a logged-out window. If your name does not appear, ChatGPT is not recommending you yet.' },
+          { q: 'Is GEO different from SEO?', a: 'SEO helps you rank in Google\'s list of links. GEO helps you get mentioned inside AI-written answers. They overlap a lot: a clear, fast, well-reviewed website helps with both.' },
+          { q: 'Can I pay ChatGPT to recommend my business?', a: 'OpenAI says claiming a Business Hub profile does not guarantee you will show up more. Recommendations still depend on how your business is described across the web.' },
+          { q: 'How long does it take to show up in AI answers?', a: 'It varies. Simple fixes like correcting your listings can help within weeks, while building mentions and reviews takes a few months.' },
+          { q: 'Does a small business really need to worry about AI search?', a: 'Yes. Your customers are already using these tools. Being missing from AI answers today is like not being on Google Maps ten years ago.' }
+        ]
+      }
+    ],
+    faqs: [
+      { q: 'How do I know if ChatGPT recommends my business?', a: 'Ask ChatGPT the same questions your customers would ask, such as "best [your service] in [your city]", in a logged-out window. If your name does not appear, ChatGPT is not recommending you yet.' },
+      { q: 'Is GEO different from SEO?', a: 'SEO helps you rank in Google\'s list of links. GEO helps you get mentioned inside AI-written answers. They overlap a lot: a clear, fast, well-reviewed website helps with both.' },
+      { q: 'Can I pay ChatGPT to recommend my business?', a: 'OpenAI says claiming a Business Hub profile does not guarantee you will show up more. Recommendations still depend on how your business is described across the web.' },
+      { q: 'How long does it take to show up in AI answers?', a: 'It varies. Simple fixes like correcting your listings can help within weeks, while building mentions and reviews takes a few months.' },
+      { q: 'Does a small business really need to worry about AI search?', a: 'Yes. Your customers are already using these tools. Being missing from AI answers today is like not being on Google Maps ten years ago.' }
+    ],
+    pullQuote: 'If AI tools cannot see your business, your customers cannot either.',
+    related: ['local-seo-for-small-businesses', 'seo-friendly-blog-for-today']
+  },
+  {
     slug: 'what-is-a-brand-identity',
     title: 'What Is a Brand Identity? The 6 Building Blocks Every Business Needs',
     metaTitle: 'What Is a Brand Identity? 6 Building Blocks | BrandPixo',
