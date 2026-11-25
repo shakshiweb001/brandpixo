@@ -1,0 +1,1 @@
+import{n as e,t}from"./jsx-runtime-D8nDyRPw.js";import{s as n}from"./fi-BQzcxixY.js";e();var r={stackedIcon:`_stackedIcon_1brwt_1`,icon:`_icon_1brwt_25`},i=t();function a({className:e=``}){return(0,i.jsxs)(`span`,{className:`${r.stackedIcon} ${e}`,"aria-hidden":`true`,children:[(0,i.jsx)(`i`,{}),(0,i.jsx)(`i`,{}),(0,i.jsx)(n,{className:r.icon})]})}export{a as t};
