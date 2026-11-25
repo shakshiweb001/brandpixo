@@ -237,7 +237,7 @@ export default function SEO() {
     url: canonical,
     isAccessibleForFree: true,
     mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
-    author: { '@id': `${SITE_URL}/#organization`, name: SITE_NAME, url: SITE_URL },
+    author: { '@type': 'Person', name: 'Manjeet Kumar', url: SITE_URL },
     publisher: { '@id': `${SITE_URL}/#organization`, name: SITE_NAME, url: SITE_URL }
   } : meta.service ? {
     '@context': 'https://schema.org',

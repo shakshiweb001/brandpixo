@@ -15,6 +15,7 @@ import { getProject, cardImage } from '../data/projectsData';
 import { serviceReading, serviceWork } from '../data/internalLinks';
 import { servicesData } from '../data/servicesData';
 import styles from './ServiceDetailPage.module.scss';
+import StackedCheck from '../components/StackedCheck';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 26 },
@@ -135,7 +136,7 @@ export default function ServiceDetailPage() {
               {(section.paragraphs || []).map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
               {section.list && (
                 <ul className={styles.detailList}>
-                  {section.list.map((item) => <li key={item}><FiCheck /> <span>{item}</span></li>)}
+                  {section.list.map((item) => <li key={item}><StackedCheck /> <span>{item}</span></li>)}
                 </ul>
               )}
             </div>
@@ -171,7 +172,7 @@ export default function ServiceDetailPage() {
             <p>We combine strategic clarity with high-end execution, so the finished work feels distinctive, performs reliably, and stays useful as your business grows.</p>
             <div className={styles.reasons}>
               {['Senior-led expertise', 'Tailored strategy', 'Refined creative craft', 'Results-oriented delivery'].map((reason) => (
-                <span key={reason}><FiCheck /> {reason}</span>
+                <span key={reason}><StackedCheck /> {reason}</span>
               ))}
             </div>
           </div>

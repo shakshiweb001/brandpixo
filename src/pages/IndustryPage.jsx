@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { m as motion } from 'framer-motion';
-import { FiArrowUpRight, FiCheck } from 'react-icons/fi';
+import { FiArrowUpRight } from 'react-icons/fi';
 import { industries, industryList } from '../data/industriesData';
 import { servicesData } from '../data/servicesData';
 import { getProject, cardImage } from '../data/projectsData';
 import NotFoundPage from './NotFoundPage';
 import styles from './IndustryPage.module.scss';
+import StackedCheck from '../components/StackedCheck';
 
 const fadeUp = { hidden: { opacity: 0, y: 28 }, visible: { opacity: 1, y: 0, transition: { duration: .7, ease: [0.16, 1, 0.3, 1] } } };
 
@@ -35,7 +36,7 @@ export default function IndustryPage() {
         <h2>What we focus on for {industry.name.toLowerCase()} brands</h2>
         <div>
           {industry.points.map(([title, copy]) => (
-            <article key={title}><FiCheck aria-hidden="true" /><h3>{title}</h3><p>{copy}</p></article>
+            <article key={title}><StackedCheck /><h3>{title}</h3><p>{copy}</p></article>
           ))}
         </div>
       </section>

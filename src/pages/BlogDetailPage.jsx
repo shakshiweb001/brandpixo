@@ -173,8 +173,8 @@ export default function BlogDetailPage() {
         </section>
 
         <section className={styles.authorCard}>
-          <div className={styles.authorMark}>BP</div>
-          <div><span>Written by</span><h3>BrandPixo Editorial Team</h3><p>Practical guidance shaped by brand strategy, digital design, and conversion experience.</p><div className={styles.authorTags}><span>Brand strategy</span><span>Digital craft</span></div></div>
+          <div className={styles.authorMark}>MK</div>
+          <div><span>Written by</span><h3>Manjeet Kumar</h3><p>Practical guidance shaped by brand strategy, digital design, and conversion experience.</p><div className={styles.authorTags}><span>Brand strategy</span><span>Digital craft</span></div></div>
           <Link to="/blog" className={styles.tapLink}>More field notes <FiArrowUpRight /></Link>
         </section>
 
